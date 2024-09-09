@@ -6,11 +6,11 @@ import Shop from "./pages/Shop";
 
 const AppRoutes = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/duda/">
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/shop" element={<Shop />} />
-                <Route path="/about" element={<About />} />
+                <Route path="*" element={<Home />} />
+                <Route path="/duda/shop" element={<Shop />} />
+                <Route path="/duda/about" element={<About />} />
             </Routes>
         </BrowserRouter>
     )
