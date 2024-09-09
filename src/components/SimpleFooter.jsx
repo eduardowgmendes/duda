@@ -81,9 +81,6 @@ export default function SimpleFooter() {
                                 <Button type='link' icon={<InstagramOutlined />} href="https://instagram.com" target='_blank'/>
                                 <Button type='link' icon={<TwitterOutlined />} href="https://twitter.com" target='_blank'/>
                                 <Button type='link' icon={<TikTokFilled />} href="https://www.tiktok.com" target='_blank'/>
-                                
-                                
-                                
                             </Space>
                         </Flex>
 
