@@ -34,7 +34,7 @@ export default function SimpleFooter() {
                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 12 }} xl={{ span: 12 }} xxl={{ span: 12 }} >
                         <a href="/">
                             <Flex style={{ padding: '0 0 32px 0' }}>
-                                <Image src='../assets/logos/duda-light-logo.svg' preview={false} alt='...' />
+                                <Image src='/assets/logos/duda-light-logo.svg' preview={false} alt='...' />
                             </Flex>
                         </a>
                         <Space direction='vertical'>
