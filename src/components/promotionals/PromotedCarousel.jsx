@@ -8,13 +8,16 @@ export default function PromotedCarosel({ promos }) {
     return (
         <Carousel autoplay fade draggable infinite dots adaptiveHeight dotPosition='bottom'>
             {promos.map((promo, index) => (
-                <Card bodyStyle={{ padding: 0 }} bordered key={index} style={{ height: '100%' }}>
-                    <Flex style={{ padding: '128px 32px 128px 32px', background: `linear-gradient(90deg, ${useExtractColor(promo.media.backdrop).dominantColor} 50%, rgba(250,250,250,0) 75%), url('${promo.media.backdrop}')`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
-                        <Row>
-                            <Col xs={{span: 24}} sm={{span: 24}} md={{span: 20}} lg={{span: 16}} xl={{span: 12}} xxl={{span: 12}}>
-                                <Title style={{ fontWeight: 'bolder', userSelect: 'none',color: promo.color.primary, fontFamily: 'Outfit, sans-serif', fontSize: '3rem', wordBreak: 'keep-all' }}>{promo.title}</Title>
-                                <Paragraph style={{ fontSize: '1.25rem', userSelect: 'none', color: promo.color.secondary }} ellipsis={{ rows: 6, expandable: false, symbol: '...' }}>{promo.description}</Paragraph>
-                                <Button size='large' shape='round' iconPosition='end' icon={<ArrowRightOutlined />}>{promo.callToAction}</Button>
+                <Card bodyStyle={{ padding: 0 }} bordered key={index}>
+                    <Flex align="center" style={{ background: `linear-gradient(90deg, ${useExtractColor(promo.media.backdrop).dominantColor} 25%, rgba(250,250,250,0) 75%), url('${promo.media.backdrop}')`, 
+                        backgroundPosition: 'end, center', 
+                        backgroundRepeat: 'no-repeat, no-repeat', 
+                        backgroundSize: 'cover, cover'}}>
+                        <Row gutter={[16,16]}>
+                            <Col xs={{span: 20}} sm={{span: 20}} md={{span: 20}} lg={{span: 16}} xl={{span: 10}} xxl={{span: 10}} offset={2}>
+                                <Title style={{ fontWeight: 'bolder', userSelect: 'none',color: promo.color.primary, fontFamily: 'Outfit, sans-serif', fontSize: '5vh', wordBreak: 'keep-all' }}>{promo.title}</Title>
+                                <Paragraph style={{ fontSize: '2.75vh', lineHeight: '1.3', userSelect: 'none', color: promo.color.secondary, fontFamily: 'Barlow Condensed, system-ui' }} ellipsis={{ rows: 6, expandable: false, symbol: '...' }}>{promo.description}</Paragraph>
+                                <Button size='large' shape='round' iconPosition='end' style={{marginBottom: 48}} icon={<ArrowRightOutlined />}>{promo.callToAction}</Button>
                             </Col>
                         </Row>
                     </Flex>

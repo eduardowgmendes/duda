@@ -522,11 +522,16 @@ export default function Home() {
         <div>
             <Hero banners={banners}/>
             
-            {/* <CategoryShowcase categories={categories} /> */}
-
             <Container>
 
-                <Section children={<CategoryShowcase categories={categories} />} />
+                <Section header={{
+                    title: 'Achadinhos do Dia',
+                    description: 'Aqui voce encontra as melhores ofertas com muitos descontos e cupons das lojas; Amazon, Magalu, Renner, C&A, Beleza na Web, Época Cosméticos e muitas outras.',
+                    callToAction: {
+                        label: 'Ver Tudo',
+                        action: '/shop'
+                    }
+                }} children={<CategoryShowcase categories={categories} />} />
                 
                 <Section header={{
                     title: 'Achadinhos do Dia',

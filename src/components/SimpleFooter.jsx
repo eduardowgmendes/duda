@@ -28,9 +28,10 @@ export default function SimpleFooter() {
     },]
 
     return (
-        <Footer style={{ background: 'whitesmoke' }}>
+        <Footer style={{ background: 'whitesmoke', padding: 0 }}>
 
             <Container>
+
                 <Row gutter={[32, 8]} >
 
                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 12 }} xl={{ span: 12 }} xxl={{ span: 12 }} >
@@ -94,6 +95,7 @@ export default function SimpleFooter() {
                         </Row>
                     </Col>
                 </Row>
+
             </Container>
 
         </Footer>

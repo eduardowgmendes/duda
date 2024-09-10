@@ -61,7 +61,7 @@ export default function SimpleHeader() {
         },]
 
     return (
-        <Header style={{height: 'auto', zIndex: 9999}}>
+        <Header style={{height: 'auto', padding: 0}}>
             <Container>
                 <Row>
                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 4 }} xl={{ span: 4 }} xxl={{ span: 2 }}>
@@ -73,7 +73,7 @@ export default function SimpleHeader() {
                     </Col>
                     <Col xs={{span: 24}} sm={{span: 24}} md={{span: 24}} lg={{span: 10}} xl={{span: 10}} xxl={{span: 12}}>
                         <Flex vertical align="center" justify="center" style={{ height: '100%' }}>
-                            <Search placeholder='Buscar...' enterButton style={{ margin: '0 20px 0 20px' }} />
+                            <Search placeholder='Buscar...' enterButton />
                         </Flex>
                     </Col>
                     <Col xs={{span: 24}} sm={{span: 24}} md={{span: 24}} lg={{span: 10}} xl={{span: 10}} xxl={{span: 10}}>
