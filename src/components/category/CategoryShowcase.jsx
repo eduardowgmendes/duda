@@ -6,7 +6,7 @@ export default function CategoryShowcase({ categories }) {
     return (
         <Row gutter={[8, 8]}>
             {categories.map((category, index) => (
-                <Col xs={{ span: 12 }} sm={{ span: 8 }} md={{ span: 8 }} lg={{ span: 4 }} xl={{ span: 6 }} xxl={{span: 4}}>
+                <Col xs={{ span: 12 }} sm={{ span: 8 }} md={{ span: 6 }} lg={{ span: 6 }} xl={{ span: 6 }} xxl={{span: 4}}>
                     <Card bordered hoverable key={index} size='large' bodyStyle={{ padding: 0 }} style={{ height: 300, overflow: 'hidden', borderColor: `${useExtractColor(category.media.background).dominantColor}` }}>
                         <Flex vertical align="center" justify="end"
                             style={{ height: 300, padding: 16, background: `linear-gradient(0deg, ${useExtractColor(category.media.background).dominantColor} 10%, rgba(250, 250, 250, 0) 50%), url('${category.media.background}')`,  backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>

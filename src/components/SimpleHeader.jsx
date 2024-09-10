@@ -1,5 +1,5 @@
 
-import { DollarCircleOutlined, InfoCircleOutlined, MenuOutlined, ShopOutlined } from "@ant-design/icons";
+import { DollarCircleOutlined, FireFilled, InfoCircleOutlined, MenuOutlined, ShopOutlined } from "@ant-design/icons";
 import { Col, Flex, Image, Layout, Menu, Row } from "antd"
 import Search from "antd/es/input/Search";
 import { useState } from "react";
@@ -64,20 +64,20 @@ export default function SimpleHeader() {
         <Header style={{height: 'auto', zIndex: 9999}}>
             <Container>
                 <Row>
-                    <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 4 }} xl={{ span: 4 }} xxl={{ span: 4 }}>
+                    <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 4 }} xl={{ span: 4 }} xxl={{ span: 2 }}>
                         <Flex align="center" justify="center">
                             <a href="/">
-                                <Image src='src/assets/logos/duda-dark-logo.svg' width={128} preview={false} alt="..."/>
+                                <Image src='src/assets/logos/duda-dark-logo.svg' width='6rem' preview={false} alt="..."/>
                             </a>
                         </Flex>
                     </Col>
-                    <Col xs={{span: 24}} sm={{span: 24}} md={{span: 24}} lg={{span: 10}} xl={{span: 10}} xxl={{span: 10}}>
+                    <Col xs={{span: 24}} sm={{span: 24}} md={{span: 24}} lg={{span: 10}} xl={{span: 10}} xxl={{span: 12}}>
                         <Flex vertical align="center" justify="center" style={{ height: '100%' }}>
                             <Search placeholder='Buscar...' enterButton style={{ margin: '0 20px 0 20px' }} />
                         </Flex>
                     </Col>
                     <Col xs={{span: 24}} sm={{span: 24}} md={{span: 24}} lg={{span: 10}} xl={{span: 10}} xxl={{span: 10}}>
-                        <Menu onClick={onClick} theme='dark' mode='horizontal' selectedKeys={[current]} items={items} />
+                        <Menu onClick={onClick} expandIcon={<FireFilled />} theme='dark' mode='horizontal' selectedKeys={[current]} items={items} />
                     </Col>
                 </Row>
             </Container>

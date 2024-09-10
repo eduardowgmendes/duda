@@ -320,6 +320,117 @@ export default function Home() {
             src: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-lt4aurs7dbv335'
         }
     },]
+    const categories = [{
+        name: 'Ferramentas',
+        color: {
+            primary: 'white',
+            secondary: '',
+        },
+        media: {
+            background: 'https://plus.unsplash.com/premium_photo-1674078860580-688dd9519e81?q=80&w=2028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            icon: <ToolTwoTone />
+        }
+    }, {
+        name: 'Eletroportáteis',
+        color: {
+            primary: 'darkslategray',
+            secondary: '',
+        },
+        media: {
+            background: 'https://images.unsplash.com/photo-1586208958839-06c17cacdf08?q=80&w=1865&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            icon: <FrownTwoTone />
+        }
+    }, {
+        name: 'Comércio & Indústria',
+        color: {
+            primary: 'whitesmoke',
+            secondary: '',
+        },
+        media: {
+            background: 'https://images.unsplash.com/photo-1542274368-443d694d79aa?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            icon: <StarTwoTone />
+        }
+    }, {
+        name: 'Brinquedos',
+        color: {
+            primary: 'cornsilk',
+            secondary: '',
+        },
+        media: {
+            background: 'https://plus.unsplash.com/premium_photo-1664373233010-7c4abae40f78?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            icon: <BulbTwoTone />
+        }
+    }, {
+        name: 'Automotivo',
+        color: {
+            primary: 'whitesmoke',
+            secondary: '',
+        },
+        media: {
+            background: 'src/assets/category/category-banner-automotive.png',
+            icon: <CarTwoTone />
+        }
+    }, {
+        name: 'Casa',
+        color: {
+            primary: 'cornsilk',
+            secondary: '',
+        },
+        media: {
+            background: 'https://images.unsplash.com/photo-1567016432779-094069958ea5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVybml0dXJlfGVufDB8fDB8fHww',
+            icon: <HomeTwoTone />
+        }
+    }, {
+        name: 'Utilidades Domésticas',
+        color: {
+            primary: 'darkslategray',
+            secondary: '',
+        },
+        media: {
+            background: 'https://images.unsplash.com/photo-1567790375865-21c42874446e?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            icon: <GiftTwoTone />
+        }
+    }, {
+        name: 'TV & Áudio',
+        color: {
+            primary: 'purple',
+            secondary: '',
+        },
+        media: {
+            background: 'https://images.unsplash.com/photo-1505740106531-4243f3831c78?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            icon: <SoundTwoTone />
+        }
+    }, {
+        name: 'Mercado',
+        color: {
+            primary: 'whitesmoke',
+            secondary: '',
+        },
+        media: {
+            background: 'https://images.unsplash.com/photo-1567790329613-4196347cf60b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            icon: <ShopTwoTone />
+        }
+    }, {
+        name: 'Games',
+        color: {
+            primary: 'whitesmoke',
+            secondary: '',
+        },
+        media: {
+            background: 'https://images.unsplash.com/photo-1535043205849-513fe27db33e?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            icon: <RocketTwoTone />
+        }
+    }, {
+        name: 'Informática',
+        color: {
+            primary: 'whitesmoke',
+            secondary: '',
+        },
+        media: {
+            background: 'https://images.unsplash.com/photo-1556559322-b5071efadc88?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            icon: <HddTwoTone />
+        }
+    },]
 
 
     const promos = [{
@@ -402,7 +513,7 @@ export default function Home() {
             background: 'https://images.unsplash.com/photo-1696159403688-3deee7d4daf8?q=80&w=2660&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         },
         color:{
-            primary: 'steelblue',
+            primary: 'blue',
             secondary: 'black'
         }
     },]
@@ -411,9 +522,11 @@ export default function Home() {
         <div>
             <Hero banners={banners}/>
             
+            {/* <CategoryShowcase categories={categories} /> */}
+
             <Container>
 
-                {/* <Section children={<CategoryShowcase categories={categories} />} /> */}
+                <Section children={<CategoryShowcase categories={categories} />} />
                 
                 <Section header={{
                     title: 'Achadinhos do Dia',
