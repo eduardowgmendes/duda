@@ -327,7 +327,7 @@ export default function Home() {
             secondary: '',
         },
         media: {
-            background: 'https://plus.unsplash.com/premium_photo-1674078860580-688dd9519e81?q=80&w=2028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            background: './assets/images/category/category-banner-tools.png',
             icon: <ToolTwoTone />
         }
     }, {
@@ -337,7 +337,7 @@ export default function Home() {
             secondary: '',
         },
         media: {
-            background: 'https://images.unsplash.com/photo-1586208958839-06c17cacdf08?q=80&w=1865&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            background: './assets/images/category/category-banner-home-appliance.png',
             icon: <FrownTwoTone />
         }
     }, {
@@ -347,7 +347,7 @@ export default function Home() {
             secondary: '',
         },
         media: {
-            background: 'https://images.unsplash.com/photo-1542274368-443d694d79aa?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            background: './assets/images/category/category-banner-industry.png',
             icon: <StarTwoTone />
         }
     }, {
@@ -357,18 +357,18 @@ export default function Home() {
             secondary: '',
         },
         media: {
-            background: 'https://plus.unsplash.com/premium_photo-1664373233010-7c4abae40f78?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            background: './assets/images/category/category-banner-toys.png',
             icon: <BulbTwoTone />
         }
     }, {
-        name: 'Automotivo',
+        name: 'Informática',
         color: {
             primary: 'whitesmoke',
             secondary: '',
         },
         media: {
-            background: './assets/images/category/category-banner-automotive.png',
-            icon: <CarTwoTone />
+            background: './assets/images/category/category-banner-computers.png',
+            icon: <HddTwoTone />
         }
     }, {
         name: 'Casa',
@@ -377,7 +377,7 @@ export default function Home() {
             secondary: '',
         },
         media: {
-            background: 'https://images.unsplash.com/photo-1567016432779-094069958ea5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVybml0dXJlfGVufDB8fDB8fHww',
+            background: './assets/images/category/category-banner-house-alternative.png',
             icon: <HomeTwoTone />
         }
     }, {
@@ -387,7 +387,7 @@ export default function Home() {
             secondary: '',
         },
         media: {
-            background: 'https://images.unsplash.com/photo-1567790375865-21c42874446e?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            background: './assets/images/category/category-banner-furniture.png',
             icon: <GiftTwoTone />
         }
     }, {
@@ -397,7 +397,7 @@ export default function Home() {
             secondary: '',
         },
         media: {
-            background: 'https://images.unsplash.com/photo-1505740106531-4243f3831c78?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            background: './assets/images/category/category-banner-tv.png',
             icon: <SoundTwoTone />
         }
     }, {
@@ -407,7 +407,7 @@ export default function Home() {
             secondary: '',
         },
         media: {
-            background: 'https://images.unsplash.com/photo-1567790329613-4196347cf60b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            background: './assets/images/category/category-banner-supermarket.png',
             icon: <ShopTwoTone />
         }
     }, {
@@ -417,20 +417,20 @@ export default function Home() {
             secondary: '',
         },
         media: {
-            background: 'https://images.unsplash.com/photo-1535043205849-513fe27db33e?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            background: './assets/images/category/category-banner-games.png',
             icon: <RocketTwoTone />
         }
-    }, {
-        name: 'Informática',
+    },{
+        name: 'Automotivo',
         color: {
             primary: 'whitesmoke',
             secondary: '',
         },
         media: {
-            background: 'https://images.unsplash.com/photo-1556559322-b5071efadc88?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-            icon: <HddTwoTone />
+            background: './assets/images/category/category-banner-automotive.png',
+            icon: <CarTwoTone />
         }
-    },]
+    }, ]
 
 
     const promos = [{
@@ -480,11 +480,11 @@ export default function Home() {
             action: '/about'
         },
         media: {
-            background: 'https://images.unsplash.com/photo-1556139954-ec19cce61d61?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            background: 'https://images.unsplash.com/photo-1631510083755-11ecb5172d81?q=80&w=2580&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         },
         color:{
-            primary: 'gold',
-            secondary: 'white'
+            primary: 'forestgreen',
+            secondary: 'dimgray'
         }
     },{
         title: 'Descubra as Novidades! Economize com a gente.',
@@ -495,11 +495,11 @@ export default function Home() {
             action: '/about'
         },
         media: {
-            background: 'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            background: 'https://images.unsplash.com/photo-1618221381711-42ca8ab6e908?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         },
         color:{
-            primary: 'indigo',
-            secondary: 'black'
+            primary: 'gold',
+            secondary: 'whitesmoke'
         }
     },{
         title: 'Faça parte da maior comunidade de compras online!',
@@ -510,11 +510,11 @@ export default function Home() {
             action: '/about'
         },
         media: {
-            background: 'https://images.unsplash.com/photo-1696159403688-3deee7d4daf8?q=80&w=2660&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            background: 'https://images.unsplash.com/photo-1615876234886-fd9a39fda97f?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         },
         color:{
-            primary: 'blue',
-            secondary: 'black'
+            primary: 'orangered',
+            secondary: 'dimgray'
         }
     },]
 
