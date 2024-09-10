@@ -1,6 +1,7 @@
 import { Avatar, Button, Card, Col, Divider, Flex, Image, Input, Layout, Menu, Row, Space, Typography } from "antd";
 import Container from "./layout/Container";
 import { ApiTwoTone, ArrowRightOutlined, FacebookOutlined, InstagramOutlined, MessageOutlined, MessageTwoTone, SendOutlined, TikTokFilled, TwitterOutlined, WhatsAppOutlined } from "@ant-design/icons";
+import { yellow } from "@ant-design/colors";
 const { Footer } = Layout
 const { Paragraph, Text, Title, Link } = Typography
 export default function SimpleFooter() {
@@ -73,17 +74,23 @@ export default function SimpleFooter() {
 
                         <Divider />
 
-                        <Flex align='start' justify='space-between'>
-                            Duda © {new Date().getFullYear()}
+                        <Row align="center" justify="bottom">
+                            <Col xs={{span:12}} sm={{span:12}} md={{span:12}} lg={{span:12}} xl={{span:12}} xxl={{span:12}}>
+                                Duda © {new Date().getFullYear()}
+                            </Col>
 
-                            <Space size='large'>
-                                <Button type='link' icon={<FacebookOutlined />} href="https://facebook.com" target='_blank'/>
-                                <Button type='link' icon={<InstagramOutlined />} href="https://instagram.com" target='_blank'/>
-                                <Button type='link' icon={<TwitterOutlined />} href="https://twitter.com" target='_blank'/>
-                                <Button type='link' icon={<TikTokFilled />} href="https://www.tiktok.com" target='_blank'/>
-                            </Space>
-                        </Flex>
+                            <Col xs={{span:12}} sm={{span:12}} md={{span:12}} lg={{span:12}} xl={{span:12}} xxl={{span:12}}>
+                                <Flex align="center" justify="end">
+                                    <Space size='small'>
+                                        <Button type='link' icon={<FacebookOutlined />} href="https://facebook.com" target='_blank'/>
+                                        <Button type='link' icon={<InstagramOutlined />} href="https://instagram.com" target='_blank'/>
+                                        <Button type='link' icon={<TwitterOutlined />} href="https://twitter.com" target='_blank'/>
+                                        <Button type='link' icon={<TikTokFilled />} href="https://www.tiktok.com" target='_blank'/>
+                                    </Space>
+                                </Flex>
+                            </Col>
 
+                        </Row>
                     </Col>
                 </Row>
             </Container>
