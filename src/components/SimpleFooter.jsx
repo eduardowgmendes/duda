@@ -1,9 +1,10 @@
-import { Avatar, Button, Card, Col, Divider, Flex, Image, Input, Layout, Menu, Row, Space, Typography } from "antd";
 import Container from "./layout/Container";
-import { ApiTwoTone, ArrowRightOutlined, FacebookOutlined, InstagramOutlined, MessageOutlined, MessageTwoTone, SendOutlined, TikTokFilled, TwitterOutlined, WhatsAppOutlined } from "@ant-design/icons";
-import { yellow } from "@ant-design/colors";
+import {  Button,  Col, Divider, Flex, Image,  Layout,  Row, Space, Typography } from "antd";
+import { FacebookOutlined, InstagramOutlined, TikTokFilled, TwitterOutlined } from "@ant-design/icons";
+
 const { Footer } = Layout
 const { Paragraph, Text, Title, Link } = Typography
+
 export default function SimpleFooter() {
 
     const departments = [{
@@ -35,7 +36,7 @@ export default function SimpleFooter() {
                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 12 }} xl={{ span: 12 }} xxl={{ span: 12 }} >
                         <a href="/">
                             <Flex style={{ padding: '0 0 32px 0' }}>
-                                <Image src='/src/assets/logos/duda-light-logo.svg' preview={false} alt='...' />
+                                <Image src='./src/assets/logos/duda-light-logo.svg' preview={false} alt='...' />
                             </Flex>
                         </a>
                         <Space direction='vertical'>
