@@ -367,7 +367,7 @@ export default function Home() {
             secondary: '',
         },
         media: {
-            background: 'src/assets/category/category-banner-automotive.png',
+            background: './assets/images/category/category-banner-automotive.png',
             icon: <CarTwoTone />
         }
     }, {
@@ -504,7 +504,7 @@ export default function Home() {
     },{
         title: 'Faça parte da maior comunidade de compras online!',
         description: 'Explore ofertas exclusivas de nossos parceiros e garanta os itens mais populares com os melhores preços. Toda a qualidade, em um só lugar!',
-        lead: 'Aqui seu dinheiro vale mais',
+        lead: null,
         callToAction:{
             message: 'Veja as Ofertas Agora',
             action: '/about'
