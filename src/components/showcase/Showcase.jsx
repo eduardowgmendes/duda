@@ -6,7 +6,7 @@ export default function Showcase({ items }) {
     return (
         <Row gutter={[8, 8]}>
             {items ? items.map((item, index) => (
-                <Col key={index} xs={{ span: 12 }} sm={{ span: 8 }} md={{ span: 6 }} lg={{ span: 4 }} xl={{ span: 3 }}>
+                <Col key={index} xs={{ span: 12 }} sm={{ span: 8 }} md={{ span: 6 }} lg={{ span: 6 }} xl={{ span: 4 }} xxl={{span: 3}}>
                     <DisplayItem item={item} />
                 </Col>
             )) : <Empty description='Não há items para mostrar' style={{

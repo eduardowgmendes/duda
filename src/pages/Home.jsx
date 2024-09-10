@@ -23,7 +23,7 @@ export default function Home() {
             alt: '...',
             src: 'https://down-br.img.susercontent.com/file/br-11134207-7r98r-lmeklijm53cnd2'
         }
-    },{
+    }, {
         title: 'Teclado para jogos com fio 61-Key RGB Backlight Mini Compact USB-C Cabo de alimentação plugável',
         description: 'Mini teclado com fio de 61 teclas separação de cabo chave plugável para conexão de laptop USB-C de mesa.',
         price: {
@@ -38,7 +38,7 @@ export default function Home() {
             alt: '...',
             src: 'https://down-br.img.susercontent.com/file/685634513182a36e87efd904900fdc30'
         }
-    },{
+    }, {
         title: 'Xiaomi Redmi 13c 256GB 8GB RAM/128GB 4GB Ram',
         description: 'Mini teclado com fio de 61 teclas separação de cabo chave plugável para conexão de laptop USB-C de mesa.',
         price: {
@@ -420,7 +420,7 @@ export default function Home() {
             background: './assets/images/category/category-banner-games.png',
             icon: <RocketTwoTone />
         }
-    },{
+    }, {
         name: 'Automotivo',
         color: {
             primary: 'whitesmoke',
@@ -430,7 +430,7 @@ export default function Home() {
             background: './assets/images/category/category-banner-automotive.png',
             icon: <CarTwoTone />
         }
-    }, ]
+    },]
 
 
     const promos = [{
@@ -475,44 +475,44 @@ export default function Home() {
         title: 'Encontre os Melhores Produtos, Selecionados para Você!',
         description: 'Explore ofertas exclusivas de nossos parceiros e garanta os itens mais populares com os melhores preços. Toda a qualidade, em um só lugar!',
         lead: null,
-        callToAction:{
+        callToAction: {
             message: 'Veja as Ofertas Agora',
             action: '/about'
         },
         media: {
             background: 'https://images.unsplash.com/photo-1631510083755-11ecb5172d81?q=80&w=2580&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         },
-        color:{
+        color: {
             primary: 'forestgreen',
             secondary: 'dimgray'
         }
-    },{
+    }, {
         title: 'Descubra as Novidades! Economize com a gente.',
         description: 'Fique por dentro dos últimos lançamentos e atualizações exclusivas. Não perca essa oportunidade de se manter informado!',
         lead: null,
-        callToAction:{
+        callToAction: {
             message: 'Saiba Mais',
             action: '/about'
         },
         media: {
             background: 'https://images.unsplash.com/photo-1618221381711-42ca8ab6e908?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         },
-        color:{
+        color: {
             primary: 'gold',
             secondary: 'whitesmoke'
         }
-    },{
+    }, {
         title: 'Faça parte da maior comunidade de compras online!',
         description: 'Explore ofertas exclusivas de nossos parceiros e garanta os itens mais populares com os melhores preços. Toda a qualidade, em um só lugar!',
         lead: null,
-        callToAction:{
+        callToAction: {
             message: 'Veja as Ofertas Agora',
             action: '/about'
         },
         media: {
             background: 'https://images.unsplash.com/photo-1615876234886-fd9a39fda97f?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         },
-        color:{
+        color: {
             primary: 'orangered',
             secondary: 'dimgray'
         }
@@ -520,19 +520,19 @@ export default function Home() {
 
     return (
         <div>
-            <Hero banners={banners}/>
-            
+            <Hero banners={banners} />
+
             <Container>
 
                 <Section header={{
-                    title: 'Achadinhos do Dia',
-                    description: 'Aqui voce encontra as melhores ofertas com muitos descontos e cupons das lojas; Amazon, Magalu, Renner, C&A, Beleza na Web, Época Cosméticos e muitas outras.',
+                    title: 'Categorias',
+                    description: 'Nossa loja virtual oferece uma ampla variedade de produtos, incluindo eletrônicos, roupas e acessórios, e artigos para casa. Explore nossa seleção diversificada para encontrar o que você precisa com qualidade e praticidade.',
                     callToAction: {
-                        label: 'Ver Tudo',
+                        label: 'Ver Todas',
                         action: '/shop'
                     }
                 }} children={<CategoryShowcase categories={categories} />} />
-                
+
                 <Section header={{
                     title: 'Achadinhos do Dia',
                     description: 'Aqui voce encontra as melhores ofertas com muitos descontos e cupons das lojas; Amazon, Magalu, Renner, C&A, Beleza na Web, Época Cosméticos e muitas outras.',
@@ -542,8 +542,12 @@ export default function Home() {
                     }
                 }} children={<Showcase items={items} />} />
 
-                <Section children={<PromotedCarosel promos={promos} />} />
+            </Container>
 
+            <Section children={<PromotedCarosel promos={promos} />} />
+
+            <Container>
+                
                 <Section header={{
                     title: 'Achadinhos Destaque',
                     description: 'Aqui voce encontra as melhores ofertas com muitos descontos e cupons das lojas; Amazon, Magalu, Renner, C&A, Beleza na Web, Época Cosméticos e muitas outras.',
@@ -552,7 +556,6 @@ export default function Home() {
                         action: '/about'
                     }
                 }} children={<Showcase items={items} />} />
-
 
             </Container>
         </div>
