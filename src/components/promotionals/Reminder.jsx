@@ -43,7 +43,7 @@ export default function Reminder() {
                                     <Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 12}} xl={{span: 12}} xxl={{span: 12}}>
                                         <Card hoverable bordered style={{ padding: 10, background: 'lightcyan' }} bodyStyle={{ padding: 0 }}>
                                             <Flex align='center' justify='center'>
-                                                <img src="./src/assets/logos/telegram.svg" width={32} alt="" style={{ marginInlineEnd: 10 }} />
+                                                <img src="assets/logos/telegram.svg" width={32} alt="" style={{ marginInlineEnd: 10 }} />
                                                 <Flex vertical>
                                                     <Paragraph style={{ margin: 0, color: "inherit" }}>Participe no</Paragraph>
                                                     <Title level={5} style={{ wordBreak: 'keep-all', margin: 0, color: "inherit" }} fontFamily='Outfit, sans-serif'>Telegram</Title>
@@ -56,7 +56,7 @@ export default function Reminder() {
 
                                         <Card hoverable bordered style={{ padding: 10, background: 'springgreen' }} bodyStyle={{ padding: 0 }}>
                                             <Flex align='center' justify='center'>
-                                                <img src="./src/assets/logos/whatsApp.svg" width={32} alt="" style={{ marginInlineEnd: 10 }} />
+                                                <img src="assets/logos/whatsApp.svg" width={32} alt="" style={{ marginInlineEnd: 10 }} />
                                                 <Flex vertical>
                                                     <Paragraph style={{ margin: 0, color: "inherit" }}>Participe no</Paragraph>
                                                     <Title level={5} style={{ margin: 0, color: "inherit" }} fontFamily='Outfit, sans-serif'>WhatsApp</Title>
