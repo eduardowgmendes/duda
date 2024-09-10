@@ -5,6 +5,8 @@ import Search from "antd/es/input/Search";
 import { useState } from "react";
 import Container from "./layout/Container";
 
+import dudaLogo from './assets/logos/duda-dark-logo.svg'
+
 const { Header } = Layout;
 
 export default function SimpleHeader() {
@@ -67,7 +69,7 @@ export default function SimpleHeader() {
                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 4 }} xl={{ span: 4 }} xxl={{ span: 2 }}>
                         <Flex align="center" justify="center">
                             <a href="/">
-                                <Image src='./logos/duda-dark-logo.svg' width='6rem' preview={false} alt="..."/>
+                                <Image src={dudaLogo} width='6rem' preview={false} alt="..."/>
                             </a>
                         </Flex>
                     </Col>
