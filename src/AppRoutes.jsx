@@ -6,7 +6,7 @@ import Shop from "./pages/Shop";
 
 const AppRoutes = () => {
     return (
-        <BrowserRouter basename="/duda/">
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
             <Routes>
                 <Route path="*" element={<Home />} />
                 <Route path="/duda/shop" element={<Shop />} />
