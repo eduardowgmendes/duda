@@ -67,7 +67,7 @@ export default function SimpleHeader() {
                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 4 }} xl={{ span: 4 }} xxl={{ span: 2 }}>
                         <Flex align="center" justify="center">
                             <a href="/">
-                                <Image src='assets/logos/duda-dark-logo.svg' width='6rem' preview={false} alt="..."/>
+                                <Image src='./assets/logos/duda-dark-logo.svg' width='6rem' preview={false} alt="..."/>
                             </a>
                         </Flex>
                     </Col>
