@@ -15,10 +15,10 @@ export default function Recommended({ items }) {
                 <Swiper style={{ display: 'flex' }}
                     slidesPerView={'auto'}
                     effect={'cards'}
-                    autoplay={true}
+                    direction={'horizontal'}
                     centeredSlides={true}
                     onProgress={(swiper, progress) => renderEffects}
-                    
+                    loop
                     cardsEffect={{
                         rotate: true,
                         perSlideOffset: 100,

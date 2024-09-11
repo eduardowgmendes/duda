@@ -17,11 +17,11 @@ export default function PromotedCarosel({ promos }) {
                 }} bordered key={index}>
                     <Container>
                         <Row>
-                            <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 12 }} lg={{ span: 8 }} xl={{ span: 8 }} xxl={{ span: 8 }}>
+                            <Col xs={{ span: 20 }} sm={{ span: 20 }} md={{ span: 20 }} lg={{ span: 8 }} xl={{ span: 8 }} xxl={{ span: 8 }}>
                                 <Flex vertical align="start" justify="center" style={{textAlign: 'start', minHeight: '75vh'}}>
-                                    <Title level={2} style={{ fontWeight: 'bolder', userSelect: 'none', color: promo.color.primary, fontFamily: 'Outfit, sans-serif', fontSize: '6vh', wordBreak: 'keep-all' }}>{promo.title}</Title>
-                                    <Paragraph style={{ fontSize: '2vh', lineHeight: '1.3', userSelect: 'none', color: promo.color.secondary }} ellipsis={{ rows: 6, expandable: false, symbol: '...' }}>{promo.description}</Paragraph>
-                                    <Button size='large' type="primary" shape='round' iconPosition='end' icon={<ArrowRightOutlined />}>{promo.callToAction}</Button>
+                                    <Title className="display-3" level={2} style={{ fontWeight: 'bolder', userSelect: 'none', color: promo.color.primary, fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>{promo.title}</Title>
+                                    <Paragraph className="lead" style={{ userSelect: 'none', color: promo.color.secondary, marginBottom: 32 }} ellipsis={{ rows: 6, expandable: false, symbol: '...' }}>{promo.description}</Paragraph>
+                                    <Button size='large' type="primary" shape='round' iconPosition='end' style={{marginBottom: 32}} icon={<ArrowRightOutlined />}>{promo.callToAction}</Button>
                                 </Flex>
                             </Col>
                         </Row>

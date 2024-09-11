@@ -7,7 +7,7 @@ export default function Header({ header }) {
         <Row style={{ marginBottom: 32 }}>
             <Col xs={{ span: 16 }} sm={{ span: 16 }} md={{ span: 16 }} lg={{ span: 16 }} xl={{ span: 16 }} xxl={{ span: 16 }}>
                 <Title level={3} style={{ fontFamily: 'Outfit, sans-serif' }}>{header.title}</Title>
-                <Paragraph style={{ marginBottom: 0 }} type='secondary'>{header.description}</Paragraph>
+                <Paragraph className="body-1" style={{ marginBottom: 0 }} type='secondary'>{header.description}</Paragraph>
             </Col>
             {
                 header.callToAction ?

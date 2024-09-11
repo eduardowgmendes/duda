@@ -16,12 +16,12 @@ export default function Hero({ banners }) {
                     backgroundSize: 'cover, cover'}}>
                             <Container>
                                 <Row>
-                                    <Col xs={{span: 24}} sm={{span: 12}} md={{span: 12}} lg={{span: 8}} xl={{span: 8}} xxl={{span: 8}}>    
+                                    <Col xs={{span: 24}} sm={{span: 12}} md={{span: 12}} lg={{span: 12}} xl={{span: 12}} xxl={{span: 12}}>    
                                         <Flex vertical align="start" justify='center' style={{textAlign: 'start', minHeight: '75vh'}}>
-                                            <Title level={1} style={{ userSelect: 'none', color: `${banner.color.primary}`, fontSize: '8vh', wordBreak: 'keep-all', fontWeight: 'bold', fontFamily: 'Outfit, sans-serif' }}>{banner.title}</Title>
-                                            <Paragraph style={{ userSelect: 'none', color: `${banner.color.secondary}`, fontSize: '2vh' }}>{banner.description}</Paragraph>
-                                            {banner.lead ? <Paragraph style={{ userSelect: 'none', fontSize: '1vh' }}>{banner.lead}</Paragraph> : null}
-                                            <Button style={{margin: '0 0 64px 0'}} type='primary' shape='round' size='large' iconPosition='end' icon={<ArrowRightOutlined href={banner.callToAction.action} />}>{banner.callToAction.message}</Button>
+                                            <Title level={1} className="display-4" style={{ userSelect: 'none', color: `${banner.color.primary}` }}>{banner.title}</Title>
+                                            <Paragraph className="lead" style={{ userSelect: 'none', color: `${banner.color.secondary}` }}>{banner.description}</Paragraph>
+                                            {banner.lead ? <Paragraph className="sublead" style={{ userSelect: 'none' }}>{banner.lead}</Paragraph> : null}
+                                            <Button style={{margin: '64px 0 64px 0'}} type='primary' shape='round' size='large' iconPosition='end' icon={<ArrowRightOutlined href={banner.callToAction.action} />}>{banner.callToAction.message}</Button>
                                         </Flex>
                                     </Col>
                                 </Row>
