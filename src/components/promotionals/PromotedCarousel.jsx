@@ -17,11 +17,11 @@ export default function PromotedCarosel({ promos }) {
                 }} bordered key={index}>
                     <Container>
                         <Row>
-                            <Col xs={{ span: 20 }} sm={{ span: 20 }} md={{ span: 20 }} lg={{ span: 8 }} xl={{ span: 8 }} xxl={{ span: 8 }}>
-                                <Flex vertical align="start" justify="center" style={{textAlign: 'start', minHeight: '75vh'}}>
-                                    <Title className="display-3" level={2} style={{ fontWeight: 'bolder', userSelect: 'none', color: promo.color.primary, fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>{promo.title}</Title>
+                            <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 8 }} xl={{ span: 8 }} xxl={{ span: 8 }}>
+                                <Flex vertical align="start" justify="center" style={{textAlign: 'start', minHeight: '100vh'}}>
+                                    <Title className="display-4" level={2} style={{ fontWeight: 'bolder', userSelect: 'none', color: promo.color.primary, fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>{promo.title}</Title>
                                     <Paragraph className="lead" style={{ userSelect: 'none', color: promo.color.secondary, marginBottom: 32 }} ellipsis={{ rows: 6, expandable: false, symbol: '...' }}>{promo.description}</Paragraph>
-                                    <Button size='large' type="primary" shape='round' iconPosition='end' style={{marginBottom: 32}} icon={<ArrowRightOutlined />}>{promo.callToAction}</Button>
+                                    <Button size='large' type="primary" shape='round' iconPosition='end' style={{margin: '32px 0 32px 0'}} icon={<ArrowRightOutlined />}>{promo.callToAction}</Button>
                                 </Flex>
                             </Col>
                         </Row>

@@ -76,7 +76,7 @@ export default function SimpleFooter() {
 
                         <Divider />
 
-                        <Row align="center" justify="bottom">
+                        <Row align="center" justify="bottom" style={{padding: '10px 0 30px 0'}}>
                             <Col xs={{span:12}} sm={{span:12}} md={{span:12}} lg={{span:12}} xl={{span:12}} xxl={{span:12}}>
                                 Duda © {new Date().getFullYear()}
                             </Col>
