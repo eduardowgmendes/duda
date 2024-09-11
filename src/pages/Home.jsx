@@ -529,8 +529,8 @@ export default function Home() {
         },
         price: {
             currency: 'R$',
-            was: '99,00',
-            current: '34,00'
+            was: '999,00',
+            current: '799,00'
         },
         merchant: {
             seller: 'Magalu'
@@ -555,21 +555,21 @@ export default function Home() {
             },]
         }
     },{
-        title: 'XiaomiRedmi8A (4GB + 64GB) Dual SIM 100 % original Versão global Segunda Mão Telefone 95novo',
-        description: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes. Seu processador Snapdragon 439 garante uma performance ágil, enquanto a câmera traseira de 12 MP captura fotos nítidas e detalhadas. Ideal para quem busca tecnologia de ponta sem comprometer o orçamento.',
+        title: 'Tablet Xiaomi Redmi Pad SE - 128GB/256GB - 4RAM/8RAM - Verde e Cinza',
+        description: 'Desfrute do desempenho excepcional e da qualidade visual do Tablet Redmi Pad S. Ideal para quem busca um tablet potente e versátil, perfeito para entretenimento, trabalho e muito mais.',
         copy: {
-            title:'Smartphone que combina desempenho robusto e preço acessível',
-            message: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes.'
+            title:'Tablet que combina desempenho robusto e preço acessível',
+            message: 'Desfrute do desempenho excepcional e da qualidade visual do Tablet Redmi Pad S. Ideal para quem busca um tablet potente e versátil, perfeito para entretenimento, trabalho e muito mais.'
         },price: {
             currency: 'R$',
-            was: '99,00',
-            current: '34,00'
+            was: '1.699,00',
+            current: '1.200,00'
         },
         merchant: {
             seller: 'Magalu'
         },
         media: {
-            mainPicture: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74mo6dd6',
+            mainPicture: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-lypc8yr4jrxhfd.webp',
             alt: '...',
             showcasePictures: [{
                 url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74o2qt7e',
@@ -588,21 +588,21 @@ export default function Home() {
             },]
         }
     },{
-        title: 'XiaomiRedmi8A (4GB + 64GB) Dual SIM 100 % original Versão global Segunda Mão Telefone 95novo',
+        title: 'Celular Xiaomi Redmi A3 Original Global 64GB 3GB RAM',
         description: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes. Seu processador Snapdragon 439 garante uma performance ágil, enquanto a câmera traseira de 12 MP captura fotos nítidas e detalhadas. Ideal para quem busca tecnologia de ponta sem comprometer o orçamento.',
         copy: {
             title:'Smartphone que combina desempenho robusto e preço acessível',
             message: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes.'
         },price: {
             currency: 'R$',
-            was: '99,00',
-            current: '34,00'
+            was: '1.244,99',
+            current: '589,00'
         },
         merchant: {
-            seller: 'Magalu'
+            seller: 'Shopee'
         },
         media: {
-            mainPicture: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74mo6dd6',
+            mainPicture: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-lxpsgll8y18f0f.webp',
             alt: '...',
             showcasePictures: [{
                 url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74o2qt7e',
@@ -621,21 +621,21 @@ export default function Home() {
             },]
         }
     },{
-        title: 'XiaomiRedmi8A (4GB + 64GB) Dual SIM 100 % original Versão global Segunda Mão Telefone 95novo',
+        title: 'Celular iPhone 12 Original com NF 64GB e 128GB Novo Vitrine com Garantia Bateria 100% Apple',
         description: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes. Seu processador Snapdragon 439 garante uma performance ágil, enquanto a câmera traseira de 12 MP captura fotos nítidas e detalhadas. Ideal para quem busca tecnologia de ponta sem comprometer o orçamento.',
         copy: {
             title:'Smartphone que combina desempenho robusto e preço acessível',
             message: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes.'
         },price: {
             currency: 'R$',
-            was: '99,00',
-            current: '34,00'
+            was: '4.200,00',
+            current: '1.999,00'
         },
         merchant: {
             seller: 'Magalu'
         },
         media: {
-            mainPicture: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74mo6dd6',
+            mainPicture: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-lvbuq7d09hi0ec.webp',
             alt: '...',
             showcasePictures: [{
                 url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74o2qt7e',
@@ -654,21 +654,21 @@ export default function Home() {
             },]
         }
     },{
-        title: 'XiaomiRedmi8A (4GB + 64GB) Dual SIM 100 % original Versão global Segunda Mão Telefone 95novo',
+        title: 'Tablet Samsung Galaxy Tab A T295 8" 4g 32gb 2gb Ram Preto',
         description: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes. Seu processador Snapdragon 439 garante uma performance ágil, enquanto a câmera traseira de 12 MP captura fotos nítidas e detalhadas. Ideal para quem busca tecnologia de ponta sem comprometer o orçamento.',
         copy: {
             title:'Smartphone que combina desempenho robusto e preço acessível',
             message: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes.'
         },price: {
             currency: 'R$',
-            was: '99,00',
-            current: '34,00'
+            was: '1.299,99',
+            current: '899,99'
         },
         merchant: {
             seller: 'Magalu'
         },
         media: {
-            mainPicture: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74mo6dd6',
+            mainPicture: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-lwq4tbovwltifa.webp',
             alt: '...',
             showcasePictures: [{
                 url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74o2qt7e',
@@ -689,8 +689,11 @@ export default function Home() {
     },]
 
     const recommendation = {
-        title: 'Destaques Imperdíveis da Nossa Loja! ',
+        title: 'Destaques Imperdíveis! ',
         description: 'Nossa seleção especial foi feita pensando em você, que busca qualidade, estilo e as melhores tendências. Não perca a chance de descobrir o que há de melhor em nossa loja!',
+        copy: {
+            message: 'Aproveite para encontrar peças exclusivas que combinam elegância e sofisticação, elevando seu visual a um novo patamar. Venha conferir e se surpreender!',
+        },
         items: recommendeds,
         color: {
             primary: 'teal',

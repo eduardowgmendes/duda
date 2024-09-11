@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import RecommendedItem from "./RecommendedItem";
 import { EffectCards, EffectCoverflow } from "swiper/modules";
-import { Card, Col, Flex, Row } from "antd";
+import { Card, Col, Empty, Flex, Row } from "antd";
 
 export default function Recommended({ items }) {
     return (
@@ -10,13 +10,13 @@ export default function Recommended({ items }) {
                 <Swiper style={{ display: 'flex' }}
                     slidesPerView={'auto'}
                     effect={'cards'}
-                    autoplay
-                    
+                    autoplay={true}
                     centeredSlides={true}
                     cardsEffect={{
                         rotate: true,
-                        perSlideOffset: 64,
-                        perSlideRotate: 8,
+                        perSlideOffset: 128,
+                        perSlideRotate: 2,
+                        slideShadows: true,
                     }}
                     modules={[EffectCards]}>
                     {items.map((item) => (
