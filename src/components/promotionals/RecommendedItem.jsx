@@ -8,7 +8,7 @@ export default function RecommendedItem({ item }) {
         <Card
             size='large'
             bordered
-            style={{ width: '48vh', boxShadow: '0px 12px 2px -8px rgba(0, 0, 0, 0.25)' }}
+            style={{ width: '32vh', boxShadow: '0px 12px 2px -8px rgba(0, 0, 0, 0.25)' }}
             title={<Text type='secondary' ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ maxWidth: '90%' }}>Recomendado</Text>}
             extra={<img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/rcmd/06720e49514cbd94b755.png" width={42} />}
             bodyStyle={{ padding: 0 }}>
