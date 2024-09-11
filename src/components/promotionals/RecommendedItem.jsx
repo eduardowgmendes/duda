@@ -8,16 +8,21 @@ export default function RecommendedItem({ item }) {
         <Card
             size='large'
             bordered
-            style={{ width: '36vh', boxShadow: '0px 12px 2px -8px rgba(0, 0, 0, 0.25)' }}
+            style={{ minWidth: '320px', height: 'auto', boxShadow: '0px 12px 2px -8px rgba(0, 0, 0, 0.25)' }}
             title={<Text type='secondary' ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ maxWidth: '90%' }}>Recomendado</Text>}
             extra={<img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/rcmd/06720e49514cbd94b755.png" width={42} />}
             bodyStyle={{ padding: 0 }}>
 
-            <Flex vertical>
+            <Flex vertical wrap>
 
-                <Flex style={{ minHeight: 256 }}>
-                    <img src={item.media.mainPicture} width='100%' alt={item.media.alt} />
-                </Flex>
+                <div style={{
+                    background: `url('${item.media.mainPicture}')`, 
+                    backgroundPosition: 'center', 
+                    backgroundSize: 'contain', 
+                    backgroundRepeat: 'no-repeat',
+                    minHeight: 256}}>
+
+                </div>
 
                 <Row gutter={[8, 16]} style={{ padding: '0px 32px 16px 32px' }}>
 
@@ -27,7 +32,7 @@ export default function RecommendedItem({ item }) {
 
                             <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
                                 <Flex align='end' justify="start" style={{ height: '100%' }}>
-                                    <Title level={3} style={{ textAlign: 'start', fontFamily: 'Outfit, sans-serif', color: 'darkslategray' }} ellipsis={{ rows: 3, expandable: false, symbol: '...' }}>{item.title}</Title>
+                                    <Title level={4} style={{ textAlign: 'start', fontFamily: 'Outfit, sans-serif', color: 'darkslategray' }} ellipsis={{ rows: 3, expandable: false, symbol: '...' }}>{item.title}</Title>
                                 </Flex>
                             </Col>
 
