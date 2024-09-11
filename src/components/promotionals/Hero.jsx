@@ -18,7 +18,7 @@ export default function Hero({ banners }) {
                                 <Row>
                                     <Col xs={{span: 24}} sm={{span: 12}} md={{span: 12}} lg={{span: 8}} xl={{span: 8}} xxl={{span: 8}}>    
                                         <Flex vertical align="start" justify='center' style={{textAlign: 'start', minHeight: '75vh'}}>
-                                            <Title level={1} style={{ userSelect: 'none', color: `${banner.color.primary}`, fontSize: '6vh', wordBreak: 'keep-all', fontWeight: 'bold', fontFamily: 'Outfit, sans-serif' }}>{banner.title}</Title>
+                                            <Title level={1} style={{ userSelect: 'none', color: `${banner.color.primary}`, fontSize: '8vh', wordBreak: 'keep-all', fontWeight: 'bold', fontFamily: 'Outfit, sans-serif' }}>{banner.title}</Title>
                                             <Paragraph style={{ userSelect: 'none', color: `${banner.color.secondary}`, fontSize: '2vh' }}>{banner.description}</Paragraph>
                                             {banner.lead ? <Paragraph style={{ userSelect: 'none', fontSize: '1vh' }}>{banner.lead}</Paragraph> : null}
                                             <Button style={{margin: '0 0 64px 0'}} type='primary' shape='round' size='large' iconPosition='end' icon={<ArrowRightOutlined href={banner.callToAction.action} />}>{banner.callToAction.message}</Button>

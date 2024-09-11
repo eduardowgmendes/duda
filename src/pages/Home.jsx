@@ -5,6 +5,8 @@ import Hero from "../components/promotionals/Hero";
 import PromotedCarosel from "../components/promotionals/PromotedCarousel";
 import Showcase from "../components/showcase/Showcase";
 import CategoryShowcase from "../components/category/CategoryShowcase";
+import Recommended from "../components/promotionals/Recommended";
+import RecommendedPromoCard from "../components/promotionals/RecommendedPromoCard";
 
 export default function Home() {
 
@@ -518,6 +520,184 @@ export default function Home() {
         }
     },]
 
+    const recommendeds = [{
+        title: 'XiaomiRedmi8A (4GB + 64GB) Dual SIM 100 % original Versão global Segunda Mão Telefone 95novo',
+        description: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes. Seu processador Snapdragon 439 garante uma performance ágil, enquanto a câmera traseira de 12 MP captura fotos nítidas e detalhadas. Ideal para quem busca tecnologia de ponta sem comprometer o orçamento.',
+        copy: {
+            title:'Smartphone que combina desempenho robusto e preço acessível',
+            message: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes.'
+        },
+        price: {
+            currency: 'R$',
+            was: '99,00',
+            current: '34,00'
+        },
+        merchant: {
+            seller: 'Magalu'
+        },
+        media: {
+            mainPicture: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74mo6dd6',
+            alt: '...',
+            showcasePictures: [{
+                url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74o2qt7e',
+                caption: '...',
+                alt: '...'
+            },
+            {
+                url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvck76qrtuqt02',
+                caption: '...',
+                alt: '...'
+            },
+            {
+                url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74phb959',
+                caption: '...',
+                alt: '...'
+            },]
+        }
+    },{
+        title: 'XiaomiRedmi8A (4GB + 64GB) Dual SIM 100 % original Versão global Segunda Mão Telefone 95novo',
+        description: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes. Seu processador Snapdragon 439 garante uma performance ágil, enquanto a câmera traseira de 12 MP captura fotos nítidas e detalhadas. Ideal para quem busca tecnologia de ponta sem comprometer o orçamento.',
+        copy: {
+            title:'Smartphone que combina desempenho robusto e preço acessível',
+            message: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes.'
+        },price: {
+            currency: 'R$',
+            was: '99,00',
+            current: '34,00'
+        },
+        merchant: {
+            seller: 'Magalu'
+        },
+        media: {
+            mainPicture: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74mo6dd6',
+            alt: '...',
+            showcasePictures: [{
+                url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74o2qt7e',
+                caption: '...',
+                alt: '...'
+            },
+            {
+                url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvck76qrtuqt02',
+                caption: '...',
+                alt: '...'
+            },
+            {
+                url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74phb959',
+                caption: '...',
+                alt: '...'
+            },]
+        }
+    },{
+        title: 'XiaomiRedmi8A (4GB + 64GB) Dual SIM 100 % original Versão global Segunda Mão Telefone 95novo',
+        description: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes. Seu processador Snapdragon 439 garante uma performance ágil, enquanto a câmera traseira de 12 MP captura fotos nítidas e detalhadas. Ideal para quem busca tecnologia de ponta sem comprometer o orçamento.',
+        copy: {
+            title:'Smartphone que combina desempenho robusto e preço acessível',
+            message: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes.'
+        },price: {
+            currency: 'R$',
+            was: '99,00',
+            current: '34,00'
+        },
+        merchant: {
+            seller: 'Magalu'
+        },
+        media: {
+            mainPicture: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74mo6dd6',
+            alt: '...',
+            showcasePictures: [{
+                url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74o2qt7e',
+                caption: '...',
+                alt: '...'
+            },
+            {
+                url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvck76qrtuqt02',
+                caption: '...',
+                alt: '...'
+            },
+            {
+                url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74phb959',
+                caption: '...',
+                alt: '...'
+            },]
+        }
+    },{
+        title: 'XiaomiRedmi8A (4GB + 64GB) Dual SIM 100 % original Versão global Segunda Mão Telefone 95novo',
+        description: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes. Seu processador Snapdragon 439 garante uma performance ágil, enquanto a câmera traseira de 12 MP captura fotos nítidas e detalhadas. Ideal para quem busca tecnologia de ponta sem comprometer o orçamento.',
+        copy: {
+            title:'Smartphone que combina desempenho robusto e preço acessível',
+            message: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes.'
+        },price: {
+            currency: 'R$',
+            was: '99,00',
+            current: '34,00'
+        },
+        merchant: {
+            seller: 'Magalu'
+        },
+        media: {
+            mainPicture: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74mo6dd6',
+            alt: '...',
+            showcasePictures: [{
+                url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74o2qt7e',
+                caption: '...',
+                alt: '...'
+            },
+            {
+                url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvck76qrtuqt02',
+                caption: '...',
+                alt: '...'
+            },
+            {
+                url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74phb959',
+                caption: '...',
+                alt: '...'
+            },]
+        }
+    },{
+        title: 'XiaomiRedmi8A (4GB + 64GB) Dual SIM 100 % original Versão global Segunda Mão Telefone 95novo',
+        description: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes. Seu processador Snapdragon 439 garante uma performance ágil, enquanto a câmera traseira de 12 MP captura fotos nítidas e detalhadas. Ideal para quem busca tecnologia de ponta sem comprometer o orçamento.',
+        copy: {
+            title:'Smartphone que combina desempenho robusto e preço acessível',
+            message: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes.'
+        },price: {
+            currency: 'R$',
+            was: '99,00',
+            current: '34,00'
+        },
+        merchant: {
+            seller: 'Magalu'
+        },
+        media: {
+            mainPicture: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74mo6dd6',
+            alt: '...',
+            showcasePictures: [{
+                url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74o2qt7e',
+                caption: '...',
+                alt: '...'
+            },
+            {
+                url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvck76qrtuqt02',
+                caption: '...',
+                alt: '...'
+            },
+            {
+                url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74phb959',
+                caption: '...',
+                alt: '...'
+            },]
+        }
+    },]
+
+    const recommendation = {
+        title: 'Destaques Imperdíveis da Nossa Loja! ',
+        description: 'Nossa seleção especial foi feita pensando em você, que busca qualidade, estilo e as melhores tendências. Não perca a chance de descobrir o que há de melhor em nossa loja!',
+        items: recommendeds,
+        color: {
+            primary: 'teal',
+            secondary: 'dimgray'
+        }
+    }
+
     return (
         <div>
             <Hero banners={banners} />
@@ -542,12 +722,14 @@ export default function Home() {
                     }
                 }} children={<Showcase items={items} />} />
 
+                <Section children={<RecommendedPromoCard recommendation={recommendation}/>} />
+
             </Container>
 
             <Section children={<PromotedCarosel promos={promos} />} />
 
             <Container>
-                
+
                 <Section header={{
                     title: 'Achadinhos Destaque',
                     description: 'Aqui voce encontra as melhores ofertas com muitos descontos e cupons das lojas; Amazon, Magalu, Renner, C&A, Beleza na Web, Época Cosméticos e muitas outras.',

@@ -23,3 +23,19 @@
 .ant-card-body{
   padding: 0;
 }
+
+.swiper {
+  width: 100%
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
