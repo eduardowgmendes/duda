@@ -110,6 +110,8 @@ p {
   align-items: center;
   transition: all ease-in-out;
   justify-content: center;
+  border-radius: 16px;
+  overflow: hidden;
   box-shadow: 0px 16px 128px 16px rgba(0, 0, 0, 0.50);
 }
 
