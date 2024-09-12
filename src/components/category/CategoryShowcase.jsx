@@ -6,18 +6,19 @@ export default function CategoryShowcase({ categories }) {
     return (
         <Row gutter={[8, 8]}>
             {categories.map((category, index) => (
-                <Col xs={{ span: 12 }} sm={{ span: 8 }} md={{ span: 6 }} lg={{ span: 6 }} xl={{ span: 6 }} xxl={{ span: 4 }}>
+                <Col xs={{ span: 8 }} sm={{ span: 6 }} md={{ span: 4 }} lg={{ span: 4 }} xl={{ span: 4 }} xxl={{ span: 3 }}>
                     <Card bordered hoverable key={index} size='small' cover={<img src={category.media.background} alt="..." />}
                         bodyStyle={{ padding: 0 }}
                         style={{ 
                             overflow: 'hidden', 
-                            marginBottom: 16,
+                            marginBottom: 8,
                             borderColor: `${useExtractColor(category.media.background).dominantColor}` }}></Card>
 
                         <Paragraph 
+                            className='body-2'
                             ellipsis={{ rows: 2, expandable: false, symbol: '...' }} 
                             style={{ 
-                                marginBottom: 32,
+                                marginBottom: 16,
                                 userSelect: 'none', 
                                 lineHeight: 1, 
                                 color: `${useExtractColor(category.media.background).darkerColor}`,
@@ -27,8 +28,7 @@ export default function CategoryShowcase({ categories }) {
                                 wordBreak: 'keep-all' }}>{category.name}</Paragraph>
 
                 </Col>
-            ))
-            }
+            ))}
         </Row >
     )
 }

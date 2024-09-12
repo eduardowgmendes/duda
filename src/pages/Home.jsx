@@ -924,7 +924,7 @@ export default function Home() {
         subtitle: 'Grupo de Ofertas!',
         description: 'Nossa seleção especial foi feita pensando em você, que busca qualidade, estilo e as melhores tendências. Não perca a chance de descobrir o que há de melhor em nossa loja!',
         copy: {
-            message: 'Aproveite para encontrar peças exclusivas que combinam elegância e sofisticação, elevando seu visual a um novo patamar. Venha conferir e se surpreender!',
+            message: 'Descubra ofertas exclusivas que destacam personalidade e autenticidade, elevando seu estilo a um novo nível. Venha conferir e junte-se à nós!',
         },
         items: recommendeds,
         color: {
@@ -940,14 +940,7 @@ export default function Home() {
 
             <Container>
 
-                <Section header={{
-                    title: 'Categorias',
-                    description: 'Nossa loja virtual oferece uma ampla variedade de produtos, incluindo eletrônicos, roupas e acessórios, e artigos para casa. Explore nossa seleção diversificada para encontrar o que você precisa com qualidade e praticidade.',
-                    callToAction: {
-                        label: 'Ver Todas',
-                        action: '/shop'
-                    }
-                }} children={<CategoryShowcase categories={categories} />} />
+                <Section children={<CategoryShowcase categories={categories} />} />
 
                 <Section header={{
                     title: 'Achadinhos do Dia',

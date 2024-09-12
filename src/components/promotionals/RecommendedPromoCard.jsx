@@ -10,9 +10,9 @@ export default function RecommendedPromoCard({ recommendation }) {
             <Row gutter={[8, 8]}>
                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
                     <Space direction='vertical' size='small' align='center' justify='center' style={{ textAlign: 'center', padding: 32, width: '100%' }}>
-                        <DollarCircleOutlined style={{ fontSize: 64, color: 'teal',  margin: '16px 0 64px 0' }} />
-                        <Title level={4} style={{ margin: 0, color: recommendation.color.secondary, fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>{recommendation.title}</Title>
-                        <Title className="display-3" level={1} style={{ color: recommendation.color.primary, fontFamily: 'Outfit, sans-serif', fontWeight: 'bold', wordBreak: 'keep-all' }}>{recommendation.subtitle}</Title>
+                        <DollarCircleOutlined style={{ fontSize: 64, color: 'teal',  margin: '16px 0 32px 0' }} />
+                        <Title level={1} style={{ margin: 0, color: recommendation.color.secondary, fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>{recommendation.title}</Title>
+                        <Title className="display-3" level={1} style={{margin: '0 0 32px 0',  color: recommendation.color.primary, fontFamily: 'Outfit, sans-serif', fontWeight: 'bold', wordBreak: 'keep-all' }}>{recommendation.subtitle}</Title>
                         <Paragraph className="lead" style={{ color: recommendation.color.secondary, fontFamily: 'Barlow Condensed, system-ui' }}>{recommendation.description}</Paragraph>
                     </Space>
                 </Col>

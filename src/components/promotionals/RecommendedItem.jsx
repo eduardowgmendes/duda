@@ -10,7 +10,7 @@ export default function RecommendedItem({ item }) {
             bordered
             style={{ minWidth: '28em', minHeight: '42em', overflow: 'hidden' }}
             title={<Text type='secondary' ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ maxWidth: '90%' }}>Recomendado</Text>}
-            extra={<img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/rcmd/06720e49514cbd94b755.png" width={42} />}
+            extra={<img src="./assets/images/top-ribbon.png" width={42} />}
             bodyStyle={{ padding: 0 }}>
 
             <Flex vertical wrap>

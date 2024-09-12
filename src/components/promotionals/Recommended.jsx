@@ -17,6 +17,7 @@ export default function Recommended({ items }) {
                     effect={'cards'}
                     direction={'horizontal'}
                     centeredSlides={true}
+                    grabCursor={true}
                     onProgress={(swiper, progress) => renderEffects}
                     loop
                     cardsEffect={{
