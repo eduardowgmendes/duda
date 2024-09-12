@@ -476,7 +476,7 @@ export default function Home() {
     const banners = [{
         title: 'Encontre os Melhores Produtos, Selecionados para Você!',
         description: 'Explore ofertas exclusivas de nossos parceiros e garanta os itens mais populares com os melhores preços. Toda a qualidade, em um só lugar!',
-        lead: 'Explore ofertas exclusivas de nossos parceiros e garanta os itens mais populares com os melhores preços. Toda a qualidade, em um só lugar!',
+        lead: null,
         callToAction: {
             message: 'Veja as Ofertas Agora',
             action: '/about'
@@ -599,10 +599,10 @@ export default function Home() {
             current: '1.200,00'
         },
         merchant: {
-            seller: 'Magalu'
+            seller: 'Shopee'
         },
         media: {
-            mainPicture: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-lypc8yr4jrxhfd.webp',
+            mainPicture: 'https://down-br.img.susercontent.com/file/sg-11134201-7rdwx-ly6sp0kiud52b9.webp',
             alt: '...',
             showcasePictures: [{
                 url: 'https://down-br.img.susercontent.com/file/cn-11134207-7r98o-lvcjta74o2qt7e',
@@ -920,7 +920,7 @@ export default function Home() {
     }]
 
     const recommendation = {
-        title: 'Destaques Imperdíveis',
+        title: 'Destaques Imperdíveis no',
         subtitle: 'Grupo de Ofertas!',
         description: 'Nossa seleção especial foi feita pensando em você, que busca qualidade, estilo e as melhores tendências. Não perca a chance de descobrir o que há de melhor em nossa loja!',
         copy: {
@@ -928,7 +928,7 @@ export default function Home() {
         },
         items: recommendeds,
         color: {
-            base: 'springgreen',
+            base: 'palegreen',
             primary: 'teal',
             secondary: 'dimgray'
         }
@@ -953,12 +953,6 @@ export default function Home() {
 
                 <Section children={<RecommendedPromoCard recommendation={recommendation}/>} />
 
-            </Container>
-
-            <Section children={<PromotedCarosel promos={promos} />} />
-
-            <Container>
-
                 <Section header={{
                     title: 'Achadinhos Destaque',
                     description: 'Aqui voce encontra as melhores ofertas com muitos descontos e cupons das lojas; Amazon, Magalu, Renner, C&A, Beleza na Web, Época Cosméticos e muitas outras.',
@@ -967,7 +961,9 @@ export default function Home() {
                         action: '/about'
                     }
                 }} children={<Showcase items={items} />} />
-
+                
+                <Section children={<PromotedCarosel promos={promos} />} />
+            
             </Container>
         </div>
     )
