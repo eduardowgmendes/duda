@@ -18,7 +18,7 @@ export default function RecommendedPromoCard({ recommendation }) {
                         <Paragraph className="lead" style={{ color: recommendation.color.secondary, fontFamily: 'Barlow Condensed, system-ui' }}>{recommendation.description}</Paragraph>
                     </Space>
                 </Col>
-                <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }} style={{ background: recommendation.color.base, height: '75vh', borderRadius: 64 }} >
+                <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }} style={{ height: '75vh', borderRadius: 64 }} >
                     <Flex align="center" justify="center" style={{ height: '100%' }}>
                         <Recommended items={recommendation.items} />
                     </Flex>
