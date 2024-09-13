@@ -8,7 +8,7 @@ const { Title, Text, Paragraph } = Typography
 export default function RecommendedPromoCard({ recommendation }) {
 
     return (
-        <Card bodyStyle={{background: `url('https://www.toptal.com/designers/subtlepatterns/uploads/square_bg.png')`, backgroundRepeat: 'repeat'}}>
+        <Card style={{borderRadius: 64}} bodyStyle={{background: `url('https://www.toptal.com/designers/subtlepatterns/uploads/square_bg.png')`, backgroundRepeat: 'repeat'}}>
             <Row gutter={[8, 8]}>
                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
                     <Space direction='vertical' size='small' align='center' justify='center' style={{ textAlign: 'center', padding: 32, width: '100%' }}>
@@ -18,12 +18,12 @@ export default function RecommendedPromoCard({ recommendation }) {
                         <Paragraph className="lead" style={{ color: recommendation.color.secondary, fontFamily: 'Barlow Condensed, system-ui' }}>{recommendation.description}</Paragraph>
                     </Space>
                 </Col>
-                <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }} style={{ height: '75vh', borderRadius: 64 }} >
+                <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }} style={{ minHeight: '75vh', borderRadius: 64 }} >
                     <Flex align="center" justify="center" style={{ height: '100%' }}>
                         <Recommended items={recommendation.items} />
                     </Flex>
                 </Col>
-                <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
+                <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }} >
                     <Space direction='vertical' size='small' align='center' style={{ textAlign: 'center', padding: 32, width: '100%' }}>
                         <Paragraph className="lead" style={{ color: recommendation.color.secondary, fontFamily: 'Barlow Condensed, system-ui' }}>{recommendation.copy.message}</Paragraph>
                         <Flex align="center">

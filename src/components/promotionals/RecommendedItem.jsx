@@ -8,7 +8,7 @@ export default function RecommendedItem({ item }) {
         <Card
             size='large'
             bordered
-            style={{ minWidth: '28em', minHeight: '42em', overflow: 'hidden' }}
+            style={{ minWidth: '26em', minHeight: '40em', overflow: 'hidden' }}
             title={<Text type='secondary' ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ maxWidth: '90%' }}>Recomendado</Text>}
             extra={<img src="./assets/images/top-ribbon.png" width={42} />}
             bodyStyle={{ padding: 0 }}>
@@ -20,7 +20,7 @@ export default function RecommendedItem({ item }) {
                     backgroundPosition: 'center', 
                     backgroundSize: 'contain', 
                     backgroundRepeat: 'no-repeat',
-                    minHeight: '18em'}}>
+                    minHeight: '20em'}}>
 
                 </div>
 

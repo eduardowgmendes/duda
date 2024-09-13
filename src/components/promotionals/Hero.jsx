@@ -10,11 +10,11 @@ export default function Hero({ banners }) {
         <section >
             <Carousel autoplay fade draggable infinite dots adaptiveHeight dotPosition='bottom'>
                 {banners && banners.map((banner, index) => (
-                    <Card key={index} bordered bodyStyle={{
+                    <Card style={{margin: 16}} key={index} bordered bodyStyle={{
                         padding: 0, background: `linear-gradient(90deg, ${useExtractColor(banner.media.background).dominantColor} 32%, rgba(250,250,250, 0) 100%), url('${banner.media.background}')`,
                         backgroundPosition: 'bottom, bottom',
                         backgroundRepeat: 'no-repeat, no-repeat',
-                        backgroundSize: 'cover, cover'
+                        backgroundSize: 'cover, cover',
                     }}>
                         <Container>
                             <Row>

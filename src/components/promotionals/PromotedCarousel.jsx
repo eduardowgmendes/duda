@@ -7,7 +7,7 @@ import Container from "../layout/Container";
 export default function PromotedCarosel({ promos }) {
 
     return (
-        <Carousel autoplay fade draggable infinite dots adaptiveHeight dotPosition='bottom'>
+        <Carousel autoplay fade draggable infinite dots adaptiveHeight dotPosition='bottom' style={{background: 'red'}}>
             {promos.map((promo, index) => (
                 <Card bodyStyle={{
                     padding: 0, background: `linear-gradient(90deg, ${useExtractColor(promo.media.backdrop).dominantColor} 25%, rgba(250,250,250,0) 75%), url('${promo.media.backdrop}')`,

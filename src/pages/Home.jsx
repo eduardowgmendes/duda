@@ -524,7 +524,7 @@ export default function Home() {
         title: 'XiaomiRedmi8A (4GB + 64GB) Dual SIM 100 % original Versão global Segunda Mão Telefone 95novo',
         description: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes. Seu processador Snapdragon 439 garante uma performance ágil, enquanto a câmera traseira de 12 MP captura fotos nítidas e detalhadas. Ideal para quem busca tecnologia de ponta sem comprometer o orçamento.',
         copy: {
-            title:'Smartphone que combina desempenho robusto e preço acessível',
+            title: 'Smartphone que combina desempenho robusto e preço acessível',
             message: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes.'
         },
         price: {
@@ -554,13 +554,13 @@ export default function Home() {
                 alt: '...'
             },]
         }
-    },{
+    }, {
         title: 'PlayStation 5 825GB 1 Controle Branco Sony',
         description: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes. Seu processador Snapdragon 439 garante uma performance ágil, enquanto a câmera traseira de 12 MP captura fotos nítidas e detalhadas. Ideal para quem busca tecnologia de ponta sem comprometer o orçamento.',
         copy: {
-            title:'Smartphone que combina desempenho robusto e preço acessível',
+            title: 'Smartphone que combina desempenho robusto e preço acessível',
             message: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes.'
-        },price: {
+        }, price: {
             currency: 'R$',
             was: '4.499,99',
             current: '2.199,99'
@@ -587,13 +587,13 @@ export default function Home() {
                 alt: '...'
             },]
         }
-    },{
+    }, {
         title: 'Tablet Xiaomi Redmi Pad SE - 128GB/256GB - 4RAM/8RAM - Verde e Cinza',
         description: 'Desfrute do desempenho excepcional e da qualidade visual do Tablet Redmi Pad S. Ideal para quem busca um tablet potente e versátil, perfeito para entretenimento, trabalho e muito mais.',
         copy: {
-            title:'Tablet que combina desempenho robusto e preço acessível',
+            title: 'Tablet que combina desempenho robusto e preço acessível',
             message: 'Desfrute do desempenho excepcional e da qualidade visual do Tablet Redmi Pad S. Ideal para quem busca um tablet potente e versátil, perfeito para entretenimento, trabalho e muito mais.'
-        },price: {
+        }, price: {
             currency: 'R$',
             was: '1.699,00',
             current: '1.200,00'
@@ -620,13 +620,13 @@ export default function Home() {
                 alt: '...'
             },]
         }
-    },{
+    }, {
         title: 'Celular Xiaomi Redmi A3 Original Global 64GB 3GB RAM',
         description: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes. Seu processador Snapdragon 439 garante uma performance ágil, enquanto a câmera traseira de 12 MP captura fotos nítidas e detalhadas. Ideal para quem busca tecnologia de ponta sem comprometer o orçamento.',
         copy: {
-            title:'Smartphone que combina desempenho robusto e preço acessível',
+            title: 'Smartphone que combina desempenho robusto e preço acessível',
             message: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes.'
-        },price: {
+        }, price: {
             currency: 'R$',
             was: '1.244,99',
             current: '589,00'
@@ -653,13 +653,13 @@ export default function Home() {
                 alt: '...'
             },]
         }
-    },{
+    }, {
         title: 'Celular iPhone 12 Original com NF 64GB e 128GB Novo Vitrine com Garantia Bateria 100% Apple',
         description: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes. Seu processador Snapdragon 439 garante uma performance ágil, enquanto a câmera traseira de 12 MP captura fotos nítidas e detalhadas. Ideal para quem busca tecnologia de ponta sem comprometer o orçamento.',
         copy: {
-            title:'Smartphone que combina desempenho robusto e preço acessível',
+            title: 'Smartphone que combina desempenho robusto e preço acessível',
             message: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes.'
-        },price: {
+        }, price: {
             currency: 'R$',
             was: '4.200,00',
             current: '1.999,00'
@@ -686,13 +686,13 @@ export default function Home() {
                 alt: '...'
             },]
         }
-    },{
+    }, {
         title: 'Notebook ASUS Vivobook 15 X1504ZA-NJ982 Intel Core i5 8GB RAM SSD 256GB 15,6" Full HD Linux 90NB1021-M01EH0',
         description: 'Seja para trabalho ou lazer, o ASUS Vivobook 15 X1504ZA-NJ982 (90NB1021-M01EH0) é um notebook que oferece desempenho e praticidade para tornar suas atividades cotidianas mais extraordinárias. A tela é em LED NanoEdge de 15,6" com resolução Full HD (1920x1080).',
         copy: {
-            title:'',
+            title: '',
             message: ''
-        },price: {
+        }, price: {
             currency: 'R$',
             was: '4.299,99',
             current: '1.299,99'
@@ -719,13 +719,13 @@ export default function Home() {
                 alt: '...'
             },]
         }
-    },,{
+    }, , {
         title: 'Tablet Samsung T360 SM',
         description: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes. Seu processador Snapdragon 439 garante uma performance ágil, enquanto a câmera traseira de 12 MP captura fotos nítidas e detalhadas. Ideal para quem busca tecnologia de ponta sem comprometer o orçamento.',
         copy: {
-            title:'Smartphone que combina desempenho robusto e preço acessível',
+            title: 'Smartphone que combina desempenho robusto e preço acessível',
             message: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes.'
-        },price: {
+        }, price: {
             currency: 'R$',
             was: '1.299,99',
             current: '899,99'
@@ -752,13 +752,13 @@ export default function Home() {
                 alt: '...'
             },]
         }
-    },{
+    }, {
         title: 'Fritadeira Elétrica sem Óleo/Air Fryer Mondial - AFN-40-BF Preta com Timer',
         description: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes. Seu processador Snapdragon 439 garante uma performance ágil, enquanto a câmera traseira de 12 MP captura fotos nítidas e detalhadas. Ideal para quem busca tecnologia de ponta sem comprometer o orçamento.',
         copy: {
-            title:'Smartphone que combina desempenho robusto e preço acessível',
+            title: 'Smartphone que combina desempenho robusto e preço acessível',
             message: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes.'
-        },price: {
+        }, price: {
             currency: 'R$',
             was: '1.299,99',
             current: '899,99'
@@ -785,13 +785,13 @@ export default function Home() {
                 alt: '...'
             },]
         }
-    },{
+    }, {
         title: 'Aspirador de Pó e Água 3 em 1 Kärcher 1500W WDL 1 Amarelo',
         description: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes. Seu processador Snapdragon 439 garante uma performance ágil, enquanto a câmera traseira de 12 MP captura fotos nítidas e detalhadas. Ideal para quem busca tecnologia de ponta sem comprometer o orçamento.',
         copy: {
-            title:'Smartphone que combina desempenho robusto e preço acessível',
+            title: 'Smartphone que combina desempenho robusto e preço acessível',
             message: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes.'
-        },price: {
+        }, price: {
             currency: 'R$',
             was: '1.299,99',
             current: '899,99'
@@ -818,13 +818,13 @@ export default function Home() {
                 alt: '...'
             },]
         }
-    },{
+    }, {
         title: 'Console Xbox Serie s Ssd512gb 1controle Rrs-00006 - Microsoft',
         description: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes. Seu processador Snapdragon 439 garante uma performance ágil, enquanto a câmera traseira de 12 MP captura fotos nítidas e detalhadas. Ideal para quem busca tecnologia de ponta sem comprometer o orçamento.',
         copy: {
-            title:'Smartphone que combina desempenho robusto e preço acessível',
+            title: 'Smartphone que combina desempenho robusto e preço acessível',
             message: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes.'
-        },price: {
+        }, price: {
             currency: 'R$',
             was: '1.299,99',
             current: '899,99'
@@ -851,13 +851,13 @@ export default function Home() {
                 alt: '...'
             },]
         }
-    },{
+    }, {
         title: 'Micro System Panasonic Bluetooth Usb Cd Sc-Akx110Psk',
         description: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes. Seu processador Snapdragon 439 garante uma performance ágil, enquanto a câmera traseira de 12 MP captura fotos nítidas e detalhadas. Ideal para quem busca tecnologia de ponta sem comprometer o orçamento.',
         copy: {
-            title:'Smartphone que combina desempenho robusto e preço acessível',
+            title: 'Smartphone que combina desempenho robusto e preço acessível',
             message: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes.'
-        },price: {
+        }, price: {
             currency: 'R$',
             was: '3.429,99',
             current: '957,86'
@@ -884,13 +884,13 @@ export default function Home() {
                 alt: '...'
             },]
         }
-    },{
+    }, {
         title: 'Nintendo Switch 64GB 2 Controles Joy-con - Branco 7"',
         description: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes. Seu processador Snapdragon 439 garante uma performance ágil, enquanto a câmera traseira de 12 MP captura fotos nítidas e detalhadas. Ideal para quem busca tecnologia de ponta sem comprometer o orçamento.',
         copy: {
-            title:'Smartphone que combina desempenho robusto e preço acessível',
+            title: 'Smartphone que combina desempenho robusto e preço acessível',
             message: 'Descubra o Xiaomi Redmi 8A, o smartphone que combina desempenho robusto e preço acessível. Com uma tela de 6,22 polegadas HD+ e uma bateria de 5.000 mAh, você desfrutará de uma visualização imersiva e longa duração sem se preocupar com recargas frequentes.'
-        },price: {
+        }, price: {
             currency: 'R$',
             was: '2.699,99',
             current: '1.199,99'
@@ -939,7 +939,7 @@ export default function Home() {
             <Hero banners={banners} />
 
             <Container>
-
+                
                 <Section children={<CategoryShowcase categories={categories} />} />
 
                 <Section header={{
@@ -951,7 +951,11 @@ export default function Home() {
                     }
                 }} children={<Showcase items={items} />} />
 
-                <Section children={<RecommendedPromoCard recommendation={recommendation}/>} />
+            </Container>
+
+            <Section children={<RecommendedPromoCard recommendation={recommendation} />} />
+
+            <Container>
 
                 <Section header={{
                     title: 'Achadinhos Destaque',
@@ -961,10 +965,11 @@ export default function Home() {
                         action: '/about'
                     }
                 }} children={<Showcase items={items} />} />
-                
-                <Section children={<PromotedCarosel promos={promos} />} />
-            
+
+
             </Container>
+
+            <Section children={<PromotedCarosel promos={promos} />} />
         </div>
     )
 }
