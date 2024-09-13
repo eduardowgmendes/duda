@@ -8,7 +8,7 @@ const { Title, Text, Paragraph } = Typography
 export default function RecommendedPromoCard({ recommendation }) {
 
     return (
-        <Card style={{borderRadius: 64}} bodyStyle={{background: `url('https://www.toptal.com/designers/subtlepatterns/uploads/square_bg.png')`, backgroundRepeat: 'repeat'}}>
+        <Card style={{borderRadius: 64}} bodyStyle={{background: `url('https://www.toptal.com/designers/subtlepatterns/uploads/square_bg.png')`,  userSelect: 'none', backgroundRepeat: 'repeat'}}>
             <Row gutter={[8, 8]}>
                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
                     <Space direction='vertical' size='small' align='center' justify='center' style={{ textAlign: 'center', padding: 32, width: '100%' }}>
@@ -29,8 +29,8 @@ export default function RecommendedPromoCard({ recommendation }) {
                         <Flex align="center">
                             
                             <Space size='large'>
-                                <Button type='text' size='large' style={{color: "steelblue" }} shape='round' icon={<MessageTwoTone />} iconPosition='end'>Telegram</Button>
-                                <Button type='text' size='large' style={{color: "springgreen" }} shape='round' icon={<WhatsAppOutlined style={{color: "springgreen"}}/>} iconPosition='end'>WhatsApp</Button>
+                                <Button type='default' size='large' style={{color: "steelblue" }} shape='round' icon={<MessageTwoTone />} iconPosition='end'>Telegram</Button>
+                                <Button type='default' back size='large' style={{color: "springgreen" }} shape='round' icon={<WhatsAppOutlined style={{color: "springgreen"}}/>} iconPosition='end'>WhatsApp</Button>
                             </Space>
                         
                         </Flex>

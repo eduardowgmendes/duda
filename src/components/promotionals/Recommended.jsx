@@ -22,7 +22,7 @@ export default function Recommended({ items }) {
                     loop
                     cardsEffect={{
                         rotate: true,
-                        perSlideOffset: 100,
+                        perSlideOffset: 110,
                         perSlideRotate: 2,
                         slideShadows: false,
                     }}

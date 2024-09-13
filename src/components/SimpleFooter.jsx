@@ -53,7 +53,7 @@ export default function SimpleFooter() {
                                 <Title level={4} style={{ marginBottom: 32 }}>Departamentos</Title>
                                 <Space direction='vertical' size='large'>
                                     {departments.map((department, index) => (
-                                        <Link key={index} href={department.href}>{department.name}</Link>
+                                        <Link type='secondary' key={index} href={department.href}>{department.name}</Link>
                                     ))}
                                 </Space>
                             </Col>
@@ -61,9 +61,9 @@ export default function SimpleFooter() {
                             <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }} xxl={{ span: 12 }}>
                                 <Title level={4} style={{ marginBottom: 32 }}>Explore</Title>
                                 <Space direction='vertical' size='large'>
-                                    <Link href="/daily-offers">Ofertas do Dia</Link>
-                                    <Link href="/stores">Lojas</Link>
-                                    <Link href="/about">Sobre Nós</Link>
+                                    <Link type='secondary' href="/daily-offers">Ofertas do Dia</Link>
+                                    <Link type='secondary' href="/stores">Lojas</Link>
+                                    <Link type='secondary' href="/about">Sobre Nós</Link>
                                 </Space>
                             </Col>
 
