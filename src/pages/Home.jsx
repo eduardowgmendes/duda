@@ -947,7 +947,7 @@ export default function Home() {
                     description: 'Aqui voce encontra as melhores ofertas com muitos descontos e cupons das lojas; Amazon, Magalu, Renner, C&A, Beleza na Web, Época Cosméticos e muitas outras.',
                     callToAction: {
                         label: 'Ver Tudo',
-                        action: '/shop'
+                        action: '/duda/shop'
                     }
                 }} children={<Showcase items={items} />} />
 

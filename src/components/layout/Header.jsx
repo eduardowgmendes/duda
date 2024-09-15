@@ -10,8 +10,8 @@ export default function Header({ header }) {
     return (
         <Row gutter={[16,16]} style={{ marginBottom: 32 }}>
             <Col xs={{ span: 24 }} sm={{ span: 16 }} md={{ span: 16 }} lg={{ span: 16 }} xl={{ span: 16 }} xxl={{ span: 16 }}>
-                <Title level={3} style={{textAlign: `${screens.xs ? 'center' : 'start'}`, fontFamily: 'Outfit, sans-serif' }}>{header.title}</Title>
-                <Paragraph className="body-1" style={{ textAlign: `${screens.xs ? 'center' : 'start'}`, marginBottom: 0 }} type='secondary'>{header.description}</Paragraph>
+                <Title level={2} style={{textAlign: `${screens.xs ? 'center' : 'start'}`, fontFamily: 'Outfit, sans-serif', color: 'steelblue' }}>{header.title}</Title>
+                <Paragraph className="body-1" style={{ textAlign: `${screens.xs ? 'center' : 'start'}`, marginBottom: 0 }}>{header.description}</Paragraph>
             </Col>
             {
                 header.callToAction ?

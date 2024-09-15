@@ -57,7 +57,7 @@ export default function SimpleHeader() {
             label: 'Sobre',
             key: 'about',
             icon: <InfoCircleOutlined />,
-            href: '/about'
+            href: '.duda/about'
         },]
 
     return (
@@ -66,7 +66,7 @@ export default function SimpleHeader() {
                 <Row>
                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 4 }} xl={{ span: 4 }} xxl={{ span: 2 }}>
                         <Flex align="center" justify="center">
-                            <a href="/">
+                            <a href="/duda/">
                                 <Image src='./assets/images/logos/duda-dark-logo.svg' width='6rem' preview={false} alt="..."/>
                             </a>
                         </Flex>
