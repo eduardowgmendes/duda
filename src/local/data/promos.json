@@ -1,0 +1,41 @@
+[
+    {
+        "title": "Seleção Especial do Editor",
+        "description": "Confira os produtos escolhidos a dedo para você! Qualidade garantida e ofertas imperdíveis na nossa curadoria exclusiva.",
+        "callToAction": "Compre Agora e Economize",
+        "color": {
+            "primary": "gold",
+            "secondary": "whitesmoke"
+        },
+        "media": {
+            "backdropAlt": "...",
+            "backdrop": "https://images.unsplash.com/photo-1633596683562-4a47eb4983c5?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+    },
+    {
+        "title": "Promoção Relâmpago em Produtos Selecionados",
+        "description": "Ofertas imperdíveis por tempo limitado! Confira nossa seleção de produtos com até 50% de desconto. Renove seu carrinho com as melhores marcas e preços incríveis.",
+        "callToAction": "Garanta o Seu Desconto",
+        "color": {
+            "primary": "cornsilk",
+            "secondary": "whitesmoke"
+        },
+        "media": {
+            "backdropAlt": "...",
+            "backdrop": "https://images.unsplash.com/photo-1628689761991-273c5392a162?q=80&w=2638&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+    },
+    {
+        "title": "Smartphones Recomendados",
+        "description": "Explore os melhores smartphones selecionados pelo editor! Alta performance, tecnologia de ponta e preços incríveis.",
+        "callToAction": "Aproveite o Frete Grátis",
+        "color": {
+            "primary": "gold",
+            "secondary": "whitesmoke"
+        },
+        "media": {
+            "backdropAlt": "...",
+            "backdrop": "https://images.unsplash.com/photo-1668871333606-ef8461d43922?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+    }
+]

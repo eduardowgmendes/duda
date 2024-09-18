@@ -1,34 +1,37 @@
-import { ArrowRightOutlined, BankTwoTone, RestTwoTone } from "@ant-design/icons";
-import { Button, Card, Carousel, Col, Flex, Layout, Row, Space, Typography } from "antd";
-const { Paragraph, Title } = Typography
+import { Carousel, Col, Flex, Row } from "antd";
 import { useExtractColor } from "react-extract-colors";
 import Container from "../layout/Container";
+import { useEffect, useState } from "react";
 
 export default function Hero({ banners }) {
 
+    const [color, setColor] = useState('gold')
+
+    const beforeChange = (index) => {
+        setColor('tomato')
+    }
+
     return (
-        <section >
-            <Carousel autoplay fade draggable infinite dots adaptiveHeight dotPosition='bottom'>
+        <section>
+            <Carousel
+                autoplay
+                fade
+                draggable
+                infinite
+                dots
+                beforeChange={(index) => beforeChange(index)}
+                dotPosition='bottom'>
                 {banners && banners.map((banner, index) => (
-                    <Card style={{margin: 16}} key={index} bordered bodyStyle={{
-                        padding: 0, background: `linear-gradient(90deg, ${useExtractColor(banner.media.background).dominantColor} 32%, rgba(250,250,250, 0) 100%), url('${banner.media.background}')`,
-                        backgroundPosition: 'bottom, bottom',
-                        backgroundRepeat: 'no-repeat, no-repeat',
-                        backgroundSize: 'cover, cover',
-                    }}>
-                        <Container>
+                    <Row>
+                        <Col span={24} style={{ background: useExtractColor(banner.media.background).dominantColor }}>
                             <Row>
-                                <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 12 }} xl={{ span: 12 }} xxl={{ span: 12 }}>
-                                    <Flex vertical align="start" justify='center' style={{ textAlign: 'start', minHeight: '75vh' }}>
-                                        <Title level={1} className="display-4" style={{ fontFamily: 'Outfit, sans-serif', userSelect: 'none', color: `${banner.color.primary}` }}>{banner.title}</Title>
-                                        <Paragraph className="lead" style={{ fontFamily: 'Barlow Condensed, sans-serif', userSelect: 'none', color: `${banner.color.secondary}` }}>{banner.description}</Paragraph>
-                                        {banner.lead ? <Paragraph className="sublead" style={{ userSelect: 'none' }}>{banner.lead}</Paragraph> : null}
-                                        <Button style={{ margin: '64px 0 64px 0' }} type='primary' shape='round' size='large' iconPosition='end' icon={<ArrowRightOutlined href={banner.callToAction.action} />}>{banner.callToAction.message}</Button>
-                                    </Flex>
+                                <Col xs={{ span: 24, offset: 0 }} md={{ span: 20, offset: 2 }} lg={{ span: 20, offset: 2 }} xl={{ span: 20, offset: 2 }} xxl={{ span: 20, offset: 2 }}>
+                                    <img src={banner.media.background} width='100%' alt="..." />
                                 </Col>
                             </Row>
-                        </Container>
-                    </Card>
+                        </Col>
+                    </Row>
+
                 ))}
             </Carousel>
         </section>

@@ -1,8 +1,9 @@
 import { Card, Col, Row, Typography } from "antd";
 import { useExtractColor } from "react-extract-colors"
-const { Text, Paragraph, Title } = Typography
+const {  Paragraph } = Typography
 
 export default function CategoryShowcase({ categories }) {
+    
     return (
         <Row gutter={[8, 8]}>
             {categories.map((category, index) => (

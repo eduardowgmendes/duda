@@ -1,0 +1,146 @@
+[
+    {
+        "name": "Ferramentas",
+        "color": {
+            "primary": "white"
+        },
+        "media": {
+            "background": "./assets/images/category/category-banner-tools.png"
+        }
+    },
+    {
+        "name": "Eletroportáteis",
+        "color": {
+            "primary": "darkslategray"
+        },
+        "media": {
+            "background": "./assets/images/category/category-banner-home-appliance.png"
+        }
+    },
+    {
+        "name": "Comércio & Indústria",
+        "color": {
+            "primary": "whitesmoke"
+        },
+        "media": {
+            "background": "./assets/images/category/category-banner-industry.png"
+        }
+    },
+    {
+        "name": "Brinquedos",
+        "color": {
+            "primary": "cornsilk"
+        },
+        "media": {
+            "background": "./assets/images/category/category-banner-toys.png"
+        }
+    },
+    {
+        "name": "Moda",
+        "color": {
+            "primary": "cornsilk"
+        },
+        "media": {
+            "background": "./assets/images/category/category-banner-fashion.png"
+        }
+    },
+    {
+        "name": "Livros",
+        "color": {
+            "primary": "cornsilk"
+        },
+        "media": {
+            "background": "./assets/images/category/category-banner-books.png"
+        }
+    },
+    {
+        "name": "Esportes",
+        "color": {
+            "primary": "cornsilk"
+        },
+        "media": {
+            "background": "./assets/images/category/category-banner-sports.png"
+        }
+    },
+    {
+        "name": "Smartphones",
+        "color": {
+            "primary": "cornsilk"
+        },
+        "media": {
+            "background": "./assets/images/category/category-banner-smartphones.png"
+        }
+    },
+    {
+        "name": "Bebê",
+        "color": {
+            "primary": "cornsilk"
+        },
+        "media": {
+            "background": "./assets/images/category/category-banner-babies.png"
+        }
+    },
+    {
+        "name": "Informática",
+        "color": {
+            "primary": "whitesmoke"
+        },
+        "media": {
+            "background": "./assets/images/category/category-banner-computers.png"
+        }
+    },
+    {
+        "name": "Casa",
+        "color": {
+            "primary": "cornsilk"
+        },
+        "media": {
+            "background": "./assets/images/category/category-banner-house-alternative.png"
+        }
+    },
+    {
+        "name": "Utilidades Domésticas",
+        "color": {
+            "primary": "darkslategray"
+        },
+        "media": {
+            "background": "./assets/images/category/category-banner-furniture.png"
+        }
+    },
+    {
+        "name": "TV & Áudio",
+        "color": {
+            "primary": "purple"
+        },
+        "media": {
+            "background": "./assets/images/category/category-banner-tv.png"
+        }
+    },
+    {
+        "name": "Mercado",
+        "color": {
+            "primary": "whitesmoke"
+        },
+        "media": {
+            "background": "./assets/images/category/category-banner-supermarket.png"
+        }
+    },
+    {
+        "name": "Games",
+        "color": {
+            "primary": "whitesmoke"
+        },
+        "media": {
+            "background": "./assets/images/category/category-banner-games.png"
+        }
+    },
+    {
+        "name": "Automotivo",
+        "color": {
+            "primary": "whitesmoke"
+        },
+        "media": {
+            "background": "./assets/images/category/category-banner-automotive.png"
+        }
+    }
+]

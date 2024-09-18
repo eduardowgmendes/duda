@@ -32,7 +32,9 @@ export default function SimpleFooter() {
 
             <Container>
 
-                <Row gutter={[32, 8]} >
+            <Divider />
+
+                <Row gutter={[32, 32]}>
 
                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 12 }} xl={{ span: 12 }} xxl={{ span: 12 }} >
                         <a href="/">

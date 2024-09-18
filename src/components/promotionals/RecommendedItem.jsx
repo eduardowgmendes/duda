@@ -24,7 +24,7 @@ export default function RecommendedItem({ item }) {
 
                 </div>
 
-                <Row gutter={[8, 8]} style={{ padding: '0px 32px 0 32px', height: 256}}>
+                <Row gutter={[8, 8]} style={{ padding: '0px 32px 0 32px', minHeight: 256}}>
 
                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
 

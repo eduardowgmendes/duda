@@ -1,9 +1,9 @@
-import { ApiTwoTone, FileZipTwoTone, MailTwoTone, MessageTwoTone, SendOutlined } from "@ant-design/icons";
+import { MailTwoTone, MessageTwoTone, SendOutlined } from "@ant-design/icons";
 import { Button, Card, Col, Flex, Input, Row, Space, Typography } from "antd";
 
 const { Title, Paragraph, Link, Text } = Typography
 
-export default function Reminder() {
+export default function SubscriptionReminder() {
 
     return (
         <Card bordered style={{margin: '128px 0 128px 0'}}>
