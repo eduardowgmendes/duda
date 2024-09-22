@@ -8,7 +8,7 @@ const { Title, Text, Paragraph } = Typography
 export default function RecommendedPromoCard({ recommendation }) {
 
     return (
-        <Card style={{borderRadius: 64}} bodyStyle={{background: `url('https://www.toptal.com/designers/subtlepatterns/uploads/square_bg.png')`,  userSelect: 'none', backgroundRepeat: 'repeat'}}>
+        <Card style={{ borderRadius: 64 }} bodyStyle={{ background: `url('https://www.toptal.com/designers/subtlepatterns/uploads/square_bg.png')`, userSelect: 'none', backgroundRepeat: 'repeat' }}>
             <Row gutter={[8, 8]}>
                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
                     <Space direction='vertical' size='small' align='center' justify='center' style={{ textAlign: 'center', padding: 32, width: '100%' }}>
@@ -26,13 +26,33 @@ export default function RecommendedPromoCard({ recommendation }) {
                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }} >
                     <Space direction='vertical' size='small' align='center' style={{ textAlign: 'center', padding: 32, width: '100%' }}>
                         <Paragraph className="lead" style={{ color: recommendation.color.secondary, fontFamily: 'Barlow Condensed, system-ui' }}>{recommendation.copy.message}</Paragraph>
-                        <Flex align="center">
-                            
-                            <Space size='large'>
-                                <Button type='default' size='large' style={{color: "steelblue" }} shape='round' icon={<MessageTwoTone />} iconPosition='end'>Telegram</Button>
-                                <Button type='default' back size='large' style={{color: "springgreen" }} shape='round' icon={<WhatsAppOutlined style={{color: "springgreen"}}/>} iconPosition='end'>WhatsApp</Button>
-                            </Space>
-                        
+                        <Flex align='start' justify='center'>
+
+                            <Row gutter={[32, 32]}>
+                                <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }} xxl={{ span: 12 }}>
+                                    <Card hoverable bordered bodyStyle={{ background: 'steelblue', color: 'whitesmoke' }}>
+                                        <Flex align='center' justify='center'>
+                                            <img src='./assets/images/logos/telegram.svg' width={48} style={{ marginInlineEnd: 16 }} alt='Telegram logo' />
+                                            <Flex vertical align='start'>
+                                                <Paragraph style={{ color: 'inherit', margin: 0 }}>Participar no</Paragraph>
+                                                <Paragraph style={{ color: 'inherit', margin: 0, fontSize: '1.75rem', lineHeight: '1', fontWeight: 'bold', fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>Telegram</Paragraph>
+                                            </Flex>
+                                        </Flex>
+                                    </Card>
+                                </Col>
+                                <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }} xxl={{ span: 12 }}>
+                                    <Card hoverable bordered bodyStyle={{ background: 'teal', color: 'whitesmoke' }}>
+                                        <Flex align='center' justify='center'>
+                                            <img src='./assets/images/logos/whatsApp.svg' width={48} style={{ marginInlineEnd: 16 }} alt='Telegram logo' />
+                                            <Flex vertical align='start'>
+                                                <Paragraph style={{ color: 'inherit', margin: 0 }}>Participar no</Paragraph>
+                                                <Paragraph style={{ color: 'inherit', margin: 0, fontSize: '1.75rem', lineHeight: '1', fontWeight: 'bold', fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>WhatsApp</Paragraph>
+                                            </Flex>
+                                        </Flex>
+                                    </Card>
+                                </Col>
+                            </Row>
+
                         </Flex>
                     </Space>
                 </Col>
