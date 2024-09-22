@@ -1,5 +1,6 @@
 import { ThunderboltTwoTone } from "@ant-design/icons";
 import { Card, Col, Divider, Flex, Image, Row, Space, Typography } from "antd";
+import { useExtractColor } from "react-extract-colors";
 const { Title, Paragraph, Text } = Typography
 
 export default function RecommendedItem({ item }) {

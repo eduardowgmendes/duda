@@ -1,14 +1,46 @@
 [
     {
-        "title": "Produtos incríveis selecionados à dedo para Você",
-        "description": "Ofertas imperdíveis por tempo limitado! Confira nossa seleção de produtos com até 50% de desconto. Renove seu carrinho com as melhores marcas e preços incríveis.",
+        "title": "",
+        "description": "",
         "lead": null,
         "callToAction": {
-            "message": "Veja as Ofertas Agora",
+            "message": "",
             "action": "/about"
         },
         "media": {
-            "background": "./assets/images/hero/main-banner.png"
+            "background": "./assets/images/hero/banner-dummy-trend.png"
+        },
+        "color": {
+            "primary": "steelblue",
+            "secondary": "dimgray"
+        }
+    },
+    {
+        "title": "",
+        "description": "",
+        "lead": null,
+        "callToAction": {
+            "message": "",
+            "action": "/about"
+        },
+        "media": {
+            "background": "./assets/images/hero/banner-dummy-discount.png"
+        },
+        "color": {
+            "primary": "steelblue",
+            "secondary": "dimgray"
+        }
+    },
+    {
+        "title": "",
+        "description": "",
+        "lead": null,
+        "callToAction": {
+            "message": "",
+            "action": "/about"
+        },
+        "media": {
+            "background": "./assets/images/hero/banner-dummy-selected.png"
         },
         "color": {
             "primary": "steelblue",
