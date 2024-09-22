@@ -2,6 +2,7 @@ import { Carousel, Col, Flex, Row } from "antd";
 import { useExtractColor } from "react-extract-colors";
 import Container from "../layout/Container";
 import { useEffect, useState } from "react";
+import { ArrowDownOutlined } from "@ant-design/icons";
 
 export default function Hero({ banners }) {
 
@@ -31,7 +32,6 @@ export default function Hero({ banners }) {
                             </Row>
                         </Col>
                     </Row>
-
                 ))}
             </Carousel>
         </section>

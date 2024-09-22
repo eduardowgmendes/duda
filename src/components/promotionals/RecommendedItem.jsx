@@ -9,7 +9,7 @@ export default function RecommendedItem({ item }) {
         <Card
             size='large'
             bordered
-            style={{ minWidth: '26em', minHeight: '40em', overflow: 'hidden' }}
+            style={{ minWidth: '26em' }}
             title={<Text type='secondary' ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ maxWidth: '90%' }}>Recomendado</Text>}
             extra={<img src="./assets/images/top-ribbon.png" width={42} />}
             bodyStyle={{ padding: 0 }}>
@@ -51,10 +51,8 @@ export default function RecommendedItem({ item }) {
                         </Row>
                     </Col>
 
-                    <Divider style={{margin: 2}}/>
-
                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
-                        <Flex vertical align='start' justify='center'>
+                        <Flex vertical align='start' justify='center' style={{height: '100%'}}>
                             <Paragraph type='secondary' style={{margin: 0, fontFamily: 'Outfit, sans-serif' }}>Vendido por: <span style={{fontWeight: 'bold'}}>{item.merchant.seller}</span></Paragraph>
                         </Flex>
                     </Col>
