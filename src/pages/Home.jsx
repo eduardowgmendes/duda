@@ -8,9 +8,11 @@ import RecommendedPromoCard from "../components/promotionals/RecommendedPromoCar
 
 import items from "../local/data/products.json"
 import promos from "../local/data/promos.json"
+import partners from "../local/data/partners.json"
 import banners from "../local/data/banners.json"
 import categories from "../local/data/categories.json"
 import recommendations from "../local/data/mock/recommendations.json"
+import Stores from "../components/showcase/Stores";
 
 export default function Home() {
 
@@ -40,7 +42,7 @@ export default function Home() {
                     description: 'Explore nossas categorias para encontrar rapidamente o que você procura. Organize suas compras de forma prática e eficiente com nossas opções diversificadas e atualizadas.',
                     callToAction: {
                         label: 'Ver Todas', 
-                        action: null
+                        action: 'shop'
                         }
                 }} children={<CategoryShowcase categories={categories} />} />
 
@@ -49,13 +51,12 @@ export default function Home() {
                     description: 'Aqui voce encontra as melhores ofertas com muitos descontos e cupons das lojas; Amazon, Magalu, Renner, C&A, Beleza na Web, Época Cosméticos e muitas outras.',
                     callToAction: {
                         label: 'Ver Tudo',
-                        action: './duda/shop'
+                        action: 'shop'
                     }
                 }} children={<Showcase items={items} />} />
 
             </Container>
 
-            <Section children={<RecommendedPromoCard recommendation={recommendation} />} />
 
             <Container>
 
@@ -64,14 +65,42 @@ export default function Home() {
                     description: 'Aqui voce encontra as melhores ofertas com muitos descontos e cupons das lojas; Amazon, Magalu, Renner, C&A, Beleza na Web, Época Cosméticos e muitas outras.',
                     callToAction: {
                         label: 'Ver Tudo',
-                        action: '/about'
+                        action: './about'
                     }
                 }} children={<Showcase items={items} />} />
 
 
             </Container>
 
+            <Section children={<RecommendedPromoCard recommendation={recommendation} />} />
+            
+            <Container>
+
+                <Section header={{
+                    title: 'Lojas',
+                    description: 'Descubra a seleção de lojas parceiras cuidadosamente escolhidas para oferecer os melhores produtos e serviços. Trabalhamos com marcas renomadas e confiáveis, garantindo a qualidade, variedade e ótimos preços para você.',
+                    callToAction: null
+                }} children={<Stores stores={partners} />} />
+
+
+            </Container>
+            
             <Section children={<PromotedCarosel promos={promos} />} />
+            
+            <Container>
+
+                <Section header={{
+                    title: 'Achadinhos Incríveis',
+                    description: 'Aqui voce encontra as melhores ofertas com muitos descontos e cupons das lojas; Amazon, Magalu, Renner, C&A, Beleza na Web, Época Cosméticos e muitas outras.',
+                    callToAction: {
+                        label: 'Ver Tudo',
+                        action: './about'
+                    }
+                }} children={<Showcase items={items} />} />
+
+
+            </Container>
+
         </div>
     )
 }

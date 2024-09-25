@@ -1,15 +1,14 @@
-import { Card, Divider, Flex, Space, Typography } from "antd";
+import { Card, Divider, Flex, Space, Typography, Watermark } from "antd";
 const { Title, Text, Paragraph } = Typography
 
 export default function DisplayItem({ item }) {
     return (
         <Card
-
             bordered
             hoverable
             size='small'
             cover={<img alt={item.picture.alt} src={item.picture.src} />}>
-
+            
             <Space direction='vertical' size='medium'>
                 <Paragraph
                 className="body-2"

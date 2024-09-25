@@ -6,10 +6,10 @@ const { Title, Paragraph, Link, Text } = Typography
 export default function SubscriptionReminder() {
 
     return (
-        <Card bordered style={{margin: '128px 0 128px 0'}}>
+        <Card bordered style={{margin: '3em 0 3em 0'}}>
             <Row gutter={[32, 32]}>
                 <Col xs={{span: 24}} sm={{span: 24}} md={{span: 24}} lg={{span: 24}} xl={{span: 6}} xxl={{span: 6}}>
-                    <Flex vertical align="start" justify="center" style={{ height: '100%' }}>
+                    <Flex vertical align="start" justify="start" style={{ height: '100%' }}>
                         <Title level={2} style={{ fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>Não perca nenhuma oferta!</Title>
                         <Paragraph type="secondary">Cadastre-se nos grupos de WhatsApp ou inscreva seu e-mail para não perder nenhuma promoção.</Paragraph>
                     </Flex>
@@ -54,10 +54,10 @@ export default function SubscriptionReminder() {
 
                                     <Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 12}} xl={{span: 12}} xxl={{span: 12}}>
 
-                                        <Card hoverable bordered style={{ padding: 10, background: 'springgreen' }} bodyStyle={{ padding: 0 }}>
+                                        <Card hoverable bordered style={{ padding: 10, background: 'teal' }} bodyStyle={{ padding: 0 }}>
                                             <Flex align='center' justify='center'>
                                                 <img src="./assets/images/logos/whatsApp.svg" width={32} alt="" style={{ marginInlineEnd: 10 }} />
-                                                <Flex vertical>
+                                                <Flex vertical style={{color: 'whitesmoke'}}>
                                                     <Paragraph style={{ margin: 0, color: "inherit" }}>Participe no</Paragraph>
                                                     <Title level={5} style={{ margin: 0, color: "inherit" }} fontFamily='Outfit, sans-serif'>WhatsApp</Title>
                                                 </Flex>

@@ -16,9 +16,6 @@ function App() {
 
       <Content style={{ height: '100%' }}>
         <AppRoutes />
-        <Container>
-          <SubscriptionReminder />
-        </Container>
       </Content>
 
       <SimpleFooter />

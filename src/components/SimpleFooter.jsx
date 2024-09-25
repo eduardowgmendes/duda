@@ -1,6 +1,7 @@
 import Container from "./layout/Container";
 import {  Button,  Col, Divider, Flex, Image,  Layout,  Row, Space, Typography } from "antd";
 import { FacebookOutlined, InstagramOutlined, TikTokFilled, TwitterOutlined } from "@ant-design/icons";
+import SubscriptionReminder from "./promotionals/SubscriptionReminder";
 
 const { Footer } = Layout
 const { Paragraph, Text, Title, Link } = Typography
@@ -28,11 +29,12 @@ export default function SimpleFooter() {
     },]
 
     return (
-        <Footer style={{ background: 'whitesmoke', padding: 0 }}>
+        <Footer style={{ background: 'white', padding: 0 }}>
 
             <Container>
+            
+            <SubscriptionReminder />
 
-            <Divider />
 
                 <Row gutter={[32, 32]}>
 

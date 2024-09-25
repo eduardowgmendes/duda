@@ -13,9 +13,9 @@ export default function RecommendedPromoCard({ recommendation }) {
                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
                     <Space direction='vertical' size='small' align='center' justify='center' style={{ textAlign: 'center', padding: 32, width: '100%' }}>
                         <DollarCircleOutlined style={{ fontSize: 64, color: recommendation.color.base, margin: '16px 0 32px 0' }} />
-                        <Title level={1} style={{ margin: 0, color: recommendation.color.secondary, fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>{recommendation.title}</Title>
-                        <Title className="display-3" level={1} style={{ margin: '0 0 32px 0', color: recommendation.color.primary, fontFamily: 'Outfit, sans-serif', fontWeight: 'bold', wordBreak: 'keep-all' }}>{recommendation.subtitle}</Title>
-                        <Paragraph className="lead" style={{ color: recommendation.color.secondary, fontFamily: 'Barlow Condensed, system-ui' }}>{recommendation.description}</Paragraph>
+                        <Title level={3} style={{ margin: 0, color: recommendation.color.secondary, fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>{recommendation.title}</Title>
+                        <Title className="display-4" level={1} style={{ margin: '0 0 32px 0', color: recommendation.color.primary, fontFamily: 'Outfit, sans-serif', fontWeight: 'bold', wordBreak: 'keep-all' }}>{recommendation.subtitle}</Title>
+                        <Paragraph style={{ color: recommendation.color.secondary }}>{recommendation.description}</Paragraph>
                     </Space>
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }} style={{ minHeight: '75vh', borderRadius: 64 }} >
@@ -25,35 +25,39 @@ export default function RecommendedPromoCard({ recommendation }) {
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }} >
                     <Space direction='vertical' size='small' align='center' style={{ textAlign: 'center', padding: 32, width: '100%' }}>
-                        <Paragraph className="lead" style={{ color: recommendation.color.secondary, fontFamily: 'Barlow Condensed, system-ui' }}>{recommendation.copy.message}</Paragraph>
-                        <Flex align='start' justify='center'>
+                        <Paragraph style={{ color: recommendation.color.secondary }}>{recommendation.copy.message}</Paragraph>
+                        
+                        <Space align='start' justify='center'>
 
-                            <Row gutter={[32, 32]}>
+                            <Row align='center' justify='center' gutter={[10, 10]}>
+
                                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }} xxl={{ span: 12 }}>
-                                    <Card hoverable bordered bodyStyle={{ background: 'steelblue', color: 'whitesmoke' }}>
+                                    <Card hoverable bordered style={{ padding: 10, background: 'lightcyan' }} bodyStyle={{ padding: 0 }}>
                                         <Flex align='center' justify='center'>
-                                            <img src='./assets/images/logos/telegram.svg' width={48} style={{ marginInlineEnd: 16 }} alt='Telegram logo' />
-                                            <Flex vertical align='start'>
-                                                <Paragraph style={{ color: 'inherit', margin: 0 }}>Participar no</Paragraph>
-                                                <Paragraph style={{ color: 'inherit', margin: 0, fontSize: '1.75rem', lineHeight: '1', fontWeight: 'bold', fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>Telegram</Paragraph>
+                                            <img src="./assets/images/logos/telegram.svg" width={32} alt="" style={{ marginInlineEnd: 10 }} />
+                                            <Flex vertical>
+                                                <Paragraph style={{ margin: 0, color: "inherit" }}>Participe no</Paragraph>
+                                                <Title level={5} style={{ wordBreak: 'keep-all', margin: 0, color: "inherit" }} fontFamily='Outfit, sans-serif'>Telegram</Title>
                                             </Flex>
                                         </Flex>
                                     </Card>
                                 </Col>
+
                                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }} xxl={{ span: 12 }}>
-                                    <Card hoverable bordered bodyStyle={{ background: 'teal', color: 'whitesmoke' }}>
+
+                                    <Card hoverable bordered style={{ padding: 10, background: 'teal' }} bodyStyle={{ padding: 0 }}>
                                         <Flex align='center' justify='center'>
-                                            <img src='./assets/images/logos/whatsApp.svg' width={48} style={{ marginInlineEnd: 16 }} alt='Telegram logo' />
-                                            <Flex vertical align='start'>
-                                                <Paragraph style={{ color: 'inherit', margin: 0 }}>Participar no</Paragraph>
-                                                <Paragraph style={{ color: 'inherit', margin: 0, fontSize: '1.75rem', lineHeight: '1', fontWeight: 'bold', fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>WhatsApp</Paragraph>
+                                            <img src="./assets/images/logos/whatsApp.svg" width={32} alt="" style={{ marginInlineEnd: 10 }} />
+                                            <Flex vertical style={{ color: 'whitesmoke' }}>
+                                                <Paragraph style={{ margin: 0, color: "inherit" }}>Participe no</Paragraph>
+                                                <Title level={5} style={{ wordBreak: 'keep-all', margin: 0, color: "inherit" }} fontFamily='Outfit, sans-serif'>WhatsApp</Title>
                                             </Flex>
                                         </Flex>
                                     </Card>
                                 </Col>
                             </Row>
 
-                        </Flex>
+                        </Space>
                     </Space>
                 </Col>
             </Row>

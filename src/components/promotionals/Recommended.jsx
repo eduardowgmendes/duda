@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import RecommendedItem from "./RecommendedItem";
-import { EffectCards } from "swiper/modules";
+import { Autoplay, EffectCards } from "swiper/modules";
 import { Col, Row } from "antd";
 
 export default function Recommended({ items }) {
@@ -18,15 +18,16 @@ export default function Recommended({ items }) {
                     direction={'horizontal'}
                     centeredSlides={true}
                     grabCursor={true}
+                    autoplay={{disableOnInteraction: false}}
                     onProgress={(swiper, progress) => renderEffects}
-                    loop
+                    loop={true}
                     cardsEffect={{
                         rotate: true,
                         perSlideOffset: 110,
                         perSlideRotate: 2,
                         slideShadows: false,
                     }}
-                    modules={[EffectCards]}>
+                    modules={[Autoplay, EffectCards]}>
                     {items.map((item) => (
                         <SwiperSlide style={{ width: '100%' }}>
                             <RecommendedItem item={item} />
