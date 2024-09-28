@@ -10,7 +10,7 @@ const AppRoutes = () => {
         <BrowserRouter basename={import.meta.env.BASE_URL}>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/shop" element={<Shop />} />
+                <Route path="/shop/:offerId" element={<Shop />} />
                 <Route path="/about" element={<About />} />
                 <Route path="*" element={<NotFound title='Oops! Você está perdido?' description='Parece que a página que você está procurando não existe mais ou foi movida. Mas não se preocupe! Navegue pelo menu acima ou volte para a página inicial para continuar explorando nosso site.'/>} />
             </Routes>

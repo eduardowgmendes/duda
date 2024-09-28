@@ -42,16 +42,16 @@ export default function Home() {
                     description: 'Explore nossas categorias para encontrar rapidamente o que você procura. Organize suas compras de forma prática e eficiente com nossas opções diversificadas e atualizadas.',
                     callToAction: {
                         label: 'Ver Todas', 
-                        action: 'shop'
+                        action: null
                         }
                 }} children={<CategoryShowcase categories={categories} />} />
 
                 <Section header={{
                     title: 'Achadinhos do Dia',
-                    description: 'Aqui voce encontra as melhores ofertas com muitos descontos e cupons das lojas; Amazon, Magalu, Renner, C&A, Beleza na Web, Época Cosméticos e muitas outras.',
+                    description: 'Descubra as melhores ofertas e produtos selecionados especialmente para você! Aproveite nossas recomendações diárias com qualidade e preços imbatíveis.',
                     callToAction: {
                         label: 'Ver Tudo',
-                        action: 'shop'
+                        action: 'shop/1'
                     }
                 }} children={<Showcase items={items} />} />
 
@@ -62,10 +62,10 @@ export default function Home() {
 
                 <Section header={{
                     title: 'Achadinhos Destaque',
-                    description: 'Aqui voce encontra as melhores ofertas com muitos descontos e cupons das lojas; Amazon, Magalu, Renner, C&A, Beleza na Web, Época Cosméticos e muitas outras.',
+                    description: 'Confira os produtos que estão em alta! Selecionamos os itens mais desejados e com ofertas imperdíveis para você aproveitar.',
                     callToAction: {
                         label: 'Ver Tudo',
-                        action: './about'
+                        action: 'shop/2'
                     }
                 }} children={<Showcase items={items} />} />
 
@@ -91,13 +91,12 @@ export default function Home() {
 
                 <Section header={{
                     title: 'Achadinhos Incríveis',
-                    description: 'Aqui voce encontra as melhores ofertas com muitos descontos e cupons das lojas; Amazon, Magalu, Renner, C&A, Beleza na Web, Época Cosméticos e muitas outras.',
+                    description: 'Produtos incríveis com preços que você não pode perder! Aproveite nossas seleções especiais e garanta suas melhores compras.',
                     callToAction: {
                         label: 'Ver Tudo',
-                        action: './about'
+                        action: 'shop/3'
                     }
                 }} children={<Showcase items={items} />} />
-
 
             </Container>
 

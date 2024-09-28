@@ -1,97 +1,135 @@
-import { Flex, Form, Layout, Segmented, Select, Space, Typography } from "antd";
-import items from "../local/data/mock/products-mock.json"
-import { AppstoreOutlined, BarsOutlined } from "@ant-design/icons";
+import { Flex, Form, Layout, Segmented, Select, Space, Spin, Typography } from "antd";
+import { AppstoreOutlined, BarsOutlined, LoadingOutlined } from "@ant-design/icons";
 import ShowcaseDisplayer from "../components/showcase/ShowcaseDisplayer";
 import Container from "../components/layout/Container";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
-const { Title, Paragraph, Link } = Typography
+const { Title, Paragraph } = Typography;
+
+import offers from "../local/data/offers/offers.json";
 
 export default function Shop() {
 
-    const [sortedItems, setSortedItems] = useState(items)
-    const [pageSize, setPageSize] = useState(20)
+    const { offerId } = useParams();
+    const currentOffer = offers.find(offer => offer.id == offerId);
+
+    const [items, setItems] = useState([]);
+    const [sortedItems, setSortedItems] = useState([]);
+    const [pageSize, setPageSize] = useState(20);
+    const [loading, setLoading] = useState(false);
+    const [itemLayout, setItemLayout] = useState('horizontal');
+
+    useEffect(() => {
+        if (currentOffer) {
+            setItems(currentOffer.offers)
+            setSortedItems(currentOffer.offers)
+        }
+    }, [currentOffer]);
 
     const sortBy = (criteria) => {
+        setLoading(true);
         switch (criteria) {
             case 'price_descendant':
-                sortByPrice(true)
+                sortByPrice(true);
                 break;
             case 'price_ascendant':
-                sortByPrice(false)
+                sortByPrice(false);
+                break;
+            default:
                 break;
         }
+        setLoading(false);
+    };
+
+    const sortByPrice = (descendant) => {
+        const sorted = [...items].sort((a, b) => {
+            const priceA = parseFloat(a.price.current)
+            const priceB = parseFloat(b.price.current)
+            return descendant ? priceB - priceA : priceA - priceB
+        });
+
+        setSortedItems(sorted);
+    };
+
+    const setupPageSize = (size) => {setPageSize(size)}
+
+    const changeListView = (view) => {setItemLayout(view)}
+
+    const criterias = [
+        {
+            value: 'price_ascendant',
+            label: 'Menor Preço'
+        },
+        {
+            value: 'price_descendant',
+            label: 'Maior Preço'
+        },
+    ];
+
+    const itemsPerPage = [
+        { value: 20, label: '20 por página' },
+        { value: 40, label: '40 por página' },
+        { value: 60, label: '60 por página' },
+        { value: 80, label: '80 por página' },
+        { value: 100, label: '100 por página' },
+    ];
+
+    if (!currentOffer) {
+        return (
+            <Layout>
+                <Container>
+                    <Flex align='center' justify='center' style={{ padding: '8em 0 8em 0', width: '100%' }}>
+                        <Spin indicator={<LoadingOutlined spin />} size='large' tip='Carregando Oferta...' />
+                    </Flex>
+                </Container>
+            </Layout>
+        );
     }
-
-    const sortByPrice = (ascendant) => {
-        const sortedItems = [...items].sort((a, b) => parseFloat(a.price.current) - parseFloat(b.price.current))
-        if (ascendant) {
-            setSortedItems(sortedItems)
-        } else {
-            setSortedItems(sortedItems.reverse())
-        }
-    }
-
-    const paginate = (pageSize) => {
-        setPageSize(pageSize)
-    }
-
-    const criterias = [{
-        value: 'price_ascendant',
-        label: 'Maior Preço'
-    }, {
-        value: 'price_descendant',
-        label: 'Menor Preço'
-    },]
-
-    const itemsPerPage = [{
-        value: 20,
-        label: '20 por página'
-    }, {
-        value: 40,
-        label: '40 por página'
-    }, {
-        value: 60,
-        label: '60 por página'
-    }, {
-        value: 80,
-        label: '80 por página'
-    }, {
-        value: 100,
-        label: '100 por página'
-    },]
 
     return (
         <Layout>
             <Container>
-                <Flex align='center' justify='start' style={{ padding: '2em 0 4em 0' }}>
-                    <Title level={2} style={{ margin: 0 }}>Categoria</Title>
+                <Flex vertical align='start' justify='center' style={{ padding: '8em 0 2em 0' }}>
+                    <Title level={1} style={{ fontFamily: 'Outfit, sans-serif', color: 'steelblue' }}>{currentOffer.title}</Title>
+                    <Paragraph type='secondary'>{currentOffer.description}</Paragraph>
                 </Flex>
 
-                <Space size='large' style={{ width: '100%' }}>
+                <Flex align='end' justify='space-between'>
+                    <Space size='large'>
+                        <Form.Item label='Ordenar'>
+                            <Select options={criterias} defaultValue='price_ascendant' onChange={sortBy} />
+                        </Form.Item>
 
-                    <Form.Item label='Ordernar'>
-                        <Select options={criterias} defaultValue='price_ascendant' onChange={sortBy} />
-                    </Form.Item>
+                        <Form.Item label='Exibir'>
+                            <Select options={itemsPerPage} defaultValue={20} onChange={setupPageSize} />
+                        </Form.Item>
+                    </Space>
 
-                    <Form.Item label='Exibir'>
-                        <Select options={itemsPerPage} defaultValue={20} onChange={paginate} />
-                    </Form.Item>
+                    <Space size='small'>
+                        <Form.Item label='Exibição'>
+                            <Segmented 
+                                onChange={changeListView}
+                                value={itemLayout}
+                                options={[
+                                    { value: 'vertical', icon: <BarsOutlined /> },
+                                    { value: 'horizontal', icon: <AppstoreOutlined /> },
+                                ]} 
+                            />
+                        </Form.Item>
+                    </Space>
+                </Flex>
 
-                    <Form.Item label='Exibição'>
-                        <Segmented options={[{
-                            value: 'List',
-                            icon: <BarsOutlined />
-                        }, {
-                            value: 'Grid',
-                            icon: <AppstoreOutlined />
-                        },]} />
-                    </Form.Item>
-                </Space>
-
-                <ShowcaseDisplayer items={sortedItems} pageSize={pageSize} />
-
+                <Flex align='center' justify='stretch' style={{ padding: '0 0 8em 0', width: '100%' }}>
+                    <Spin 
+                        spinning={loading} 
+                        indicator={<LoadingOutlined spin />} 
+                        size='large' 
+                        tip='Carregando Dados...'>
+                        <ShowcaseDisplayer items={sortedItems.length > 0 ? sortedItems : items} pageSize={pageSize} itemLayout={itemLayout} />
+                    </Spin>
+                </Flex>
             </Container>
         </Layout>
-    )
+    );
 }
