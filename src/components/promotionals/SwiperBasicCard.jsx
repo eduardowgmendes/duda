@@ -22,7 +22,7 @@ export default function SwiperBasicCard({ item }) {
                     backgroundSize: 'contain', 
                     margin: '.25em 0 .25em 0',
                     backgroundRepeat: 'no-repeat',
-                    height: '16vh'}}>
+                    height: '10em'}}>
 
                 </div>
 

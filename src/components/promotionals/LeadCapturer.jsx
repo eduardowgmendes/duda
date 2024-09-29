@@ -20,7 +20,7 @@ export default function LeadCapturer({ recommendation }) {
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
                 <Flex align='center' justify='center'>
-                    <Flex align="center" justify="center" style={{ height: '56vh' }}>
+                    <Flex align="center" justify="center" style={{ height: 'auto' }}>
                         <SwiperCarousel items={recommendation.items} />
                     </Flex>
                 </Flex>
