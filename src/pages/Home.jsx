@@ -4,7 +4,6 @@ import Hero from "../components/promotionals/Hero";
 import PromotedCarosel from "../components/promotionals/PromotedCarousel";
 import Showcase from "../components/showcase/Showcase";
 import CategoryShowcase from "../components/category/CategoryShowcase";
-import RecommendedPromoCard from "../components/promotionals/RecommendedPromoCard";
 
 import items from "../local/data/products.json"
 import promos from "../local/data/promos.json"
@@ -13,6 +12,10 @@ import banners from "../local/data/banners.json"
 import categories from "../local/data/categories.json"
 import recommendations from "../local/data/mock/recommendations.json"
 import Stores from "../components/showcase/Stores";
+import LeadCapturer from "../components/promotionals/LeadCapturer";
+import GridSection from "../components/showcase/layout/GridSection";
+import UnitLink from "../components/promotionals/UnitLink";
+import { BugOutlined, DollarOutlined, MobileOutlined, UpOutlined, UsbOutlined } from "@ant-design/icons";
 
 export default function Home() {
 
@@ -57,7 +60,6 @@ export default function Home() {
 
             </Container>
 
-
             <Container>
 
                 <Section header={{
@@ -69,22 +71,21 @@ export default function Home() {
                     }
                 }} children={<Showcase items={items} />} />
 
+                <GridSection 
+                    mainChildSection={<LeadCapturer recommendation={recommendation} />} 
+                    secondaryChildSection={<UnitLink link={{icon: <MobileOutlined style={{fontSize: 64, marginTop: 24}}/>,title: 'Smartphones XIAOMI 50% OFF', description: 'Toda a linha de Smartphones da Xiaomi com 50% OFF', color:{background: 'tomato', textColor: 'whitesmoke'}, action: {callToAction: 'Conferir', href: 'shop/1'}}}/>} 
+                    tertiaryChildSection={<UnitLink link={{icon: <UsbOutlined style={{fontSize: 64, marginTop: 24}}/>,title: 'Informática 25% OFF', description: 'Aproveite 25% OFF em todo o setor de informática! Ofertas imperdíveis em notebooks, acessórios, e muito mais. Garanta já o seu desconto!', color:{background: 'teal', textColor: 'whitesmoke'}, action: {callToAction: 'Conferir', href: 'shop/1'}}}/>}>
 
-            </Container>
-
-            <Section children={<RecommendedPromoCard recommendation={recommendation} />} />
-            
-            <Container>
+                </GridSection>
 
                 <Section header={{
                     title: 'Lojas',
                     description: 'Descubra a seleção de lojas parceiras cuidadosamente escolhidas para oferecer os melhores produtos e serviços. Trabalhamos com marcas renomadas e confiáveis, garantindo a qualidade, variedade e ótimos preços para você.',
                     callToAction: null
                 }} children={<Stores stores={partners} />} />
-
-
-            </Container>
             
+            </Container>
+
             <Section children={<PromotedCarosel promos={promos} />} />
             
             <Container>

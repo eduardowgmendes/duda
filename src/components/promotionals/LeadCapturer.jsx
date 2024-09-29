@@ -1,27 +1,29 @@
 import { Button, Card, Col, Flex, Row, Space, Typography } from "antd";
 import { DollarCircleOutlined, MessageTwoTone, WhatsAppOutlined } from "@ant-design/icons";
 
-import Recommended from "./Recommended";
+import SwiperCarousel from "../layout/SwiperCarousel";
 
 const { Title, Text, Paragraph } = Typography
 
-export default function RecommendedPromoCard({ recommendation }) {
+export default function LeadCapturer({ recommendation }) {
 
     return (
-        <Card style={{ borderRadius: 64 }} bodyStyle={{ background: `url('https://www.toptal.com/designers/subtlepatterns/uploads/square_bg.png')`, userSelect: 'none', backgroundRepeat: 'repeat' }}>
+        <Card bordered hoverable style={{ borderRadius: 64, overflow: 'hidden' }} bodyStyle={{ background: `url('./assets/images/backgrounds/square.png')`, padding: 0, userSelect: 'none', backgroundRepeat: 'repeat', overflow: 'hidden' }}>
             <Row gutter={[8, 8]}>
                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
                     <Space direction='vertical' size='small' align='center' justify='center' style={{ textAlign: 'center', padding: 32, width: '100%' }}>
                         <DollarCircleOutlined style={{ fontSize: 64, color: recommendation.color.base, margin: '16px 0 32px 0' }} />
                         <Title level={3} style={{ margin: 0, color: recommendation.color.secondary, fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>{recommendation.title}</Title>
-                        <Title className="display-4" level={1} style={{ margin: '0 0 32px 0', color: recommendation.color.primary, fontFamily: 'Outfit, sans-serif', fontWeight: 'bold', wordBreak: 'keep-all' }}>{recommendation.subtitle}</Title>
+                        <Title className="display-4" level={1} style={{ margin: 0, color: recommendation.color.primary, fontFamily: 'Outfit, sans-serif', fontWeight: 'bold', wordBreak: 'keep-all' }}>{recommendation.subtitle}</Title>
                         <Paragraph style={{ color: recommendation.color.secondary }}>{recommendation.description}</Paragraph>
                     </Space>
                 </Col>
-                <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }} style={{ minHeight: '75vh', borderRadius: 64 }} >
-                    <Flex align="center" justify="center" style={{ height: '100%' }}>
-                        <Recommended items={recommendation.items} />
+                <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
+                <Flex align='center' justify='center'>
+                    <Flex align="center" justify="center" style={{ height: '56vh' }}>
+                        <SwiperCarousel items={recommendation.items} />
                     </Flex>
+                </Flex>
                 </Col>
                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }} >
                     <Space direction='vertical' size='small' align='center' style={{ textAlign: 'center', padding: 32, width: '100%' }}>
@@ -29,11 +31,11 @@ export default function RecommendedPromoCard({ recommendation }) {
                         
                         <Space align='start' justify='center'>
 
-                            <Row align='center' justify='center' gutter={[10, 10]}>
+                            <Row align='center' justify='center' gutter={[16, 16]}>
 
                                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }} xxl={{ span: 12 }}>
-                                    <Card hoverable bordered style={{ padding: 10, background: 'lightcyan' }} bodyStyle={{ padding: 0 }}>
-                                        <Flex align='center' justify='center'>
+                                    <Card hoverable bordered style={{ padding: 10, background: 'lightcyan', borderRadius: 64 }} bodyStyle={{ padding: 0 }}>
+                                        <Flex align='center' justify='center' style={{padding: '0 4em 0 4em'}}>
                                             <img src="./assets/images/logos/telegram.svg" width={32} alt="" style={{ marginInlineEnd: 10 }} />
                                             <Flex vertical>
                                                 <Paragraph style={{ margin: 0, color: "inherit" }}>Participe no</Paragraph>
@@ -45,8 +47,8 @@ export default function RecommendedPromoCard({ recommendation }) {
 
                                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }} xxl={{ span: 12 }}>
 
-                                    <Card hoverable bordered style={{ padding: 10, background: 'teal' }} bodyStyle={{ padding: 0 }}>
-                                        <Flex align='center' justify='center'>
+                                    <Card hoverable bordered style={{ padding: 10, background: 'teal', borderRadius: 64 }} bodyStyle={{ padding: 0 }}>
+                                        <Flex align='center' justify='center' style={{padding: '0 4em 0 4em'}}>
                                             <img src="./assets/images/logos/whatsApp.svg" width={32} alt="" style={{ marginInlineEnd: 10 }} />
                                             <Flex vertical style={{ color: 'whitesmoke' }}>
                                                 <Paragraph style={{ margin: 0, color: "inherit" }}>Participe no</Paragraph>

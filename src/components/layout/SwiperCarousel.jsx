@@ -1,14 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import RecommendedItem from "./RecommendedItem";
 import { Autoplay, EffectCards } from "swiper/modules";
-import { Col, Row } from "antd";
+import { Col, Grid, Row } from "antd";
+import SwiperBasicCard from "../promotionals/SwiperBasicCard";
+const { useBreakpoint } = Grid
 
-export default function Recommended({ items }) {
+// This component will be modified to a less enphatic component where the user can use this by the way he wants. I mean, setup the way he wants.
+
+export default function SwiperCarousel({ items }) {
     
-    const renderEffects = (progress) => {
-        console.log('changed: ', progress)
-    }
-
     return (
         <Row>
             <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
@@ -19,18 +18,17 @@ export default function Recommended({ items }) {
                     centeredSlides={true}
                     grabCursor={true}
                     autoplay={{disableOnInteraction: false}}
-                    onProgress={(swiper, progress) => renderEffects}
                     loop={true}
                     cardsEffect={{
                         rotate: true,
-                        perSlideOffset: 110,
+                        perSlideOffset: 100,
                         perSlideRotate: 2,
                         slideShadows: false,
                     }}
                     modules={[Autoplay, EffectCards]}>
                     {items.map((item) => (
-                        <SwiperSlide style={{ width: '100%' }}>
-                            <RecommendedItem item={item} />
+                        <SwiperSlide style={{ width: '100%'}}>
+                            <SwiperBasicCard item={item} />
                         </SwiperSlide>
                     ))}
                 </Swiper>
