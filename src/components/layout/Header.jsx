@@ -21,6 +21,7 @@ export default function Header({ header }) {
                                 icon={<ArrowRightOutlined />}
                                 iconPosition="end"
                                 type='default'
+                                shape='round'
                                 href={header.callToAction.action}>{header.callToAction.label}</Button>
                         </Flex>
                     </Col> : null

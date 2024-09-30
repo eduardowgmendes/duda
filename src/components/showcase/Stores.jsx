@@ -1,4 +1,5 @@
-import { Card, List, Space, Typography } from "antd";
+import { ArrowRightOutlined, MoreOutlined, RightOutlined } from "@ant-design/icons";
+import { Button, Card, List, Space, Typography } from "antd";
 const { Paragraph, Title } = Typography
 export default function Stores({ stores }) {
     
@@ -7,6 +8,8 @@ export default function Stores({ stores }) {
     const handleOnClick = (e) => {
        console.log(e) 
     }
+    
+    const lastIndex = stores.length - 1
 
     return (
         <List
@@ -20,7 +23,8 @@ export default function Stores({ stores }) {
                 xxl: 8
             }}
             dataSource={stores}
-            renderItem={(store) => (
+            renderItem={(store, index) => (
+                index !== lastIndex ?
                 <List.Item>
                     <Space direction='vertical' align='center' size='small'>
                         <Card
@@ -30,6 +34,10 @@ export default function Stores({ stores }) {
                             <img src={store.media.logo} alt={store.media.alt} width={'100%'} />
                         </Card>
                         <Paragraph ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{fontFamily: 'Outfit, sans-serif'}}>{store.name}</Paragraph>
+                    </Space>
+                </List.Item> : <List.Item>
+                    <Space direction='vertical' align='center' size='large'>
+                        <Button type='default' shape='round' size='large' icon={<RightOutlined />} iconPosition='end' href="shop/1"></Button>
                     </Space>
                 </List.Item>
             )} />
