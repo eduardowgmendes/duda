@@ -8,6 +8,7 @@ import { useParams } from "react-router-dom";
 const { Title, Paragraph } = Typography;
 
 import offers from "../local/data/offers/offers.json";
+import Header from "../components/layout/Header";
 
 export default function Shop() {
 
@@ -90,10 +91,12 @@ export default function Shop() {
     return (
         <Layout>
             <Container>
-                <Flex vertical align='start' justify='center' style={{ padding: '8em 0 2em 0' }}>
-                    <Title level={1} style={{ fontFamily: 'Outfit, sans-serif', color: 'steelblue' }}>{currentOffer.title}</Title>
-                    <Paragraph type='secondary'>{currentOffer.description}</Paragraph>
-                </Flex>
+            
+                <Header header={{
+                    title: currentOffer.title,
+                    description: currentOffer.description,
+                    callToAction: null
+                }} />
 
                 <Flex align='end' justify='space-between'>
                     <Space size='large'>

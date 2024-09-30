@@ -39,14 +39,14 @@ export default function Home() {
             <Hero banners={banners} />
 
             <Container>
-                
+
                 <Section header={{
-                    title: 'Categorias Populares', 
+                    title: 'Categorias Populares',
                     description: 'Explore nossas categorias para encontrar rapidamente o que você procura. Organize suas compras de forma prática e eficiente com nossas opções diversificadas e atualizadas.',
                     callToAction: {
-                        label: 'Ver Todas', 
+                        label: 'Ver Todas',
                         action: null
-                        }
+                    }
                 }} children={<CategoryShowcase categories={categories} />} />
 
                 <Section header={{
@@ -71,10 +71,20 @@ export default function Home() {
                     }
                 }} children={<Showcase items={items} />} />
 
-                <GridSection 
-                    mainChildSection={<LeadCapturer recommendation={recommendation} />} 
-                    secondaryChildSection={<UnitLink link={{icon: <MobileOutlined style={{fontSize: 64, marginTop: 24}}/>,title: 'Smartphones XIAOMI 50% OFF', description: 'Toda a linha de Smartphones da Xiaomi com 50% OFF', color:{background: 'tomato', textColor: 'whitesmoke'}, action: {callToAction: 'Conferir', href: 'shop/1'}}}/>} 
-                    tertiaryChildSection={<UnitLink link={{icon: <UsbOutlined style={{fontSize: 64, marginTop: 24}}/>,title: 'Informática 25% OFF', description: 'Aproveite 25% OFF em todo o setor de informática! Ofertas imperdíveis em notebooks, acessórios, e muito mais. Garanta já o seu desconto!', color:{background: 'teal', textColor: 'whitesmoke'}, action: {callToAction: 'Conferir', href: 'shop/1'}}}/>}>
+                <GridSection
+                    mainChildSection={<LeadCapturer recommendation={recommendation} />}
+                    secondaryChildSection={<UnitLink link={{ 
+                        icon: <MobileOutlined style={{ fontSize: 64, marginTop: 24 }} />, 
+                        title: 'Smartphones XIAOMI 50% OFF', 
+                        description: 'Não perca! Smartphones XIAOMI com até 50% de desconto. Alta tecnologia, desempenho incomparável e design moderno por um preço que você nunca viu. Aproveite agora e tenha o melhor da inovação XIAOMI na palma da sua mão, com economia garantida!', 
+                        color: { background: 'tomato', textColor: 'whitesmoke' }, 
+                        action: { callToAction: 'Conferir', href: 'shop/1' } }} />}
+                    tertiaryChildSection={<UnitLink link={{ 
+                        icon: <UsbOutlined style={{ fontSize: 64, marginTop: 24 }} />, 
+                        title: 'Informática 25% OFF', 
+                        description: 'Aproveite 25% OFF em todo o setor de informática! Ofertas imperdíveis em notebooks, acessórios, e muito mais. Garanta já o seu desconto!', 
+                        color: { background: 'springgreen', textColor: 'teal' }, 
+                        action: { callToAction: 'Conferir', href: 'shop/2' } }} />}>
 
                 </GridSection>
 
@@ -83,11 +93,11 @@ export default function Home() {
                     description: 'Descubra a seleção de lojas parceiras cuidadosamente escolhidas para oferecer os melhores produtos e serviços. Trabalhamos com marcas renomadas e confiáveis, garantindo a qualidade, variedade e ótimos preços para você.',
                     callToAction: null
                 }} children={<Stores stores={partners} />} />
-            
+
             </Container>
 
             <Section children={<PromotedCarosel promos={promos} />} />
-            
+
             <Container>
 
                 <Section header={{

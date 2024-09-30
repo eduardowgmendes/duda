@@ -1,4 +1,4 @@
-import { ThunderboltTwoTone } from "@ant-design/icons";
+import { ShopFilled, ThunderboltTwoTone } from "@ant-design/icons";
 import { Card, Col, Divider, Flex, Image, Row, Space, Typography } from "antd";
 import { useExtractColor } from "react-extract-colors";
 const { Title, Paragraph, Text } = Typography
@@ -56,7 +56,7 @@ export default function SwiperBasicCard({ item }) {
 
                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
                         <Flex vertical align='start' justify='center' style={{height: '100%'}}>
-                            <Paragraph type='secondary' style={{margin: 0, fontFamily: 'Outfit, sans-serif' }}>Vendido por: <span style={{fontWeight: 'bold'}}>{item.merchant.seller}</span></Paragraph>
+                            <Paragraph type='secondary' style={{margin: 0, fontFamily: 'Outfit, sans-serif' }}><ShopFilled style={{marginInlineEnd: 8, color: 'steelblue'}}/><span style={{fontWeight: 'bold'}}>{item.merchant.seller}</span></Paragraph>
                         </Flex>
                     </Col>
 
