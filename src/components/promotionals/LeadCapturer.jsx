@@ -8,12 +8,12 @@ const { Title, Text, Paragraph } = Typography
 export default function LeadCapturer({ recommendation }) {
 
     return (
-        <Card bordered hoverable style={{ borderRadius: 64, overflow: 'hidden' }} bodyStyle={{ background: `url('./assets/images/backgrounds/square.png')`, padding: 0, userSelect: 'none', backgroundRepeat: 'repeat', overflow: 'hidden' }}>
+        <Card bordered hoverable style={{ borderRadius: 64, overflow: 'hidden' }} bodyStyle={{ background: `url('./assets/images/backgrounds/memphis-colorful.webp')`,  padding: 0, userSelect: 'none', backgroundRepeat: 'repeat', overflow: 'hidden' }}>
             <Row gutter={[8, 8]}>
                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
                     <Space direction='vertical' size='small' align='center' justify='center' style={{ textAlign: 'center', padding: 32, width: '100%' }}>
                         <DollarCircleOutlined style={{ fontSize: 64, color: recommendation.color.base, margin: '16px 0 32px 0' }} />
-                        <Title level={3} style={{ margin: 0, color: recommendation.color.secondary, fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>{recommendation.title}</Title>
+                        <Title level={4} style={{ margin: 0, color: recommendation.color.secondary, fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>{recommendation.title}</Title>
                         <Title className="display-4" level={1} style={{ margin: 0, color: recommendation.color.primary, fontFamily: 'Outfit, sans-serif', fontWeight: 'bold', wordBreak: 'keep-all' }}>{recommendation.subtitle}</Title>
                         <Paragraph style={{ color: recommendation.color.secondary }}>{recommendation.description}</Paragraph>
                     </Space>

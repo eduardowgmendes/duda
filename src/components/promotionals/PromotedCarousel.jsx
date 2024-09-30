@@ -27,7 +27,7 @@ export default function PromotedCarosel({ promos }) {
 
                         <Row gutter={[8, 8]}>
                             <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 16 }} xl={{ span: 8 }} xxl={{ span: 8 }}>
-                                <Flex vertical align={screens.xs ? 'center' : 'start'} justify="center" style={{ textAlign: `${screens.xs ? 'center' : 'start'}`, padding: screens.xs ? '8em 2em 1em 2em' : '4em 4em 1em 4em' }}>
+                                <Flex vertical align={screens.xs ? 'center' : 'start'} justify="center" style={{ textAlign: `${screens.xs ? 'center' : 'start'}`, padding: screens.xs ? '8em 3em 1em 3em' : '4em 4em 1em 4em' }}>
                                     <div style={{width: 64, height: 64, borderRadius: 8, overflow: 'hidden'}}>
                                         <img src={promo.images.featureImage} width='100%' />
                                     </div>

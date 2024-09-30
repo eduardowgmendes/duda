@@ -28,9 +28,9 @@ export default function Home() {
         },
         items: recommendations,
         color: {
-            base: 'steelblue',
-            primary: 'steelblue',
-            secondary: 'dimgray'
+            base: 'purple',
+            primary: 'indigo',
+            secondary: 'lightcoral'
         }
     }
 
