@@ -1,4 +1,4 @@
-import { ArrowRightOutlined, RightOutlined } from "@ant-design/icons";
+import { ArrowRightOutlined, PlusOutlined, RightOutlined } from "@ant-design/icons";
 import { Button, Card, Col, Flex, Row, Space, Typography } from "antd";
 import { useExtractColor } from "react-extract-colors"
 const { Paragraph } = Typography
@@ -35,7 +35,7 @@ export default function CategoryShowcase({ categories }) {
                         }}>{category.name}</Paragraph>
                 </Col> : <Col xs={{ span: 8 }} sm={{ span: 6 }} md={{ span: 4 }} lg={{ span: 4 }} xl={{ span: 4 }} xxl={{ span: 3 }}>
                     <Space direction='vertical' align='center' size='large'>
-                        <Button type='default' shape='round' size='large' icon={<RightOutlined />} iconPosition='end' href="shop/1"></Button>
+                        <Button type='default' shape='round' size='large' icon={<PlusOutlined />} iconPosition='end' href="shop/1"></Button>
                     </Space>
                 </Col>
             ))}

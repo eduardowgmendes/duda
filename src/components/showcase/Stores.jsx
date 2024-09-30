@@ -1,4 +1,4 @@
-import { ArrowRightOutlined, MoreOutlined, RightOutlined } from "@ant-design/icons";
+import { ArrowRightOutlined, MoreOutlined, PlusOutlined, RightOutlined } from "@ant-design/icons";
 import { Button, Card, List, Space, Typography } from "antd";
 const { Paragraph, Title } = Typography
 export default function Stores({ stores }) {
@@ -37,7 +37,7 @@ export default function Stores({ stores }) {
                     </Space>
                 </List.Item> : <List.Item>
                     <Space direction='vertical' align='center' size='large'>
-                        <Button type='default' shape='round' size='large' icon={<RightOutlined />} iconPosition='end' href="shop/1"></Button>
+                        <Button type='default' shape='round' size='large' icon={<PlusOutlined />} iconPosition='end' href="shop/1"></Button>
                     </Space>
                 </List.Item>
             )} />

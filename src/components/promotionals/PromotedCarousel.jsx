@@ -17,7 +17,7 @@ export default function PromotedCarosel({ promos }) {
                 <Container>
                     <Card
                         bordered
-                        style={{ overflow: 'hidden', borderRadius: 64,  userSelect: 'none' }}
+                        style={{ overflow: 'hidden', borderRadius: screens.xs ? '4em 4em 1em 1em':'4em',  userSelect: 'none' }}
                         bodyStyle={{
                             padding: 0, background: `linear-gradient(${screens.xs ? '0deg' : '90deg'}, ${useExtractColor(promo.media.backdrop).dominantColor} ${screens.xs ? '90%' : '25%'}, rgba(250,250,250,0) ${screens.xs ? '100%' : '75%'}), url('${promo.media.backdrop}')`,
                             backgroundPosition: 'bottom, center',
@@ -37,7 +37,7 @@ export default function PromotedCarosel({ promos }) {
                                 </Flex>
                             </Col>
                             <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 16 }} xxl={{ span: 16 }}>
-                                <Flex vertical align='center' justify='center' style={{ height: '100%', padding: screens.xs ? '0em 1.25em 4em 1.25em' : '4em 1.25em 4em 1.25em' }}>
+                                <Flex vertical align='center' justify='center' style={{ height: '100%', padding: screens.xs ? '1.25em' : '4em' }}>
                                     {promo.offers && <List 
                                         grid={{
                                             gutter: 8,
