@@ -30,7 +30,7 @@ export default function Home() {
         color: {
             base: 'purple',
             primary: 'indigo',
-            secondary: 'lightcoral'
+            secondary: 'dimgray'
         }
     }
 
