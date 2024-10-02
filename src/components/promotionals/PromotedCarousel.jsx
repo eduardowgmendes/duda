@@ -84,7 +84,7 @@ export default function PromotedCarosel({ title, description, promos }) {
                                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
                                         <Flex vertical align={screens.xs ? 'center' : 'start'} justify='end' style={{
                                             textAlign: `${screens.xs ? 'center' : 'start'}`,
-                                            padding: screens.xs ? '4em 2em 1em 2em' : '2em',
+                                            padding: screens.xs ? '4em .25em 1em .25em' : '4em',
                                             userSelect: 'none',
                                             minHeight: screens.xs ? '32em' : '28em'
                                         }}>
