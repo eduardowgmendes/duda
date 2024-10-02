@@ -14,7 +14,7 @@ export default function DisplayItem({ item }) {
                 <Paragraph
                 className="body-2"
                     ellipsis={{ rows: 2, expandable: false, symbol: 'more' }}
-                    style={{ fontWeight: 'bold', marginBottom: 16, marginTop: 0, fontFamily: 'Outfit, sans-serif', color: '#25333e' }}>{item.title}</Paragraph>
+                    style={{ fontWeight: 'bold', marginBottom: 16, marginTop: 0, fontFamily: 'Outfit, sans-serif', color: '#25333e', wordBreak: 'keep-all' }}>{item.title}</Paragraph>
 
                 <Space direction='vertical' size='small'>
                     <Paragraph delete italic type='secondary' style={{ margin: 0, fontFamily: 'Outfit, sans-serif' }}>{item.price.currency.concat(' ').concat(item.price.was)}</Paragraph>
