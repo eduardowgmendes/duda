@@ -91,9 +91,9 @@ export default function PromotedCarosel({ title, description, promos }) {
                                             <div style={{ width: 64, height: 64, borderRadius: 8, overflow: 'hidden' }}>
                                                 <img src={promo.images.featureImage} width='100%' />
                                             </div>
-                                            <Title level={2} ellipsis={{ rows: 4, expandable: false, symbol: '...' }} style={{ fontWeight: 'bold', userSelect: 'none', color: promo.color.primary, fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all', maxWidth: screens.xs ? '100%' : '75%' }}>{promo.title}</Title>
+                                            <Title className="display-4" ellipsis={{ rows: 4, expandable: false, symbol: '...' }} style={{ fontWeight: 'bold', userSelect: 'none', color: promo.color.primary, fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all', maxWidth: screens.xs ? '100%' : '75%' }}>{promo.title}</Title>
                                             <Paragraph style={{ userSelect: 'none', color: promo.color.secondary, maxWidth: screens.xs ? '100%' : '75%' }} ellipsis={{ rows: 6, expandable: false, symbol: '...' }}>{promo.description}</Paragraph>
-                                            <Button type="default" shape='round' iconPosition='end' href={promo.href} style={{ margin: '2em 0 2em 0' }} icon={<ArrowRightOutlined />}>{promo.callToAction}</Button>
+                                            <Button type="default" shape='round' size='large' iconPosition='end' href={promo.href} style={{ margin: '2em 0 2em 0' }} icon={<ArrowRightOutlined />}>{promo.callToAction}</Button>
                                         </Flex>
                                     </Col>
                                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
