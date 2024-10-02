@@ -77,13 +77,13 @@ export default function Home() {
                         icon: <MobileOutlined style={{ fontSize: 64, marginTop: 24 }} />, 
                         title: 'Smartphones XIAOMI 50% OFF', 
                         description: 'Não perca! Smartphones XIAOMI com até 50% de desconto. Alta tecnologia, desempenho incomparável e design moderno por um preço que você nunca viu. Aproveite agora e tenha o melhor da inovação XIAOMI na palma da sua mão, com economia garantida!', 
-                        color: { background: 'tomato', textColor: 'whitesmoke' }, 
+                        color: { background: 'tomato', textColor: 'whitesmoke', primary: 'gold', secondary: 'dimgray' }, 
                         action: { callToAction: 'Conferir', href: 'shop/1' } }} />}
                     tertiaryChildSection={<UnitLink link={{ 
                         icon: <UsbOutlined style={{ fontSize: 64, marginTop: 24 }} />, 
                         title: 'Informática 25% OFF', 
                         description: 'Aproveite 25% OFF em todo o setor de informática! Ofertas imperdíveis em notebooks, acessórios, e muito mais. Garanta já o seu desconto!', 
-                        color: { background: 'springgreen', textColor: 'teal' }, 
+                        color: { background: ' dimgray', textColor: 'whitesmoke', primary: 'springgreen', secondary: 'white' }, 
                         action: { callToAction: 'Conferir', href: 'shop/2' } }} />}>
 
                 </GridSection>
