@@ -97,10 +97,10 @@ export default function PromotedCarosel({ title, description, promos }) {
                                         </Flex>
                                     </Col>
                                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
-                                        <Flex vertical align='center' justify='center' style={{ height: '100%', padding: screens.xs ? '1em' : '1em 2em 1em 2em', userSelect: 'none' }}>
+                                        <Flex vertical align='center' justify='center' style={{ height: '100%', padding: screens.xs ? '.50em' : '1em 1em 1em 1em', userSelect: 'none' }}>
                                             {promo.offers && <List
                                                 grid={{
-                                                    gutter: 8,
+                                                    gutter: screens.xs ? 4 : 8,
                                                     xs: 3,
                                                     sm: 3,
                                                     md: 4,
