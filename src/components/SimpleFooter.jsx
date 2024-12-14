@@ -29,12 +29,11 @@ export default function SimpleFooter() {
     },]
 
     return (
-        <Footer style={{ background: 'white', padding: 0 }}>
+        <Footer style={{ padding: 0 }}>
 
             <Container>
             
             <SubscriptionReminder />
-
 
                 <Row gutter={[32, 32]}>
 

@@ -1,4 +1,4 @@
-import { Flex, Form, Layout, Segmented, Select, Space, Spin, Typography } from "antd";
+import { Card, Flex, Form, Grid, Image, Layout, Segmented, Select, Space, Spin, Typography } from "antd";
 import { AppstoreOutlined, BarsOutlined, LoadingOutlined } from "@ant-design/icons";
 import ShowcaseDisplayer from "../components/showcase/ShowcaseDisplayer";
 import Container from "../components/layout/Container";
@@ -9,6 +9,8 @@ const { Title, Paragraph } = Typography;
 
 import offers from "../local/data/offers/offers.json";
 import Header from "../components/layout/Header";
+import { useExtractColor } from "react-extract-colors";
+import MainHeader from "../components/layout/MainHeader";
 
 export default function Shop() {
 
@@ -53,9 +55,9 @@ export default function Shop() {
         setSortedItems(sorted);
     };
 
-    const setupPageSize = (size) => {setPageSize(size)}
+    const setupPageSize = (size) => { setPageSize(size) }
 
-    const changeListView = (view) => {setItemLayout(view)}
+    const changeListView = (view) => { setItemLayout(view) }
 
     const criterias = [
         {
@@ -88,51 +90,71 @@ export default function Shop() {
         );
     }
 
+    const colors = useExtractColor(currentOffer.media.cover)
+
     return (
+
         <Layout>
+
             <Container>
-            
-                <Header header={{
-                    title: currentOffer.title,
-                    description: currentOffer.description,
-                    callToAction: null
-                }} />
-
-                <Flex align='end' justify='space-between'>
-                    <Space size='large'>
-                        <Form.Item label='Ordenar'>
-                            <Select options={criterias} defaultValue='price_ascendant' onChange={sortBy} />
-                        </Form.Item>
-
-                        <Form.Item label='Exibir'>
-                            <Select options={itemsPerPage} defaultValue={20} onChange={setupPageSize} />
-                        </Form.Item>
-                    </Space>
-
-                    <Space size='small'>
-                        <Form.Item label='Exibição'>
-                            <Segmented 
-                                onChange={changeListView}
-                                value={itemLayout}
-                                options={[
-                                    { value: 'vertical', icon: <BarsOutlined /> },
-                                    { value: 'horizontal', icon: <AppstoreOutlined /> },
-                                ]} 
-                            />
-                        </Form.Item>
-                    </Space>
-                </Flex>
-
-                <Flex align='center' justify='stretch' style={{ padding: '0 0 8em 0', width: '100%' }}>
-                    <Spin 
-                        spinning={loading} 
-                        indicator={<LoadingOutlined spin />} 
-                        size='large' 
-                        tip='Carregando Dados...'>
-                        <ShowcaseDisplayer items={sortedItems.length > 0 ? sortedItems : items} pageSize={pageSize} itemLayout={itemLayout} />
-                    </Spin>
-                </Flex>
+                <Card bordered style={{borderRadius: '8rem', overflow: 'hidden', margin: '4rem 0 2rem 0'}} bodyStyle={{padding: 0}}>
+                    <Flex vertical align='center' justify='center' style={{ maxHeight: '50vh', overflow: 'hidden', background: `${colors.dominantColor}` }}>
+                        <Image preview={false} src={currentOffer.media.cover}/>
+                    </Flex>
+                </Card>
             </Container>
+
+            <Flex vertical> 
+
+                <Container>
+
+                    <MainHeader header={{
+                        title: currentOffer.title,
+                        description: currentOffer.description,
+                        callToAction: null,
+                        colors: {
+                            title: `${colors.dominantColor}`,
+                            message: null
+                        }
+                    }} />
+
+                    <Flex align='end' justify='space-between'>
+                        <Space size='large'>
+                            <Form.Item label='Ordenar'>
+                                <Select options={criterias} defaultValue='price_ascendant' onChange={sortBy} />
+                            </Form.Item>
+
+                            <Form.Item label='Exibir'>
+                                <Select options={itemsPerPage} defaultValue={20} onChange={setupPageSize} />
+                            </Form.Item>
+                        </Space>
+
+                        <Space size='large'>
+                            <Form.Item label='Exibição'>
+                                <Segmented
+                                    onChange={changeListView}
+                                    value={itemLayout}
+                                    options={[
+                                        { value: 'vertical', icon: <BarsOutlined /> },
+                                        { value: 'horizontal', icon: <AppstoreOutlined /> },
+                                    ]}
+                                />
+                            </Form.Item>
+                        </Space>
+                    </Flex>
+
+                    <Flex align='center' justify='stretch' style={{ padding: '0 0 8em 0', width: '100%' }}>
+                        <Spin
+                            spinning={loading}
+                            indicator={<LoadingOutlined spin />}
+                            size='large'
+                            tip='Carregando Dados...'>
+                            <ShowcaseDisplayer items={sortedItems.length > 0 ? sortedItems : items} pageSize={pageSize} itemLayout={itemLayout} />
+                        </Spin>
+                    </Flex>
+                </Container>
+            </Flex>
+
         </Layout>
     );
 }

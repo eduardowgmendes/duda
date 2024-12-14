@@ -1,20 +1,25 @@
-import { Button, Card, Col, Flex, Row, Space, Typography } from "antd"
+import { Button, Card, Col, Divider, Flex, Image, Row, Space, Typography } from "antd"
+import { useExtractColor } from "react-extract-colors"
 const { Title, Paragraph, Text, Link } = Typography
 export default function UnitLink({ link }) {
+    
+    const colors = useExtractColor(link.media.cover)
+
     return (
-        <Card bordered hoverable
-        bodyStyle={{padding: '0 4em 0 4em'}}
-            style={{ backgroundColor: `${link.color.background}`, color: `${link.color.textColor}`, width: '100%', minHeight: '50vh', borderRadius: 64 }}>
+        <Card bordered hoverable border
+        bodyStyle={{padding: '0em 0em 2em 0em'}}
+            style={{ border: `1px solid ${colors.dominantColor}`, color: `${link.color.textColor}`, width: '100%', minHeight: '32em', borderRadius: 64, overflow: 'hidden' }}>
             <Row gutter={[16, 16]}>
                 <Col span={24}>
-                    <Flex vertical align='center' justify='center' style={{minHeight: '50vh'}}>
-                        <Space direction='vertical' align='center' size='small' style={{ textAlign: 'center', width: '100%', userSelect: 'none' }}>
-                            {link.icon}
-                            <Title level={2} ellipsis={{ rows: 3, expandable: false, symbol: '...' }} style={{ color: `${link.color.primary}`, wordBreak: 'keep-all', fontWeight: 'bold', fontFamily: 'Outfit, sans-serif' }}>{link.title}</Title>
-                            <Paragraph ellipsis={{ rows: 4, expandable: false, symbol: '...' }} style={{color: 'inherit'}}>{link.description}</Paragraph>
-                            <Button size='large' shape='round' type='default' href={link.action.href} style={{ marginBottom: 24 }}>{link.action.callToAction}</Button>
-                        </Space>
-                    </Flex>
+                    <div style={{ height: 256, background:`url('${link.media.cover}')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}} />
+                    <Divider style={{margin: 0}} />
+                </Col>
+                <Col span={24} style={{padding:'0em 2em 0em 2em'}}>
+                    <Space direction='vertical' align='center' size='large' style={{ textAlign: 'center', userSelect: 'none' }}>
+                        <Title className="display-4" level={1} ellipsis={{ rows: 3, expandable: false, symbol: '...' }} style={{ color: `${colors.dominantColor}`, wordBreak: 'keep-all', fontWeight: 'bold', fontFamily: 'Outfit, sans-serif' }}>{link.title}</Title>
+                        <Paragraph ellipsis={{ rows: 4, expandable: false, symbol: '...' }}>{link.description}</Paragraph>
+                        <Button size='large' shape='round' type='default' href={link.action.href} style={{ marginBottom: 24, color: `${colors.dominantColor}` }}>{link.action.callToAction}</Button>
+                    </Space>
                 </Col>
             </Row>
         </Card>

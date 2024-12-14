@@ -8,13 +8,13 @@ const { Title, Text, Paragraph } = Typography
 export default function LeadCapturer({ recommendation }) {
 
     return (
-        <Card bordered hoverable style={{ borderRadius: 64, overflow: 'hidden' }} bodyStyle={{ background: `url('./assets/images/backgrounds/memphis-colorful.webp')`,  padding: 0, userSelect: 'none', backgroundRepeat: 'repeat', overflow: 'hidden' }}>
+        <Card bordered hoverable style={{ borderRadius: 64, overflow: 'hidden' }} bodyStyle={{ padding: 0, userSelect: 'none', backgroundRepeat: 'repeat', overflow: 'hidden' }}>
             <Row gutter={[8, 8]}>
                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
                     <Space direction='vertical' size='small' align='center' justify='center' style={{ textAlign: 'center', padding: 32, width: '100%' }}>
                         <DollarCircleOutlined style={{ fontSize: 64, color: recommendation.color.base, margin: '16px 0 32px 0' }} />
                         <Title level={4} style={{ margin: 0, color: recommendation.color.secondary, fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>{recommendation.title}</Title>
-                        <Title className="display-4" level={1} style={{ margin: 0, color: recommendation.color.primary, fontFamily: 'Outfit, sans-serif', fontWeight: 'bold', wordBreak: 'keep-all' }}>{recommendation.subtitle}</Title>
+                        <Title className="display-4" level={1} style={{ margin: '0 0 3rem 0', color: recommendation.color.base, fontFamily: 'Outfit, sans-serif', fontWeight: 'bold', wordBreak: 'keep-all' }}>{recommendation.subtitle}</Title>
                         <Paragraph style={{ color: recommendation.color.secondary }}>{recommendation.description}</Paragraph>
                     </Space>
                 </Col>
@@ -34,7 +34,7 @@ export default function LeadCapturer({ recommendation }) {
                             <Row align='center' justify='center' gutter={[16, 16]}>
 
                                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }} xxl={{ span: 12 }}>
-                                    <Card hoverable bordered style={{ padding: 10, background: 'lightcyan', borderRadius: 64 }} bodyStyle={{ padding: 0 }}>
+                                    <Card hoverable bordered style={{ padding: 10, borderRadius: 64 }} bodyStyle={{ padding: 0 }}>
                                         <Flex align='center' justify='center' style={{padding: '0 4em 0 4em'}}>
                                             <img src="./assets/images/logos/telegram.svg" width={32} alt="" style={{ marginInlineEnd: 10 }} />
                                             <Flex vertical>
@@ -47,7 +47,7 @@ export default function LeadCapturer({ recommendation }) {
 
                                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }} xxl={{ span: 12 }}>
 
-                                    <Card hoverable bordered style={{ padding: 10, background: 'teal', borderRadius: 64 }} bodyStyle={{ padding: 0 }}>
+                                    <Card hoverable bordered style={{ padding: 10, borderRadius: 64 }} bodyStyle={{ padding: 0 }}>
                                         <Flex align='center' justify='center' style={{padding: '0 4em 0 4em'}}>
                                             <img src="./assets/images/logos/whatsApp.svg" width={32} alt="" style={{ marginInlineEnd: 10 }} />
                                             <Flex vertical style={{ color: 'whitesmoke' }}>

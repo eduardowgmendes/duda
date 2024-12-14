@@ -1,7 +1,11 @@
 import { Card, Col, Flex, Row, Space, Typography } from "antd";
+import { useExtractColor } from "react-extract-colors";
 const { Paragraph, Title, Text } = Typography
 
 export default function ListItem({ item }) {
+
+    const colors = useExtractColor(item.picture.src)
+
     return (
         <Card bordered bodyStyle={{ padding: 0 }} style={{width: '100%'}}>
 
@@ -27,8 +31,8 @@ export default function ListItem({ item }) {
                             <Paragraph delete italic type='secondary' style={{ margin: 0, fontFamily: 'Outfit, sans-serif' }}>{item.price.currency.concat(' ').concat(item.price.was)}</Paragraph>
                             
                             <Flex align='start'>
-                                <Text type='secondary' style={{ paddingInlineEnd: 4, wordBreak: 'keep-all' }}>{item.price.currency}</Text>
-                                <Text ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ fontSize: '1.75em', fontWeight: 'bold', lineHeight: 1, fontFamily: 'Outfit', color: '#1c80da' }}>{item.price.current}</Text>
+                                <Text type='secondary' style={{ paddingInlineEnd: 4, wordBreak: 'keep-all', color: `${colors.lighterColor}` }}>{item.price.currency}</Text>
+                                <Text ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ fontSize: '1.75em', fontWeight: 'bold', lineHeight: 1, fontFamily: 'Outfit', color: `${colors.dominantColor}` }}>{item.price.current}</Text>
                             </Flex>
                         
                         </Space>

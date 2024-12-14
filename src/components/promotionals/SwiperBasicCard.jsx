@@ -5,24 +5,26 @@ const { Title, Paragraph, Text } = Typography
 
 export default function SwiperBasicCard({ item }) {
 
+    const colors = useExtractColor(item.media.mainPicture)
+
     return (
         <Card
             size='large'
-            bordered
             style={{ minWidth: '20em' }}
             title={<Text type='secondary' ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ maxWidth: '90%' }}>Recomendado</Text>}
-            extra={<div style={{margin: '-4px 0 0 0', overflow: 'hidden'}}><img src="./assets/images/top-ribbon.png" width={32} /></div>}
+            extra={<div style={{margin: '-4px 0 0 0'}}><img src="./assets/images/top-ribbon.png" width={32} /></div>}
             bodyStyle={{ padding: 0 }}>
 
             <Flex vertical wrap>
 
                 <div style={{
-                    background: `url('${item.media.mainPicture}')`, 
+                    background: `url('${item.media.mainPicture}')`,
+                    backgroundColor: `${colors.dominantColor}`, 
                     backgroundPosition: 'center', 
                     backgroundSize: 'contain', 
                     margin: '.25em 0 .25em 0',
                     backgroundRepeat: 'no-repeat',
-                    height: '10em'}}>
+                    height: '16em'}}>
 
                 </div>
 
@@ -34,7 +36,7 @@ export default function SwiperBasicCard({ item }) {
 
                             <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
                                 <Flex align='start' justify="start" style={{ height: 'auto' }}>
-                                    <Paragraph style={{fontSize: '1.16rem', margin: 0, textAlign: 'start', fontFamily: 'Outfit, sans-serif', color: 'darkslategray' }} ellipsis={{ rows: 2, expandable: false, symbol: '...' }}>{item.title}</Paragraph>
+                                    <Paragraph style={{fontSize: '1.16rem', margin: 0, textAlign: 'start', fontFamily: 'Outfit, sans-serif' }} ellipsis={{ rows: 2, expandable: false, symbol: '...' }}>{item.title}</Paragraph>
                                 </Flex>
                             </Col>
 
@@ -44,7 +46,7 @@ export default function SwiperBasicCard({ item }) {
                                         <Paragraph delete italic type='secondary' style={{ margin: 0, fontFamily: 'Outfit, sans-serif' }}>{item.price.currency.concat(' ').concat(item.price.was)}</Paragraph>
                                         <Flex align='start'>
                                             <Text type='secondary' style={{ paddingInlineEnd: 4, wordBreak: 'keep-all' }}>{item.price.currency}</Text>
-                                            <Text ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ fontSize: '1.5rem', lineHeight: 1, fontWeight: 'bold', fontFamily: 'Outfit, sans-serif', color: 'steelblue' }}>{item.price.current}</Text>
+                                            <Text ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ fontSize: '1.5rem', lineHeight: 1, fontWeight: 'bold', fontFamily: 'Outfit, sans-serif' }}>{item.price.current}</Text>
                                         </Flex>
                                     </Space>
                                 </Flex>
@@ -56,7 +58,7 @@ export default function SwiperBasicCard({ item }) {
 
                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
                         <Flex vertical align='start' justify='center' style={{height: '100%'}}>
-                            <Paragraph type='secondary' style={{margin: 0, fontFamily: 'Outfit, sans-serif' }}><ShopFilled style={{marginInlineEnd: 8, color: 'steelblue'}}/><span style={{fontWeight: 'bold'}}>{item.merchant.seller}</span></Paragraph>
+                            <Paragraph type='secondary' style={{margin: 0, fontFamily: 'Outfit, sans-serif' }}><ShopFilled style={{marginInlineEnd: 8}}/><span style={{fontWeight: 'bold'}}>{item.merchant.seller}</span></Paragraph>
                         </Flex>
                     </Col>
 

@@ -1,11 +1,12 @@
-import { ArrowRightOutlined, CaretLeftOutlined, CaretRightOutlined, FlagOutlined, PauseCircleOutlined, PlayCircleOutlined, PlaySquareOutlined, ProductOutlined } from "@ant-design/icons";
-import { Button, Card, Carousel, Col, Divider, Empty, Flex, Grid, Image, List, Progress, Row, Space, Typography } from "antd";
+import { ArrowRightOutlined, CaretLeftOutlined, CaretRightOutlined, FlagOutlined, IconProvider, PauseCircleOutlined, PlayCircleOutlined, PlaySquareOutlined, ProductOutlined } from "@ant-design/icons";
+import { Button, Card, Carousel, Col, Divider, Empty, Flex, Grid, Image, List, Progress, Row, Space, Tooltip, Typography } from "antd";
 const { Paragraph, Text, Title } = Typography
 import { useExtractColor } from "react-extract-colors";
 import Container from "../layout/Container";
 import DisplayItem from "../showcase/item/DisplayItem";
 import ListItem from "../showcase/item/ListItem";
 import { useRef, useState } from "react";
+import Icon from "@ant-design/icons/lib/components/Icon";
 
 const { useBreakpoint } = Grid
 
@@ -50,9 +51,15 @@ export default function PromotedCarosel({ title, description, promos }) {
                         <Space align='center'>
                             <Card bodyStyle={{ padding: 4 }} bordered style={{ borderRadius: 64 }}>
                                 <Space size={4} align='center'>
-                                    <Button type='default' shape='round' icon={autoplay ? <PauseCircleOutlined /> : <PlaySquareOutlined />} iconPosition='center' onClick={toggleAutoplay} />
-                                    <Button type='default' shape='round' icon={<CaretLeftOutlined />} iconPosition='center' onClick={previous} />
-                                    <Button type='default' shape='round' icon={<CaretRightOutlined />} iconPosition='center' onClick={next} />
+                                    <Tooltip title={autoplay ? 'Pausar' : 'Iniciar'}>
+                                        <Button type='default' shape='round' icon={autoplay ? <PauseCircleOutlined /> : <PlaySquareOutlined />} iconPosition='center' onClick={toggleAutoplay} />
+                                    </Tooltip>
+                                    <Tooltip title='Anterior'>
+                                        <Button type='default' shape='round' icon={<CaretLeftOutlined />} iconPosition='center' onClick={previous} />
+                                    </Tooltip>
+                                    <Tooltip title='Próximo'>
+                                        <Button type='default' shape='round' icon={<CaretRightOutlined />} iconPosition='center' onClick={next} />
+                                    </Tooltip>
                                 </Space>
                             </Card>
                         </Space>
@@ -72,7 +79,7 @@ export default function PromotedCarosel({ title, description, promos }) {
                         {promos.map((promo, index) => (
                             <Card
                                 bordered
-                                style={{ overflow: 'hidden', userSelect: 'none' }}
+                                style={{ overflow:  'hidden', borderRadius: '8rem', userSelect: 'none' }}
                                 bodyStyle={{
                                     padding: 0, background: `linear-gradient(${screens.xs ? '0deg' : '90deg'}, ${useExtractColor(promo.media.backdrop).dominantColor} ${screens.xs ? '75%' : '50%'}, rgba(250,250,250,0) ${screens.xs ? '100%' : '100%'}), url('${promo.media.backdrop}')`,
                                     backgroundPosition: 'center, center',
@@ -82,17 +89,16 @@ export default function PromotedCarosel({ title, description, promos }) {
 
                                 <Row gutter={[8, 8]}>
                                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
-                                        <Flex vertical align={screens.xs ? 'center' : 'start'} justify='end' style={{
-                                            textAlign: `${screens.xs ? 'center' : 'start'}`,
-                                            padding: screens.xs ? '4em .25em 1em .25em' : '4em',
-                                            userSelect: 'none',
-                                            minHeight: screens.xs ? '32em' : '28em'
+                                        <Flex vertical align='center' justify='center' style={{
+                                            textAlign: 'center',
+                                            padding: screens.xs ? '4em .25em 1em .25em' : '8em 2em 0em 2em',
+                                            userSelect: 'none'
                                         }}>
                                             <div style={{ width: 64, height: 64, borderRadius: 8, overflow: 'hidden' }}>
                                                 <img src={promo.images.featureImage} width='100%' />
                                             </div>
-                                            <Title className="display-4" ellipsis={{ rows: 4, expandable: false, symbol: '...' }} style={{ fontWeight: 'bold', userSelect: 'none', color: promo.color.primary, fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all', maxWidth: screens.xs ? '100%' : '75%' }}>{promo.title}</Title>
-                                            <Paragraph style={{ userSelect: 'none', color: promo.color.secondary, maxWidth: screens.xs ? '100%' : '75%' }} ellipsis={{ rows: 6, expandable: false, symbol: '...' }}>{promo.description}</Paragraph>
+                                            <Title className="display-4" ellipsis={{ rows: 4, expandable: false, symbol: '...' }} style={{ fontWeight: 'bold', userSelect: 'none', color: promo.color.primary, fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>{promo.title}</Title>
+                                            <Paragraph style={{ userSelect: 'none', color: promo.color.secondary }} ellipsis={{ rows: 6, expandable: false, symbol: '...' }}>{promo.description}</Paragraph>
                                             <Button type="default" shape='round' size='large' iconPosition='end' href={promo.href} style={{ margin: '2em 0 2em 0' }} icon={<ArrowRightOutlined />}>{promo.callToAction}</Button>
                                         </Flex>
                                     </Col>

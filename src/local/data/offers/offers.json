@@ -2,6 +2,9 @@
     {
         "id": 1,
         "title": "Achadinhos do Dia",
+        "media":{
+            "cover":"https://plus.unsplash.com/premium_vector-1711987912442-034f1a0c74c1?q=80&w=1958&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
         "description": "Descubra as melhores ofertas e produtos selecionados especialmente para você! Aproveite nossas recomendações diárias com qualidade e preços imbatíveis.",
         "offers": [
             {
@@ -133,19 +136,19 @@
                 }
             },
             {
-                "title": "Masturbador Masculino Realístico em Cyberskin com Formato de Bunda e Dois Orifícios Penetráveis Vagina e Anus PG-002",
+                "title": "Gran Turismo 7 Edição de Aniversario 25 Anos PS5 Seminovo",
                 "description": "",
                 "price": {
                     "currency": "R$",
-                    "was": "9499.00",
-                    "current": "4443.00"
+                    "was": "899.99",
+                    "current": "512.99"
                 },
                 "merchant": {
                     "seller": "Shopee"
                 },
                 "picture": {
                     "alt": "...",
-                    "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lwomfbfz1cwi6a"
+                    "src": "https://down-br.img.susercontent.com/file/sg-11134201-7renq-m29xoipnk883a7.webp"
                 }
             },
             {
@@ -293,7 +296,7 @@
                 }
             },
             {
-                "title": "Usb BotãO AutomáTico Bebedouro Bomba EléTrica Agua RecarregáVel Dispenser Universal Carregamento",
+                "title": "Usb Botão Automático Bebedouro Bomba EléTrica Agua RecarregáVel Dispenser Universal Carregamento",
                 "description": "",
                 "price": {
                     "currency": "R$",
@@ -329,6 +332,9 @@
     {
         "id": 2,
         "title": "Achadinhos Destaque",
+        "media":{
+            "cover":"https://plus.unsplash.com/premium_vector-1711987904351-a78f20d3712f?q=80&w=2148&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
         "description": "Confira os produtos que estão em alta! Selecionamos os itens mais desejados e com ofertas imperdíveis para você aproveitar.",
         "offers": [
             {
@@ -656,6 +662,9 @@
     {
         "id": 3,
         "title": "Achadinhos Incríveis",
+        "media":{
+            "cover":"https://plus.unsplash.com/premium_vector-1721763379382-48fd67a436b3?q=80&w=2220&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
         "description": "Produtos incríveis com preços que você não pode perder! Aproveite nossas seleções especiais e garanta suas melhores compras.",
         "offers": [
             {

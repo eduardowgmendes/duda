@@ -28,9 +28,9 @@ export default function Home() {
         },
         items: recommendations,
         color: {
-            base: 'purple',
+            base: 'pink',
             primary: 'indigo',
-            secondary: 'dimgray'
+            secondary: null
         }
     }
 
@@ -78,12 +78,14 @@ export default function Home() {
                         title: 'Smartphones XIAOMI 50% OFF', 
                         description: 'Não perca! Smartphones XIAOMI com até 50% de desconto. Alta tecnologia, desempenho incomparável e design moderno por um preço que você nunca viu. Aproveite agora e tenha o melhor da inovação XIAOMI na palma da sua mão, com economia garantida!', 
                         color: { background: 'tomato', textColor: 'whitesmoke', primary: 'white', secondary: 'dimgray' }, 
+                        media: {cover: 'https://plus.unsplash.com/premium_vector-1714618935347-290b24ecd388?q=80&w=2372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', altCover: '...'},
                         action: { callToAction: 'Conferir', href: 'shop/1' } }} />}
                     tertiaryChildSection={<UnitLink link={{ 
                         icon: <UsbOutlined style={{ fontSize: 64, marginTop: 24 }} />, 
                         title: 'Informática 25% OFF', 
                         description: 'Aproveite 25% OFF em todo o setor de informática! Ofertas imperdíveis em notebooks, acessórios, e muito mais. Garanta já o seu desconto!', 
                         color: { background: ' springgreen', textColor: 'dimgray', primary: 'teal', secondary: 'dimgray' }, 
+                        media: {cover: 'https://plus.unsplash.com/premium_vector-1711987912442-034f1a0c74c1?q=80&w=1958&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://plus.unsplash.com/premium_vector-1711987912442-034f1a0c74c1?q=80&w=1958&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', altCover: '...'},
                         action: { callToAction: 'Conferir', href: 'shop/2' } }} />}>
 
                 </GridSection>
