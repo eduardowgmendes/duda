@@ -8,7 +8,7 @@ export default function UnitLink({ link }) {
     return (
         <Card bordered hoverable border
         bodyStyle={{padding: '0em 0em 2em 0em'}}
-            style={{ border: `1px solid ${colors.dominantColor}`, color: `${link.color.textColor}`, width: '100%', minHeight: '32em', borderRadius: 64, overflow: 'hidden' }}>
+            style={{ border: `1px solid ${colors.dominantColor}`, color: `${link.color.textColor}`, width: '100%', minHeight: '32em', borderRadius: '4rem', overflow: 'hidden' }}>
             <Row gutter={[16, 16]}>
                 <Col span={24}>
                     <div style={{ height: 256, background:`url('${link.media.cover}')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}} />

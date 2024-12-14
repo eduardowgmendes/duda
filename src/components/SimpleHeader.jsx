@@ -63,7 +63,7 @@ export default function SimpleHeader({ themeChangeHandler, themeMode }) {
     return (
         <Header style={{ height: 'auto', padding: 0, background: 'transparent', margin: '2rem 0 2rem 0' }}>
             <Container>
-                <Row>
+                <Row style={{background: 'black', overflow: 'hidden', borderRadius: '8rem'}}>
                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 2 }} xl={{ span: 2 }} xxl={{ span: 2 }}>
                         <Flex align="center" justify="center">
                             <a href="/duda/">
@@ -78,7 +78,7 @@ export default function SimpleHeader({ themeChangeHandler, themeMode }) {
                     </Col>
                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 10 }} xl={{ span: 10 }} xxl={{ span: 10 }}>
                         <Flex align="center" justify="space-between">
-                            <Menu theme="dark" style={{ background: 'inherit', border: 'none' }} onClick={onClick} expandIcon={<FireFilled />} mode='horizontal' selectedKeys={[current]} items={items} />
+                            <Menu theme='dark' style={{ background: 'inherit', border: 'none' }} onClick={onClick} expandIcon={<FireFilled />} mode='horizontal' selectedKeys={[current]} items={items} />
                             <Segmented options={[
                                 { label: 'Auto', value: 'auto' },
                                 { icon: <SunFilled />, value: 'light' },

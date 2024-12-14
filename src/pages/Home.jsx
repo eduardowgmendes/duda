@@ -15,22 +15,22 @@ import Stores from "../components/showcase/Stores";
 import LeadCapturer from "../components/promotionals/LeadCapturer";
 import GridSection from "../components/showcase/layout/GridSection";
 import UnitLink from "../components/promotionals/UnitLink";
-import { BugOutlined, DollarOutlined, MobileOutlined, UpOutlined, UsbOutlined } from "@ant-design/icons";
+import { MobileOutlined, UsbOutlined } from "@ant-design/icons";
 
 export default function Home() {
 
     const recommendation = {
-        title: 'Destaques Imperdíveis no',
-        subtitle: 'Grupo de Ofertas!',
+        title: 'Conheça o nosso exclusivo',
+        subtitle: 'Varal de Ofertas!',
         description: 'Nossa seleção especial foi feita pensando em você, que busca qualidade, estilo e as melhores tendências. Não perca a chance de descobrir o que há de melhor em nossa loja!',
         copy: {
             message: 'Entre agora nos nossos grupos exclusivos de WhatsApp e Telegram, e receba as melhores promoções direto no seu celular.',
         },
         items: recommendations,
         color: {
-            base: 'pink',
-            primary: 'indigo',
-            secondary: null
+            base: 'gold',
+            primary: 'white',
+            secondary: 'white'
         }
     }
 

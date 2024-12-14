@@ -8,7 +8,7 @@ const { Title, Text, Paragraph } = Typography
 export default function LeadCapturer({ recommendation }) {
 
     return (
-        <Card bordered hoverable style={{ borderRadius: 64, overflow: 'hidden' }} bodyStyle={{ padding: 0, userSelect: 'none', backgroundRepeat: 'repeat', overflow: 'hidden' }}>
+        <Card bordered hoverable style={{ borderRadius: '4rem', overflow: 'hidden' }} bodyStyle={{ padding: 0, userSelect: 'none', background: 'url(https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', overflow: 'hidden' }}>
             <Row gutter={[8, 8]}>
                 <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
                     <Space direction='vertical' size='small' align='center' justify='center' style={{ textAlign: 'center', padding: 32, width: '100%' }}>
@@ -38,8 +38,8 @@ export default function LeadCapturer({ recommendation }) {
                                         <Flex align='center' justify='center' style={{padding: '0 4em 0 4em'}}>
                                             <img src="./assets/images/logos/telegram.svg" width={32} alt="" style={{ marginInlineEnd: 10 }} />
                                             <Flex vertical>
-                                                <Paragraph style={{ margin: 0, color: "inherit" }}>Participe no</Paragraph>
-                                                <Title level={5} style={{ wordBreak: 'keep-all', margin: 0, color: "inherit" }} fontFamily='Outfit, sans-serif'>Telegram</Title>
+                                                <Paragraph style={{ margin: 0 }}>Participe no</Paragraph>
+                                                <Title level={5} style={{ wordBreak: 'keep-all', margin: 0 }} fontFamily='Outfit, sans-serif'>Telegram</Title>
                                             </Flex>
                                         </Flex>
                                     </Card>
@@ -51,8 +51,8 @@ export default function LeadCapturer({ recommendation }) {
                                         <Flex align='center' justify='center' style={{padding: '0 4em 0 4em'}}>
                                             <img src="./assets/images/logos/whatsApp.svg" width={32} alt="" style={{ marginInlineEnd: 10 }} />
                                             <Flex vertical style={{ color: 'whitesmoke' }}>
-                                                <Paragraph style={{ margin: 0, color: "inherit" }}>Participe no</Paragraph>
-                                                <Title level={5} style={{ wordBreak: 'keep-all', margin: 0, color: "inherit" }} fontFamily='Outfit, sans-serif'>WhatsApp</Title>
+                                                <Paragraph style={{ margin: 0 }}>Participe no</Paragraph>
+                                                <Title level={5} style={{ wordBreak: 'keep-all', margin: 0 }} fontFamily='Outfit, sans-serif'>WhatsApp</Title>
                                             </Flex>
                                         </Flex>
                                     </Card>
