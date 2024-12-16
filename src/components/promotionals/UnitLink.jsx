@@ -1,3 +1,4 @@
+import { ArrowRightOutlined } from "@ant-design/icons"
 import { Button, Card, Col, Divider, Flex, Image, Row, Space, Typography } from "antd"
 import { useExtractColor } from "react-extract-colors"
 const { Title, Paragraph, Text, Link } = Typography
@@ -18,7 +19,7 @@ export default function UnitLink({ link }) {
                     <Space direction='vertical' align='center' size='large' style={{ textAlign: 'center', userSelect: 'none' }}>
                         <Title className="display-4" level={1} ellipsis={{ rows: 3, expandable: false, symbol: '...' }} style={{ color: `${colors.dominantColor}`, wordBreak: 'keep-all', fontWeight: 'bold', fontFamily: 'Outfit, sans-serif' }}>{link.title}</Title>
                         <Paragraph ellipsis={{ rows: 4, expandable: false, symbol: '...' }}>{link.description}</Paragraph>
-                        <Button size='large' shape='round' type='default' href={link.action.href} style={{ marginBottom: 24, color: `${colors.dominantColor}` }}>{link.action.callToAction}</Button>
+                        <Button size='large' shape='round' type='default' iconPosition='end' icon={<ArrowRightOutlined />} href={link.action.href} style={{ marginBottom: 24, color: `${colors.dominantColor}` }}>{link.action.callToAction}</Button>
                     </Space>
                 </Col>
             </Row>

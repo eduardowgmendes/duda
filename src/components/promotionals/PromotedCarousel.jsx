@@ -75,30 +75,30 @@ export default function PromotedCarosel({ title, description, promos }) {
                         pauseOnFocus
                         beforeChange={(current, next) => getCurrent(current, next)}
                         dotPosition='bottom' ref={carouselRef}
-                        style={{ position: 'relative', cursor: 'grab' }}>
+                        style={{ position: 'relative', cursor: 'grab', borderRadius: '4rem', overflow: 'hidden' }}>
                         {promos.map((promo, index) => (
-                            <Card
-                                bordered
-                                style={{ overflow:  'hidden', borderRadius: '8rem', userSelect: 'none' }}
+                            <Card 
+                                style={{ overflow:  'hidden', userSelect: 'none' }}
                                 bodyStyle={{
-                                    padding: 0, background: `linear-gradient(${screens.xs ? '0deg' : '90deg'}, ${useExtractColor(promo.media.backdrop).dominantColor} ${screens.xs ? '75%' : '50%'}, rgba(250,250,250,0) ${screens.xs ? '100%' : '100%'}), url('${promo.media.backdrop}')`,
+                                    padding: 0,
                                     backgroundPosition: 'center, center',
                                     backgroundRepeat: 'no-repeat, no-repeat',
                                     backgroundSize: 'cover, cover'
                                 }} key={index}>
 
                                 <Row gutter={[8, 8]}>
-                                    <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
-                                        <Flex vertical align='center' justify='center' style={{
+                                    <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }} style={{minHeight: '75vh', background: `linear-gradient(0deg, ${useExtractColor(promo.media.backdrop).dominantColor} ${screens.xs ? '75%' : '25%'}, rgba(250,250,250,0) ${screens.xs ? '100%' : '100%'}), url('${promo.media.backdrop}')`}}>
+                                        <Flex vertical align='center' justify='end' style={{
                                             textAlign: 'center',
-                                            padding: screens.xs ? '4em .25em 1em .25em' : '8em 2em 0em 2em',
+                                            height: '100%',
+                                            padding: screens.xs ? '4em 2em 2em 2em' : '2em 2em 2em 2em',
                                             userSelect: 'none'
                                         }}>
                                             <div style={{ width: 64, height: 64, borderRadius: 8, overflow: 'hidden' }}>
                                                 <img src={promo.images.featureImage} width='100%' />
                                             </div>
-                                            <Title className="display-4" ellipsis={{ rows: 4, expandable: false, symbol: '...' }} style={{ fontWeight: 'bold', userSelect: 'none', color: promo.color.primary, fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>{promo.title}</Title>
-                                            <Paragraph style={{ userSelect: 'none', color: promo.color.secondary }} ellipsis={{ rows: 6, expandable: false, symbol: '...' }}>{promo.description}</Paragraph>
+                                            <Title className='display-4' ellipsis={{ rows: 4, expandable: false, symbol: '...' }} style={{ fontWeight: 'bold', userSelect: 'none', color: promo.color.primary, fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>{promo.title}</Title>
+                                            <Paragraph className='sublead' style={{ userSelect: 'none', color: promo.color.secondary }} ellipsis={{ rows: 6, expandable: false, symbol: '...' }}>{promo.description}</Paragraph>
                                             <Button type="default" shape='round' size='large' iconPosition='end' href={promo.href} style={{ margin: '2em 0 2em 0' }} icon={<ArrowRightOutlined />}>{promo.callToAction}</Button>
                                         </Flex>
                                     </Col>

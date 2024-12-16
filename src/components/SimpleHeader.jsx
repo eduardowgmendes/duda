@@ -3,7 +3,6 @@ import { DollarCircleOutlined, FireFilled, InfoCircleOutlined, MenuOutlined, Moo
 import { Col, Flex, Image, Layout, Menu, Row, Segmented } from "antd"
 import Search from "antd/es/input/Search";
 import { useState } from "react";
-import Container from "./layout/Container";
 
 const { Header } = Layout;
 
@@ -57,37 +56,38 @@ export default function SimpleHeader({ themeChangeHandler, themeMode }) {
             label: 'Sobre',
             key: 'about',
             icon: <InfoCircleOutlined />,
-            href: '.duda/about'
+            href: '/about'
         },]
 
     return (
-        <Header style={{ height: 'auto', padding: 0, background: 'transparent', margin: '2rem 0 2rem 0' }}>
-            <Container>
-                <Row style={{background: 'black', overflow: 'hidden', borderRadius: '8rem'}}>
-                    <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 2 }} xl={{ span: 2 }} xxl={{ span: 2 }}>
-                        <Flex align="center" justify="center">
-                            <a href="/duda/">
-                                <Image src='./assets/images/logos/duda-dark-logo.svg' width='6rem' preview={false} alt="..." />
-                            </a>
-                        </Flex>
-                    </Col>
-                    <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 10 }} xl={{ span: 10 }} xxl={{ span: 10 }}>
-                        <Flex vertical align="center" justify="center" style={{ height: '100%' }}>
-                            <Search placeholder='Buscar...' enterButton />
-                        </Flex>
-                    </Col>
-                    <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 10 }} xl={{ span: 10 }} xxl={{ span: 10 }}>
-                        <Flex align="center" justify="space-between">
-                            <Menu theme='dark' style={{ background: 'inherit', border: 'none' }} onClick={onClick} expandIcon={<FireFilled />} mode='horizontal' selectedKeys={[current]} items={items} />
-                            <Segmented options={[
-                                { label: 'Auto', value: 'auto' },
-                                { icon: <SunFilled />, value: 'light' },
-                                { label: <MoonFilled />, value: 'dark' }
-                            ]} onChange={themeChangeHandler} value={themeMode} />
-                        </Flex>
-                    </Col>
-                </Row>
-            </Container>
+        <Header style={{ height: 'auto', padding: 0, marginBottom: '2rem', background: themeMode === 'light' ? 'transparent' : 'black'}}>
+            <Row>
+                <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 4 }} xl={{ span: 4 }} xxl={{ span: 4 }}>
+                    <Flex align="center" justify="center">
+                        <a href="/duda/">
+                            <Image src='./assets/images/logos/duda-dark-logo.svg' width='6rem' preview={false} alt="..." />
+                        </a>
+                    </Flex>
+                </Col>
+                <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 8 }} xl={{ span: 10 }} xxl={{ span: 10 }}>
+                    <Flex vertical align="center" justify="center" style={{ height: '100%' }}>
+                        <Search placeholder='Buscar...' enterButton />
+                    </Flex>
+                </Col>
+                <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 10 }} xl={{ span: 10 }} xxl={{ span: 10 }}>
+                    <Flex align="center" justify="space-between">
+                        <Menu theme={themeMode} style={{ background: 'inherit', border: 'none' }} onClick={onClick} expandIcon={<FireFilled />} mode='horizontal' selectedKeys={[current]} items={items} />
+                    </Flex>
+                </Col>
+                <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
+                    <Flex style={{height: '100%', margin: '0rem 0 1rem 0'}} justify='center' align='center'>
+                        <Segmented options={[
+                            { icon: <SunFilled />, value: 'light' },
+                            { label: <MoonFilled />, value: 'dark' }
+                        ]} onChange={themeChangeHandler} value={themeMode} />
+                    </Flex>
+                </Col>
+            </Row>
         </Header>
     )
 }

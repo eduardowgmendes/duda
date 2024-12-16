@@ -41,12 +41,12 @@ export default function SubscriptionReminder() {
                                 <Row align='center' justify='center' gutter={[10,10]}>
 
                                     <Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 12}} xl={{span: 12}} xxl={{span: 12}}>
-                                        <Card hoverable bordered style={{ padding: 10, background: 'lightcyan' }} bodyStyle={{ padding: 0 }}>
+                                        <Card hoverable bordered style={{ padding: 10 }} bodyStyle={{ padding: 0 }}>
                                             <Flex align='center' justify='center'>
                                                 <img src="./assets/images/logos/telegram.svg" width={32} alt="" style={{ marginInlineEnd: 10 }} />
                                                 <Flex vertical>
-                                                    <Paragraph style={{ margin: 0, color: "inherit" }}>Participe no</Paragraph>
-                                                    <Title level={5} style={{ wordBreak: 'keep-all', margin: 0, color: "inherit" }} fontFamily='Outfit, sans-serif'>Telegram</Title>
+                                                    <Paragraph style={{ margin: 0 }}>Participe no</Paragraph>
+                                                    <Title level={5} style={{ wordBreak: 'keep-all', margin: 0 }} fontFamily='Outfit, sans-serif'>Telegram</Title>
                                                 </Flex>
                                             </Flex>
                                         </Card>
@@ -54,12 +54,12 @@ export default function SubscriptionReminder() {
 
                                     <Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 12}} xl={{span: 12}} xxl={{span: 12}}>
 
-                                        <Card hoverable bordered style={{ padding: 10, background: 'teal' }} bodyStyle={{ padding: 0 }}>
+                                        <Card hoverable bordered style={{ padding: 10 }} bodyStyle={{ padding: 0 }}>
                                             <Flex align='center' justify='center'>
                                                 <img src="./assets/images/logos/whatsApp.svg" width={32} alt="" style={{ marginInlineEnd: 10 }} />
-                                                <Flex vertical style={{color: 'whitesmoke'}}>
-                                                    <Paragraph style={{ margin: 0, color: "inherit" }}>Participe no</Paragraph>
-                                                    <Title level={5} style={{ margin: 0, color: "inherit" }} fontFamily='Outfit, sans-serif'>WhatsApp</Title>
+                                                <Flex vertical >
+                                                    <Paragraph style={{ margin: 0 }}>Participe no</Paragraph>
+                                                    <Title level={5} style={{ margin: 0 }} fontFamily='Outfit, sans-serif'>WhatsApp</Title>
                                                 </Flex>
                                             </Flex>
                                         </Card>
