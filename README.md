@@ -1,5 +1,5 @@
 
-![Duda](https://raw.githubusercontent.com/eduardowgmendes/duda/refs/heads/main/public/assets/images/logos/duda-light-logo.svg)
+![Duda](https://raw.githubusercontent.com/eduardowgmendes/duda/refs/heads/main/public/assets/images/logos/duda-dark-logo.svg)
 
 # Duda  
 
