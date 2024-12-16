@@ -1,5 +1,5 @@
 
-![Duda](https://raw.githubusercontent.com/eduardowgmendes/duda/refs/heads/main/public/assets/images/logos/duda-dark-logo.svg)
+![Duda](https://raw.githubusercontent.com/eduardowgmendes/duda/refs/heads/main/duda-banner.png)
 
 Um website de marketing afiliado que destaca os **melhores preços e condições da internet**. Encontre produtos de alta qualidade com as **ofertas mais vantajosas**, atualizadas diariamente para garantir que você sempre faça o melhor negócio.  
 
