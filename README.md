@@ -18,15 +18,16 @@ Este projeto foi desenvolvido exclusivamente com:
 1. Clone o repositório:  
    ```bash
    git clone https://github.com/seu-usuario/duda.git
-
+   ```
 2. Navegue até o diretório do projeto: 
-```bash
+   ```bash
    cd duda
-
+   ```
 3. Instale as dependências
-```bash
+   ```bash
    npm install
-
+   ```
 4. Inicie o servidor de desenvolvimento: 
-```bash
+   ```bash
    npm start run
+   ```
