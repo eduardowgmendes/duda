@@ -12,6 +12,9 @@ Este projeto foi desenvolvido exclusivamente com:
 - **Interface intuitiva e responsiva:** Experiência de navegação fluida em qualquer dispositivo.  
 - **Produtos de alta qualidade:** Curadoria cuidadosa para trazer as melhores opções aos usuários.  
 
+## Live Preview
+[Duda](https://eduardowgmendes.github.io/duda/)
+
 ## 📦 Como Instalar e Executar  
 1. Clone o repositório:  
    ```bash
