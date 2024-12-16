@@ -12,8 +12,10 @@ Este projeto foi desenvolvido exclusivamente com:
 - **Interface intuitiva e responsiva:** Experiência de navegação fluida em qualquer dispositivo.  
 - **Produtos de alta qualidade:** Curadoria cuidadosa para trazer as melhores opções aos usuários.  
 
-## Live Preview
-[Duda](https://eduardowgmendes.github.io/duda/)
+Veja o projeto em ação! A Duda está disponível online para visualização:
+[Live Preview](https://eduardowgmendes.github.io/duda/)
+
+Explore as funcionalidades e encontre as melhores ofertas disponíveis
 
 ## 📦 Como Instalar e Executar  
 1. Clone o repositório:  
