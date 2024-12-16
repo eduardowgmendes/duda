@@ -17,7 +17,7 @@ Este projeto foi desenvolvido exclusivamente com:
 ## 📦 Como Instalar e Executar  
 1. Clone o repositório:  
    ```bash
-   git clone https://github.com/seu-usuario/duda.git
+   git clone https://github.com/eduardowgmendes/duda.git
    ```
 2. Navegue até o diretório do projeto: 
    ```bash
