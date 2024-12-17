@@ -24,7 +24,7 @@ export default function Hero({ banners }) {
                 dotPosition='bottom'>
                 {banners && banners.map((banner) => (
                     <Container>
-                        <Card hoverable style={{ borderRadius: '4rem', overflow: 'hidden', cursor: 'grab' }} bodyStyle={{ padding: 0 }}>
+                        <Card style={{ borderRadius: '4rem', overflow: 'hidden', cursor: 'grab' }} bodyStyle={{ padding: 0 }}>
                             <Row>
                                 <Col span={24} style={{ background: useExtractColor(banner.media.background).dominantColor }}>
                                     <Row>
