@@ -12,7 +12,7 @@ export default function CategoryShowcase({ categories }) {
             {categories.map((category, index) => (
                 index !== lastIndex ? <Col xs={{ span: 8 }} sm={{ span: 6 }} md={{ span: 4 }} lg={{ span: 4 }} xl={{ span: 4 }} xxl={{ span: 3 }}>
 
-                    <Card bordered hoverable key={index} size='small' cover={<img src={category.media.background} alt="..." />}
+                    <Card className="glow" bordered hoverable key={index} size='small' cover={<img src={category.media.background} alt="..." />}
                         bodyStyle={{ padding: 0 }}
                         style={{
                             overflow: 'hidden',

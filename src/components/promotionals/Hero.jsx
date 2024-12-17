@@ -22,9 +22,9 @@ export default function Hero({ banners }) {
                 dots
                 beforeChange={(index) => beforeChange(index)}
                 dotPosition='bottom'>
-                {banners && banners.map((banner, index) => (
+                {banners && banners.map((banner) => (
                     <Container>
-                        <Card bordered style={{borderRadius: '2rem', overflow: 'hidden'}} bodyStyle={{padding: 0}}>
+                        <Card hoverable style={{ borderRadius: '4rem', overflow: 'hidden', cursor: 'grab' }} bodyStyle={{ padding: 0 }}>
                             <Row>
                                 <Col span={24} style={{ background: useExtractColor(banner.media.background).dominantColor }}>
                                     <Row>

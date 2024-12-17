@@ -35,7 +35,7 @@ export default function Home() {
     }
 
     return (
-        <div>
+        <div style={{overflow: 'unset'}}>
             <Hero banners={banners} />
 
             <Container>

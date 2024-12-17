@@ -9,6 +9,7 @@ export default function DisplayItem({ item }) {
 
     return (
             <Card
+                className="glow"
                 bordered
                 hoverable
                 size='small'

@@ -76,17 +76,19 @@ p {
 
 .lead {
   margin-bottom: 1.75rem !important;
-  font-weight: 300 !important;
+  font-weight: bold !important;
   line-height: 1.2 !important;
   font-size: 1.75rem !important;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 .sublead {
   margin-bottom: .75rem !important;
-  font-weight: 100 !important;
+  font-weight: medium !important;
   line-height: 1.2 !important;
   font-size: 1.25rem !important;
   line-height: 2rem !important;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 .body-1 {
@@ -141,4 +143,19 @@ p {
       rgba(0, 0, 0, 1) 15%,
       rgba(0, 0, 0, 1) 85%,
       rgba(0, 0, 0, 0) 90%);
+}
+
+.glow {
+  transition: all 25ms ease-in;
+}
+
+.glow:hover {
+  z-index: 99999;
+  box-shadow: 0 0 8rem 1rem rgba(255, 255, 255, 0.32);
+  transform: translateY(-.16rem);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.glow:hover * {
+  color: black;
 }

@@ -1,9 +1,13 @@
 import { ArrowRightOutlined, MoreOutlined, PlusOutlined, RightOutlined } from "@ant-design/icons";
 import { Button, Card, List, Space, Typography } from "antd";
+import { useState } from "react";
+import { useExtractColor } from "react-extract-colors";
 const { Paragraph, Title } = Typography
 export default function Stores({ stores }) {
     
     // window.open(url, '_blank').focus()
+
+    const [isHovering, setIsHovering] = useState(false)
 
     const handleOnClick = (e) => {
        console.log(e) 
@@ -28,7 +32,10 @@ export default function Stores({ stores }) {
                 <List.Item>
                     <Space direction='vertical' align='center' size='small'>
                         <Card
+                            className="glow"
                             hoverable
+                            onMouseEnter={setIsHovering(true)}
+                            onMouseOut={setIsHovering(false)}
                             onClick={handleOnClick}
                             bordered>
                             <img src={store.media.logo} alt={store.media.alt} width={'100%'} />
