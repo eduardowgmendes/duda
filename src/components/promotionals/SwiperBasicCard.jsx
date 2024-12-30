@@ -11,8 +11,8 @@ export default function SwiperBasicCard({ item }) {
         <Card
             size='large'
             style={{
-                border: 'none', minWidth: '24em' }}
-            title={<Text type='secondary' ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ maxWidth: '90%' }}>Recomendado</Text>}
+                border: 'none', minWidth: '24em', background: 'white' }}
+            title={<Text type='secondary' ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ maxWidth: '90%', color: 'black' }}>Recomendado</Text>}
             extra={<div><img src="./assets/images/top-ribbon.png" width={32} /></div>}
             bodyStyle={{ padding: 0 }}>
 
@@ -41,17 +41,17 @@ export default function SwiperBasicCard({ item }) {
 
                             <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
                                 <Flex align='start' justify="start" style={{ height: 'auto' }}>
-                                    <Paragraph style={{ fontSize: '1.16rem', fontWeight: 'bold', margin: 0, textAlign: 'start', fontFamily: 'Outfit, sans-serif' }} ellipsis={{ rows: 2, expandable: false, symbol: '...' }}>{item.title}</Paragraph>
+                                    <Paragraph style={{ fontSize: '1.16rem', fontWeight: 'bold', margin: 0, textAlign: 'start', fontFamily: 'Outfit, sans-serif', color: 'black' }} ellipsis={{ rows: 2, expandable: false, symbol: '...' }}>{item.title}</Paragraph>
                                 </Flex>
                             </Col>
 
                             <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
                                 <Flex vertical align='start' justify='end' style={{ height: 'auto', margin: '1em 0 0 0' }}>
                                     <Space direction='vertical' align='start' size='small'>
-                                        <Paragraph delete italic type='secondary' style={{ margin: 0, fontFamily: 'Outfit, sans-serif', color: 'inherit' }}>{item.price.currency.concat(' ').concat(item.price.was)}</Paragraph>
+                                        <Paragraph delete italic type='secondary' style={{ margin: 0, fontFamily: 'Outfit, sans-serif', color: 'dimgray' }}>{item.price.currency.concat(' ').concat(item.price.was)}</Paragraph>
                                         <Flex align='start'>
-                                            <Text type='secondary' style={{ paddingInlineEnd: 4, wordBreak: 'keep-all', color: 'inherit' }}>{item.price.currency}</Text>
-                                            <Text ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ fontSize: '1.5rem', lineHeight: 1, fontWeight: 'bold', fontFamily: 'Outfit, sans-serif' }}>{item.price.current}</Text>
+                                            <Text type='secondary' style={{ paddingInlineEnd: 4, wordBreak: 'keep-all', color: 'dimgray' }}>{item.price.currency}</Text>
+                                            <Text ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ fontSize: '1.5rem', lineHeight: 1, fontWeight: 'bold', fontFamily: 'Outfit, sans-serif', color: 'royalblue' }}>{item.price.current}</Text>
                                         </Flex>
                                     </Space>
                                 </Flex>
