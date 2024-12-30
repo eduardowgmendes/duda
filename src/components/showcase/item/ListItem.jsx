@@ -1,4 +1,5 @@
-import { Card, Col, Flex, Row, Space, Typography } from "antd";
+import { ShopFilled } from "@ant-design/icons";
+import { Card, Col, Divider, Flex, Image, Row, Space, Typography } from "antd";
 import { useExtractColor } from "react-extract-colors";
 const { Paragraph, Title, Text } = Typography
 
@@ -7,42 +8,34 @@ export default function ListItem({ item }) {
     const colors = useExtractColor(item.picture.src)
 
     return (
-        <Card bordered bodyStyle={{ padding: 0 }} style={{width: '100%'}}>
+        <Card className="glow" bordered bodyStyle={{ padding: 0 }} style={{ width: '100%', cursor: 'pointer' }}>
 
             <Row gutter={[8, 8]}>
 
-                <Col xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 8 }} lg={{ span: 8 }} xl={{ span: 4 }} xxl={{ span: 4 }}>
-                    <Flex align='center' justify='center' style={{ overflow: 'hidden', height: '100%' }}>
-                        <div style={{backgroundImage: `url('${item.picture.src}')`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', width: '100%', height: '100%', aspectRatio: '1/1'}} />
+                <Col xs={{ span: 8 }} sm={{ span: 8 }} md={{ span: 8 }} lg={{ span: 4 }} xl={{ span: 4 }} xxl={{ span: 2 }}>
+                    <Flex vertical justify="center" style={{ height: '100%', backgroundColor: `${colors.dominantColor}` }}>
+                        <Image preview={false} src={item.picture.src} />
                     </Flex>
                 </Col>
 
-                <Col xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 16 }} lg={{ span: 16 }} xl={{ span: 12 }} xxl={{ span: 8 }}>
+                <Col xs={{ span: 16 }} sm={{ span: 16 }} md={{ span: 16 }} lg={{ span: 20 }} xl={{ span: 20 }} xxl={{ span: 22 }}>
 
-                    <Flex vertical align='start' justify='space-between' style={{ height: '100%', padding: 16 }}>
-
-                        <Space direction='vertical' size='small'>
-                            
-                            <Title
-                                level={5}
-                                ellipsis={{ rows: 3, expandable: false, symbol: '...' }}
-                                style={{ margin: 0, fontFamily: 'Outfit, sans-serif' }}>{item.title}</Title>
-                            
-                            <Paragraph delete italic type='secondary' style={{ margin: 0, fontFamily: 'Outfit, sans-serif' }}>{item.price.currency.concat(' ').concat(item.price.was)}</Paragraph>
-                            
-                            <Flex align='start'>
-                                <Text type='secondary' style={{ paddingInlineEnd: 4, wordBreak: 'keep-all', color: `${colors.lighterColor}` }}>{item.price.currency}</Text>
-                                <Text ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ fontSize: '1.75em', fontWeight: 'bold', lineHeight: 1, fontFamily: 'Outfit', color: `${colors.dominantColor}` }}>{item.price.current}</Text>
-                            </Flex>
-                        
-                        </Space>
-
-                        <Flex align="center" justify="start" style={{ width: '100%', padding: '1em 0 0 0' }}>
-                            <small style={{ fontFamily: 'Outfit, sans-serif' }}><span style={{ color: "gray" }}>Vendido por: </span>{item.merchant.seller}</small>
+                    <Flex align="start" style={{ padding: '1rem', height: '100%'}} >
+                        <Title
+                            level={5}
+                            ellipsis={{ rows: 3, expandable: false, symbol: '...' }}
+                            style={{ flex: 1, margin: 0, fontFamily: 'Outfit, sans-serif', marginInlineEnd: '1rem' }}>{item.title}</Title>
+                        <Flex vertical justify="space-between" align="end" style={{height: '100%'}}>
+                            <Space size='small' direction="vertical" align="end">
+                                <Paragraph delete italic type='secondary' style={{ margin: 0, fontFamily: 'Outfit, sans-serif' }}>{item.price.currency.concat(' ').concat(item.price.was)}</Paragraph>
+                                <Space size='small' align="end">
+                                    <small style={{ wordBreak: 'keep-all' }}>{item.price.currency}</small>
+                                    <Text ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ fontSize: '1.5em', fontWeight: 'bold', lineHeight: 1, fontFamily: 'Outfit' }}>{item.price.current}</Text>
+                                </Space>
+                            </Space>
+                            <small style={{ fontFamily: 'Outfit, sans-serif', margin: '1rem 0 0 0' }}><ShopFilled style={{ marginInlineEnd: 8 }} />{item.merchant.seller}</small>
                         </Flex>
-
                     </Flex>
-
                 </Col>
 
             </Row>

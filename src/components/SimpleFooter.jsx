@@ -6,7 +6,7 @@ import SubscriptionReminder from "./promotionals/SubscriptionReminder";
 const { Footer } = Layout
 const { Paragraph, Text, Title, Link } = Typography
 
-export default function SimpleFooter() {
+export default function SimpleFooter({ themeMode }) {
 
     const departments = [{
         name: 'Moda & Beleza',
@@ -40,7 +40,7 @@ export default function SimpleFooter() {
                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 12 }} xl={{ span: 12 }} xxl={{ span: 12 }} >
                         <a href="/">
                             <Flex style={{ padding: '0 0 32px 0' }}>
-                                <Image src='./assets/images/logos/duda-light-logo.svg' preview={false} alt='...' />
+                                {themeMode === 'light' ? <Image src='./assets/images/logos/duda-light-logo.svg' preview={false} alt='...' /> : <Image src='./assets/images/logos/duda-dark-logo.svg' preview={false} alt='...' />}
                             </Flex>
                         </a>
                         <Space direction='vertical'>

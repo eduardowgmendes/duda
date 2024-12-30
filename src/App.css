@@ -76,7 +76,6 @@ p {
 
 .lead {
   margin-bottom: 1.75rem !important;
-  font-weight: bold !important;
   line-height: 1.2 !important;
   font-size: 1.75rem !important;
   font-family: 'Barlow Condensed', sans-serif;
@@ -146,13 +145,12 @@ p {
 }
 
 .glow {
-  transition: all 25ms ease-in;
+  transition: all 128ms ease-in-out;
 }
 
 .glow:hover {
   z-index: 99999;
   box-shadow: 0 0 8rem 1rem rgba(255, 255, 255, 0.32);
-  transform: translateY(-.16rem);
   background-color: rgba(255, 255, 255, 1);
 }
 

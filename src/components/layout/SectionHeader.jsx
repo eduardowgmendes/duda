@@ -1,7 +1,7 @@
 import { Empty } from "antd";
 import Header from "./Header";
 
-export default function Section({ header, children }) {
+export default function SectionHeader({ header, children }) {
 
     return (
         <section style={{minHeight: '25vh', padding: '4em 0 4em 0'}}>

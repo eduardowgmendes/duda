@@ -1,8 +1,9 @@
 
-import { DollarCircleOutlined, FireFilled, InfoCircleOutlined, MenuOutlined, MoonFilled, ShopOutlined, SunFilled } from "@ant-design/icons";
+import { CaretRightFilled, DollarCircleOutlined, FireFilled, InfoCircleOutlined, MenuOutlined, MoonFilled, ShopOutlined, SunFilled } from "@ant-design/icons";
 import { Col, Flex, Image, Layout, Menu, Row, Segmented } from "antd"
 import Search from "antd/es/input/Search";
 import { useState } from "react";
+import Container from "./layout/Container";
 
 const { Header } = Layout;
 
@@ -12,6 +13,7 @@ export default function SimpleHeader({ themeChangeHandler, themeMode }) {
 
     const onClick = (e) => {
         setCurrent(e.key)
+        window.location.href = e.key
     }
 
     const departments = [{
@@ -44,50 +46,52 @@ export default function SimpleHeader({ themeChangeHandler, themeMode }) {
         {
             label: 'Ofertas do Dia',
             key: 'daily-offers',
-            icon: <DollarCircleOutlined />,
-            href: '/daily-offers'
+            icon: <DollarCircleOutlined />
         }, {
             label: 'Lojas',
             key: 'stores',
-            icon: <ShopOutlined />,
-            href: '/stores'
+            icon: <ShopOutlined />
         },
         {
             label: 'Sobre',
             key: 'about',
-            icon: <InfoCircleOutlined />,
-            href: '/about'
+            icon: <InfoCircleOutlined />
         },]
 
     return (
-        <Header style={{ height: 'auto', padding: 0, marginBottom: '2rem', background: themeMode === 'light' ? 'transparent' : 'black'}}>
-            <Row>
-                <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 4 }} xl={{ span: 4 }} xxl={{ span: 4 }}>
-                    <Flex align="center" justify="center">
-                        <a href="/duda/">
-                            <Image src='./assets/images/logos/duda-dark-logo.svg' width='6rem' preview={false} alt="..." />
-                        </a>
-                    </Flex>
-                </Col>
-                <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 8 }} xl={{ span: 10 }} xxl={{ span: 10 }}>
-                    <Flex vertical align="center" justify="center" style={{ height: '100%' }}>
-                        <Search placeholder='Buscar...' enterButton />
-                    </Flex>
-                </Col>
-                <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 10 }} xl={{ span: 10 }} xxl={{ span: 10 }}>
-                    <Flex align="center" justify="space-between">
-                        <Menu theme={themeMode} style={{ background: 'inherit', border: 'none' }} onClick={onClick} expandIcon={<FireFilled />} mode='horizontal' selectedKeys={[current]} items={items} />
-                    </Flex>
-                </Col>
-                <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
-                    <Flex style={{height: '100%', margin: '0rem 0 1rem 0'}} justify='center' align='center'>
-                        <Segmented options={[
-                            { icon: <SunFilled />, value: 'light' },
-                            { label: <MoonFilled />, value: 'dark' }
-                        ]} onChange={themeChangeHandler} value={themeMode} />
-                    </Flex>
-                </Col>
-            </Row>
+        <Header style={{ height: 'auto', padding: 0, marginBottom: '2rem', background: 'transparent' }}>
+            <Container>
+                <Row>
+                    <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 4 }} xl={{ span: 4 }} xxl={{ span: 2 }}>
+                        <Flex align="center" justify="space-between">
+                            <a href="/duda/" style={{margin: '0 .25rem 0 .25rem'}}>
+                                {themeMode === 'light' ? <Image src='./assets/images/logos/duda-light-logo.svg' width='6rem' preview={false} alt="..." /> : <Image src='./assets/images/logos/duda-dark-logo.svg' width='6rem' preview={false} alt="..." />}
+                            </a>
+
+                            <Segmented style={{margin: '0 .25rem 0 .25rem'}} 
+                            options={[
+                                { icon: <SunFilled style={{color: themeMode === 'light' ? 'yellow' : 'lemonchiffon'}}/>, value: 'light' },
+                                { label: <MoonFilled style={{color: themeMode === 'light' ? 'midnightblue' : 'gold'}}/>, value: 'dark' }
+                            ]} onChange={themeChangeHandler} value={themeMode} />
+                        </Flex>
+                    </Col>
+                    <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 16, offset: 4 }} xl={{ span: 16, offset: 4 }} xxl={{ span: 20, offset: 2 }}>
+                        <Flex vertical align="center" justify="center" style={{ height: '100%' }}>
+                            <Search placeholder='Buscar...' enterButton />
+                        </Flex>
+                    </Col>
+                    <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 24 }} xxl={{ span: 24 }}>
+                        <Flex align="center" justify="center">
+                            <Menu theme={themeMode} 
+                                style={{ background: 'inherit', border: 'none' }}
+                                onClick={onClick}
+                                mode='horizontal'
+                                selectedKeys={[current]}
+                                items={items} />
+                        </Flex>
+                    </Col>
+                </Row>
+            </Container>
         </Header>
     )
 }

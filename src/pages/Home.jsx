@@ -1,5 +1,5 @@
 import Container from "../components/layout/Container";
-import Section from "../components/layout/Section";
+import Section from "../components/layout/SectionHeader";
 import Hero from "../components/promotionals/Hero";
 import PromotedCarosel from "../components/promotionals/PromotedCarousel";
 import Showcase from "../components/showcase/Showcase";
@@ -89,12 +89,6 @@ export default function Home() {
                         action: { callToAction: 'Conferir', href: 'shop/2' } }} />}>
 
                 </GridSection>
-
-                <Section header={{
-                    title: 'Lojas',
-                    description: 'Descubra a seleção de lojas parceiras cuidadosamente escolhidas para oferecer os melhores produtos e serviços. Trabalhamos com marcas renomadas e confiáveis, garantindo a qualidade, variedade e ótimos preços para você.',
-                    callToAction: null
-                }} children={<Stores stores={partners} />} />
 
             </Container>
 

@@ -10,7 +10,7 @@ const { Title, Paragraph } = Typography;
 import offers from "../local/data/offers/offers.json";
 import Header from "../components/layout/Header";
 import { useExtractColor } from "react-extract-colors";
-import MainHeader from "../components/layout/MainHeader";
+import ShopSectionHeader from "../components/layout/ShopSectionHeader";
 
 export default function Shop() {
 
@@ -96,19 +96,11 @@ export default function Shop() {
 
         <Layout>
 
-            <Container>
-                <Card bordered style={{borderRadius: '8rem', overflow: 'hidden', margin: '4rem 0 2rem 0'}} bodyStyle={{padding: 0}}>
-                    <Flex vertical align='center' justify='center' style={{ maxHeight: '50vh', overflow: 'hidden', background: `${colors.dominantColor}` }}>
-                        <Image preview={false} src={currentOffer.media.cover}/>
-                    </Flex>
-                </Card>
-            </Container>
-
             <Flex vertical> 
 
                 <Container>
 
-                    <MainHeader header={{
+                    <ShopSectionHeader header={{
                         title: currentOffer.title,
                         description: currentOffer.description,
                         callToAction: null,
@@ -116,7 +108,7 @@ export default function Shop() {
                             title: `${colors.dominantColor}`,
                             message: null
                         }
-                    }} />
+                    }} currentOffer={currentOffer} />
 
                     <Flex align='end' justify='space-between'>
                         <Space size='large'>
