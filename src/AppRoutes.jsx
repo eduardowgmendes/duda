@@ -15,7 +15,7 @@ const AppRoutes = () => {
                 <Route path="/daily-offers/:offerId" element={<Shop />} />
                 <Route path="/stores" element={<StoresPage />} />
                 <Route path="/about" element={<About />} />
-                <Route path="*" element={<NotFound title='Oops! Você está perdido?' description='Parece que a página que você está procurando não existe mais ou foi movida. Mas não se preocupe! Navegue pelo menu acima ou volte para a página inicial para continuar explorando nosso site.'/>} />
+                <Route path="*" element={<NotFound title='Oops! Você está perdido?' description='Parece que a página que você está procurando não existe mais ou foi movida. Mas não se preocupe! Navegue pelo menu acima ou volte para a página inicial para continuar explorando nosso site.' />} />
             </Routes>
         </HashRouter>
     )
